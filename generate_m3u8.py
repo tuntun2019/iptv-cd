@@ -161,7 +161,7 @@ def parse_multicast_table(html_content):
     return channels
 
 def generate_m3u8(channels, udpxy_url, output_file):
-    """生成单个m3u8文件"""
+    """生成单个m3u8文件（修复分组第一个台显示错误）"""
     # M3U8头部（含正确的EPG地址）
     m3u8_header = f"""#EXTM3U x-tvg-url="{EPG_URL}"
 """
@@ -171,21 +171,26 @@ def generate_m3u8(channels, udpxy_url, output_file):
     grouped_channels = {}
     for channel in channels:
         group = channel['group']
-        grouped_channels[group] = grouped_channels.get(group, []) + [channel]
+        if group not in grouped_channels:
+            grouped_channels[group] = []
+        grouped_channels[group].append(channel)
     
     # 分组显示顺序
     group_order = ["央视", "省级卫视", "地方台-四川", "4K专区", "其他频道"]
+    # 补充未在预设顺序的分组
     for group in grouped_channels.keys():
         if group not in group_order:
             group_order.append(group)
     
-    # 生成m3u8内容
+    # 生成m3u8内容 【核心修改：去掉#EXTGRP后的空行】
     for group in group_order:
-        if group not in grouped_channels:
+        if group not in grouped_channels or len(grouped_channels[group]) == 0:
             continue
+        # 1. 添加分组标签（单独一行，无后续空行）
         m3u8_lines.append(f"#EXTGRP:{group}")
-        m3u8_lines.append("")
-        for channel in grouped_channels[group]:
+        # 2. 直接添加频道条目，不插入空行
+        group_channel_list = grouped_channels[group]
+        for channel in group_channel_list:
             name = channel['name']
             multicast = channel['multicast']
             logo = channel['logo']
@@ -198,14 +203,17 @@ def generate_m3u8(channels, udpxy_url, output_file):
             ip, port = multicast_parts
             udpxy_play_url = f"{udpxy_url.rstrip('/')}/udp/{ip}:{port}"
             
-            channel_line = f"""#EXTINF:-1 tvg-id="{tvg_id}" tvg-logo="{logo}",{name}
-{udpxy_play_url}
-"""
+            # 频道条目格式（严格规范）
+            channel_line = f"#EXTINF:-1 tvg-id=\"{tvg_id}\" tvg-logo=\"{logo}\",{name}\n{udpxy_play_url}"
             m3u8_lines.append(channel_line)
+        # 3. 分组之间添加空行，提升可读性（分组内无空行）
+        m3u8_lines.append("")
     
+    # 合并所有行，用换行符分隔
+    final_m3u8_content = "\n".join(m3u8_lines)
     # 保存文件
     with open(output_file, "w", encoding="utf-8") as f:
-        f.write("".join(m3u8_lines))
+        f.write(final_m3u8_content)
     
     # 统计分组信息
     group_stats = {g:len(c) for g,c in grouped_channels.items()}
