@@ -16,7 +16,7 @@ def get_multicast_data(url):
 
 def generate_m3u8(multicast_data, udpxy_proxy):
     """生成带udpxy、台标、EPG的m3u8内容"""
-    m3u8_header = """#EXTM3U x-tvg-url="https://epg.51zmt.top:8001/epg/epg.xml"
+    m3u8_header = """#EXTM3U x-tvg-url="http://epg.51zmt.top:8000/e.xml.gz"
 """
     m3u8_lines = [m3u8_header]
 
