@@ -3,56 +3,63 @@ import requests
 from urllib.parse import quote
 from bs4 import BeautifulSoup
 
-# ===================== 台标配置（iptv-org公开源） =====================
-BASE_LOGO_URL = "https://github.com/iptv-org/logos/raw/master/logos/"
-DEFAULT_LOGO = "https://github.com/iptv-org/logos/raw/master/logos/default.png"
+# ===================== 台标配置（适配GitHub代理） =====================
+# GitHub代理地址
+GITHUB_PROXY = "https://ghfast.top/"
+# 原始台标仓库地址
+RAW_LOGO_BASE = "https://github.com/iptv-org/logos/raw/master/logos/"
+# 带代理的台标基础地址
+BASE_LOGO_URL = GITHUB_PROXY + RAW_LOGO_BASE
+# 默认台标（带代理）
+DEFAULT_LOGO = GITHUB_PROXY + "https://github.com/iptv-org/logos/raw/master/logos/default.png"
 
+# 特殊频道台标映射（自动适配代理）
 SPECIAL_LOGO_MAPPING = {
-    "CCTV-少儿": f"{BASE_LOGO_URL}cctv-14.png",
-    "CCTV-17": f"{BASE_LOGO_URL}cctv-17.png",
-    "CCTV-5＋": f"{BASE_LOGO_URL}cctv-5plus.png",
-    "CGTN英语": f"{BASE_LOGO_URL}cgtn.png",
-    "四川卫视": f"{BASE_LOGO_URL}sichuan.png",
-    "湖南卫视": f"{BASE_LOGO_URL}hunan.png",
-    "江苏卫视": f"{BASE_LOGO_URL}jiangsu.png",
-    "浙江卫视": f"{BASE_LOGO_URL}zhejiang.png",
-    "东方卫视": f"{BASE_LOGO_URL}dragon-tv.png",
-    "北京卫视": f"{BASE_LOGO_URL}beijing.png",
-    "广东卫视": f"{BASE_LOGO_URL}guangdong.png",
-    "深圳卫视": f"{BASE_LOGO_URL}shenzhen.png",
-    "天津卫视": f"{BASE_LOGO_URL}tianjin.png",
-    "山东卫视": f"{BASE_LOGO_URL}shandong.png",
-    "安徽卫视": f"{BASE_LOGO_URL}anhui.png",
-    "辽宁卫视": f"{BASE_LOGO_URL}liaoning.png",
-    "黑龙江卫视": f"{BASE_LOGO_URL}heilongjiang.png",
-    "吉林卫视": f"{BASE_LOGO_URL}jilin.png",
-    "河南卫视": f"{BASE_LOGO_URL}henan.png",
-    "湖北卫视": f"{BASE_LOGO_URL}hubei.png",
-    "江西卫视": f"{BASE_LOGO_URL}jiangxi.png",
-    "广西卫视": f"{BASE_LOGO_URL}guangxi.png",
-    "云南卫视": f"{BASE_LOGO_URL}yunnan.png",
-    "贵州卫视": f"{BASE_LOGO_URL}guizhou.png",
-    "山西卫视": f"{BASE_LOGO_URL}shanxi.png",
-    "陕西卫视": f"{BASE_LOGO_URL}shaanxi.png",
-    "青海卫视": f"{BASE_LOGO_URL}qinghai.png",
-    "宁夏卫视": f"{BASE_LOGO_URL}ningxia.png",
-    "内蒙古卫视": f"{BASE_LOGO_URL}neimenggu.png",
-    "西藏卫视": f"{BASE_LOGO_URL}tibet.png",
-    "新疆卫视": f"{BASE_LOGO_URL}xinjiang.png",
-    "甘肃卫视": f"{BASE_LOGO_URL}gansu.png",
-    "海南卫视": f"{BASE_LOGO_URL}hainan.png",
-    "兵团卫视": f"{BASE_LOGO_URL}bingtuan.png",
-    "东南卫视": f"{BASE_LOGO_URL}fujian.png",
-    "延边卫视": f"{BASE_LOGO_URL}yanbian.png",
-    "康巴卫视": f"{BASE_LOGO_URL}kangba.png",
-    "CDTV-1": f"{BASE_LOGO_URL}chengdu.png"
+    "CCTV-少儿": f"{RAW_LOGO_BASE}cctv-14.png",
+    "CCTV-17": f"{RAW_LOGO_BASE}cctv-17.png",
+    "CCTV-5＋": f"{RAW_LOGO_BASE}cctv-5plus.png",
+    "CGTN英语": f"{RAW_LOGO_BASE}cgtn.png",
+    "四川卫视": f"{RAW_LOGO_BASE}sichuan.png",
+    "湖南卫视": f"{RAW_LOGO_BASE}hunan.png",
+    "江苏卫视": f"{RAW_LOGO_BASE}jiangsu.png",
+    "浙江卫视": f"{RAW_LOGO_BASE}zhejiang.png",
+    "东方卫视": f"{RAW_LOGO_BASE}dragon-tv.png",
+    "北京卫视": f"{RAW_LOGO_BASE}beijing.png",
+    "广东卫视": f"{RAW_LOGO_BASE}guangdong.png",
+    "深圳卫视": f"{RAW_LOGO_BASE}shenzhen.png",
+    "天津卫视": f"{RAW_LOGO_BASE}tianjin.png",
+    "山东卫视": f"{RAW_LOGO_BASE}shandong.png",
+    "安徽卫视": f"{RAW_LOGO_BASE}anhui.png",
+    "辽宁卫视": f"{RAW_LOGO_BASE}liaoning.png",
+    "黑龙江卫视": f"{RAW_LOGO_BASE}heilongjiang.png",
+    "吉林卫视": f"{RAW_LOGO_BASE}jilin.png",
+    "河南卫视": f"{RAW_LOGO_BASE}henan.png",
+    "湖北卫视": f"{RAW_LOGO_BASE}hubei.png",
+    "江西卫视": f"{RAW_LOGO_BASE}jiangxi.png",
+    "广西卫视": f"{RAW_LOGO_BASE}guangxi.png",
+    "云南卫视": f"{RAW_LOGO_BASE}yunnan.png",
+    "贵州卫视": f"{RAW_LOGO_BASE}guizhou.png",
+    "山西卫视": f"{RAW_LOGO_BASE}shanxi.png",
+    "陕西卫视": f"{RAW_LOGO_BASE}shaanxi.png",
+    "青海卫视": f"{RAW_LOGO_BASE}qinghai.png",
+    "宁夏卫视": f"{RAW_LOGO_BASE}ningxia.png",
+    "内蒙古卫视": f"{RAW_LOGO_BASE}neimenggu.png",
+    "西藏卫视": f"{RAW_LOGO_BASE}tibet.png",
+    "新疆卫视": f"{RAW_LOGO_BASE}xinjiang.png",
+    "甘肃卫视": f"{RAW_LOGO_BASE}gansu.png",
+    "海南卫视": f"{RAW_LOGO_BASE}hainan.png",
+    "兵团卫视": f"{RAW_LOGO_BASE}bingtuan.png",
+    "东南卫视": f"{RAW_LOGO_BASE}fujian.png",
+    "延边卫视": f"{RAW_LOGO_BASE}yanbian.png",
+    "康巴卫视": f"{RAW_LOGO_BASE}kangba.png",
+    "CDTV-1": f"{RAW_LOGO_BASE}chengdu.png"
 }
 
 # ===================== 核心配置项 =====================
 # 1. 过滤画中画频道的关键词
 FILTER_KEYWORDS = ["画中画", "PIP", "pip", "画中", "中画"]
 
-# 2. udpxy地址与输出文件的映射（核心新增）
+# 2. udpxy地址与输出文件的映射
 UDPXY_CONFIGS = [
     {"udpxy_url": "http://192.168.16.254:8866", "output_file": "iptv.m3u8"},
     {"udpxy_url": "http://192.168.19.254:8866", "output_file": "iptv-t.m3u8"}
@@ -77,18 +84,25 @@ def get_channel_group(channel_name):
         return "其他频道"
 
 def get_channel_logo(channel_name):
-    """根据频道名获取台标URL"""
+    """根据频道名获取带代理的台标URL"""
+    # 1. 优先匹配特殊频道映射（拼接代理）
     if channel_name in SPECIAL_LOGO_MAPPING:
-        return SPECIAL_LOGO_MAPPING[channel_name]
+        raw_logo_url = SPECIAL_LOGO_MAPPING[channel_name]
+        return GITHUB_PROXY + raw_logo_url
     
+    # 2. 通用匹配：去除后缀，转小写，拼接代理
     clean_name = channel_name.replace("高清", "").replace("4K", "").replace("＋", "plus").strip()
     if clean_name.startswith("CCTV"):
         logo_name = clean_name.lower()
     else:
         logo_name = clean_name.lower().replace(" ", "-")
     
-    logo_url = f"{BASE_LOGO_URL}{logo_name}.png"
-    return logo_url
+    # 3. 拼接原始URL + 代理
+    raw_logo_url = f"{RAW_LOGO_BASE}{logo_name}.png"
+    proxy_logo_url = GITHUB_PROXY + raw_logo_url
+    
+    # 4. 兜底：返回带代理的默认台标
+    return proxy_logo_url
 
 def get_multicast_html(url):
     """获取组播源的HTML页面"""
@@ -212,6 +226,7 @@ def main():
         
         # 2. 循环生成每个udpxy对应的文件
         print("\n🚀 开始生成m3u8文件：")
+        print(f"🖼️  台标代理地址：{GITHUB_PROXY}")
         generated_files = []
         for config in UDPXY_CONFIGS:
             udpxy_url = config["udpxy_url"]
@@ -225,7 +240,7 @@ def main():
         for file in generated_files:
             print(f"  - {file}")
         print(f"📡 EPG源地址：{EPG_URL}")
-        print(f"🖼️  台标源：iptv-org公开库")
+        print(f"🖼️  台标源：iptv-org公开库（代理：{GITHUB_PROXY}）")
     
     except Exception as e:
         print(f"\n❌ 程序执行失败：{str(e)}")
