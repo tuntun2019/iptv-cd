@@ -1,437 +1,437 @@
 #EXTM3U x-tvg-url="http://epg.51zmt.top:8000/e.xml.gz"
-#EXTGRP:央视#EXTINF:-1 tvg-id="cctv1" tvg-logo="https://epg.51zmt.top:8001/logos/cctv1.png",CCTV-1高清
+#EXTGRP:央视#EXTINF:-1 tvg-id="cctv1" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/cctv-1.png",CCTV-1高清
 http://192.168.16.254:8866/udp/239.94.0.31:5140
-#EXTINF:-1 tvg-id="cctv2" tvg-logo="https://epg.51zmt.top:8001/logos/cctv2.png",CCTV-2高清
+#EXTINF:-1 tvg-id="cctv2" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/cctv-2.png",CCTV-2高清
 http://192.168.16.254:8866/udp/239.94.0.2:5140
-#EXTINF:-1 tvg-id="cctv3" tvg-logo="https://epg.51zmt.top:8001/logos/cctv3.png",CCTV-3高清
+#EXTINF:-1 tvg-id="cctv3" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/cctv-3.png",CCTV-3高清
 http://192.168.16.254:8866/udp/239.94.0.32:5140
-#EXTINF:-1 tvg-id="cctv4" tvg-logo="https://epg.51zmt.top:8001/logos/cctv4.png",CCTV-4高清
+#EXTINF:-1 tvg-id="cctv4" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/cctv-4.png",CCTV-4高清
 http://192.168.16.254:8866/udp/239.94.0.4:5140
-#EXTINF:-1 tvg-id="cctv5" tvg-logo="https://epg.51zmt.top:8001/logos/cctv5.png",CCTV-5高清
+#EXTINF:-1 tvg-id="cctv5" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/cctv-5.png",CCTV-5高清
 http://192.168.16.254:8866/udp/239.94.0.33:5140
-#EXTINF:-1 tvg-id="cctv6" tvg-logo="https://epg.51zmt.top:8001/logos/cctv6.png",CCTV-6高清
+#EXTINF:-1 tvg-id="cctv6" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/cctv-6.png",CCTV-6高清
 http://192.168.16.254:8866/udp/239.94.0.34:5140
-#EXTINF:-1 tvg-id="cctv7" tvg-logo="https://epg.51zmt.top:8001/logos/cctv7.png",CCTV-7高清
+#EXTINF:-1 tvg-id="cctv7" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/cctv-7.png",CCTV-7高清
 http://192.168.16.254:8866/udp/239.94.0.7:5140
-#EXTINF:-1 tvg-id="cctv8" tvg-logo="https://epg.51zmt.top:8001/logos/cctv8.png",CCTV-8高清
+#EXTINF:-1 tvg-id="cctv8" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/cctv-8.png",CCTV-8高清
 http://192.168.16.254:8866/udp/239.94.0.35:5140
-#EXTINF:-1 tvg-id="cctv9" tvg-logo="https://epg.51zmt.top:8001/logos/cctv9.png",CCTV-9高清
+#EXTINF:-1 tvg-id="cctv9" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/cctv-9.png",CCTV-9高清
 http://192.168.16.254:8866/udp/239.94.0.9:5140
-#EXTINF:-1 tvg-id="cctv10" tvg-logo="https://epg.51zmt.top:8001/logos/cctv10.png",CCTV-10高清
+#EXTINF:-1 tvg-id="cctv10" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/cctv-10.png",CCTV-10高清
 http://192.168.16.254:8866/udp/239.94.0.10:5140
-#EXTINF:-1 tvg-id="cctv11" tvg-logo="https://epg.51zmt.top:8001/logos/cctv11.png",CCTV-11高清
+#EXTINF:-1 tvg-id="cctv11" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/cctv-11.png",CCTV-11高清
 http://192.168.16.254:8866/udp/239.94.0.36:5140
-#EXTINF:-1 tvg-id="cctv12" tvg-logo="https://epg.51zmt.top:8001/logos/cctv12.png",CCTV-12高清
+#EXTINF:-1 tvg-id="cctv12" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/cctv-12.png",CCTV-12高清
 http://192.168.16.254:8866/udp/239.94.0.12:5140
-#EXTINF:-1 tvg-id="cctv13" tvg-logo="https://epg.51zmt.top:8001/logos/cctv13.png",CCTV-13高清
+#EXTINF:-1 tvg-id="cctv13" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/cctv-13.png",CCTV-13高清
 http://192.168.16.254:8866/udp/239.94.0.37:5140
-#EXTINF:-1 tvg-id="cctv少儿" tvg-logo="https://epg.51zmt.top:8001/logos/cctv14.png",CCTV-少儿高清
+#EXTINF:-1 tvg-id="cctv少儿" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/cctv-少儿.png",CCTV-少儿高清
 http://192.168.16.254:8866/udp/239.94.0.14:5140
-#EXTINF:-1 tvg-id="cctv15" tvg-logo="https://epg.51zmt.top:8001/logos/cctv15.png",CCTV-15高清
+#EXTINF:-1 tvg-id="cctv15" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/cctv-15.png",CCTV-15高清
 http://192.168.16.254:8866/udp/239.94.0.38:5140
-#EXTINF:-1 tvg-id="cctv17" tvg-logo="https://epg.51zmt.top:8001/logos/cctv17.png",CCTV-17高清
+#EXTINF:-1 tvg-id="cctv17" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/cctv-17.png",CCTV-17高清
 http://192.168.16.254:8866/udp/239.94.0.39:5140
-#EXTINF:-1 tvg-id="cctv" tvg-logo="https://epg.51zmt.top:8001/logos/cctv4k.png",CCTV-4K
+#EXTINF:-1 tvg-id="cctv" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/cctv-.png",CCTV-4K
 http://192.168.16.254:8866/udp/239.94.0.20:5140
-#EXTINF:-1 tvg-id="cgtn英语" tvg-logo="https://epg.51zmt.top:8001/logos/cgtn.png",CGTN英语
+#EXTINF:-1 tvg-id="cgtn英语" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/cgtn.png",CGTN英语
 http://192.168.16.254:8866/udp/239.94.0.40:5140
-#EXTINF:-1 tvg-id="cctv5plus" tvg-logo="https://epg.51zmt.top:8001/logos/cctv5plus.png",CCTV-5＋高清
+#EXTINF:-1 tvg-id="cctv5plus" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/cctv-5plus.png",CCTV-5＋高清
 http://192.168.16.254:8866/udp/239.94.0.23:5140
-#EXTINF:-1 tvg-id="cgtn西班牙语" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",CGTN西班牙语
+#EXTINF:-1 tvg-id="cgtn西班牙语" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/cgtn西班牙语.png",CGTN西班牙语
 http://192.168.16.254:8866/udp/239.94.1.65:5140
-#EXTINF:-1 tvg-id="cgtn法语" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",CGTN法语
+#EXTINF:-1 tvg-id="cgtn法语" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/cgtn法语.png",CGTN法语
 http://192.168.16.254:8866/udp/239.94.1.66:5140
-#EXTGRP:省级卫视#EXTINF:-1 tvg-id="四川卫视" tvg-logo="https://epg.51zmt.top:8001/logos/sctv1.png",四川卫视高清
+#EXTGRP:省级卫视#EXTINF:-1 tvg-id="四川卫视" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/四川卫视.png",四川卫视高清
 http://192.168.16.254:8866/udp/239.94.0.59:5140
-#EXTINF:-1 tvg-id="四川卫视" tvg-logo="https://epg.51zmt.top:8001/logos/sctv4k.png",四川卫视4K
+#EXTINF:-1 tvg-id="四川卫视" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/四川卫视.png",四川卫视4K
 http://192.168.16.254:8866/udp/239.94.0.115:5140
-#EXTINF:-1 tvg-id="湖南卫视" tvg-logo="https://epg.51zmt.top:8001/logos/hntv4k.png",湖南卫视4K
+#EXTINF:-1 tvg-id="湖南卫视" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/湖南卫视.png",湖南卫视4K
 http://192.168.16.254:8866/udp/239.94.0.116:5140
-#EXTINF:-1 tvg-id="江苏卫视" tvg-logo="https://epg.51zmt.top:8001/logos/jstv4k.png",江苏卫视4K
+#EXTINF:-1 tvg-id="江苏卫视" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/江苏卫视.png",江苏卫视4K
 http://192.168.16.254:8866/udp/239.94.0.117:5140
-#EXTINF:-1 tvg-id="浙江卫视" tvg-logo="https://epg.51zmt.top:8001/logos/zjstv4k.png",浙江卫视4K
+#EXTINF:-1 tvg-id="浙江卫视" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/浙江卫视.png",浙江卫视4K
 http://192.168.16.254:8866/udp/239.94.0.118:5140
-#EXTINF:-1 tvg-id="东方卫视" tvg-logo="https://epg.51zmt.top:8001/logos/dftv4k.png",东方卫视4K
+#EXTINF:-1 tvg-id="东方卫视" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/东方卫视.png",东方卫视4K
 http://192.168.16.254:8866/udp/239.94.0.119:5140
-#EXTINF:-1 tvg-id="北京卫视" tvg-logo="https://epg.51zmt.top:8001/logos/bjtv4k.png",北京卫视4K
+#EXTINF:-1 tvg-id="北京卫视" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/北京卫视.png",北京卫视4K
 http://192.168.16.254:8866/udp/239.94.0.112:5140
-#EXTINF:-1 tvg-id="深圳卫视" tvg-logo="https://epg.51zmt.top:8001/logos/sztv4k.png",深圳卫视4K
+#EXTINF:-1 tvg-id="深圳卫视" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/深圳卫视.png",深圳卫视4K
 http://192.168.16.254:8866/udp/239.94.0.113:5140
-#EXTINF:-1 tvg-id="广东卫视" tvg-logo="https://epg.51zmt.top:8001/logos/gdtv4k.png",广东卫视4K
+#EXTINF:-1 tvg-id="广东卫视" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/广东卫视.png",广东卫视4K
 http://192.168.16.254:8866/udp/239.94.0.114:5140
-#EXTINF:-1 tvg-id="山东卫视" tvg-logo="https://epg.51zmt.top:8001/logos/sdtv4k.png",山东卫视4K
+#EXTINF:-1 tvg-id="山东卫视" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/山东卫视.png",山东卫视4K
 http://192.168.16.254:8866/udp/239.94.0.120:5140
-#EXTINF:-1 tvg-id="湖南卫视" tvg-logo="https://epg.51zmt.top:8001/logos/hntv.png",湖南卫视高清
+#EXTINF:-1 tvg-id="湖南卫视" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/湖南卫视.png",湖南卫视高清
 http://192.168.16.254:8866/udp/239.94.0.61:5140
-#EXTINF:-1 tvg-id="江苏卫视" tvg-logo="https://epg.51zmt.top:8001/logos/jstv.png",江苏卫视高清
+#EXTINF:-1 tvg-id="江苏卫视" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/江苏卫视.png",江苏卫视高清
 http://192.168.16.254:8866/udp/239.94.0.62:5140
-#EXTINF:-1 tvg-id="浙江卫视" tvg-logo="https://epg.51zmt.top:8001/logos/zjstv.png",浙江卫视高清
+#EXTINF:-1 tvg-id="浙江卫视" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/浙江卫视.png",浙江卫视高清
 http://192.168.16.254:8866/udp/239.94.0.63:5140
-#EXTINF:-1 tvg-id="东方卫视" tvg-logo="https://epg.51zmt.top:8001/logos/dftv.png",东方卫视高清
+#EXTINF:-1 tvg-id="东方卫视" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/东方卫视.png",东方卫视高清
 http://192.168.16.254:8866/udp/239.94.0.64:5140
-#EXTINF:-1 tvg-id="北京卫视" tvg-logo="https://epg.51zmt.top:8001/logos/bjtv.png",北京卫视高清
+#EXTINF:-1 tvg-id="北京卫视" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/北京卫视.png",北京卫视高清
 http://192.168.16.254:8866/udp/239.94.0.65:5140
-#EXTINF:-1 tvg-id="深圳卫视" tvg-logo="https://epg.51zmt.top:8001/logos/sztv.png",深圳卫视高清
+#EXTINF:-1 tvg-id="深圳卫视" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/深圳卫视.png",深圳卫视高清
 http://192.168.16.254:8866/udp/239.94.0.66:5140
-#EXTINF:-1 tvg-id="广东卫视" tvg-logo="https://epg.51zmt.top:8001/logos/gdtv.png",广东卫视高清
+#EXTINF:-1 tvg-id="广东卫视" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/广东卫视.png",广东卫视高清
 http://192.168.16.254:8866/udp/239.94.0.67:5140
-#EXTINF:-1 tvg-id="天津卫视" tvg-logo="https://epg.51zmt.top:8001/logos/tjtv.png",天津卫视高清
+#EXTINF:-1 tvg-id="天津卫视" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/天津卫视.png",天津卫视高清
 http://192.168.16.254:8866/udp/239.94.0.68:5140
-#EXTINF:-1 tvg-id="山东卫视" tvg-logo="https://epg.51zmt.top:8001/logos/sdtv.png",山东卫视高清
+#EXTINF:-1 tvg-id="山东卫视" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/山东卫视.png",山东卫视高清
 http://192.168.16.254:8866/udp/239.94.0.69:5140
-#EXTINF:-1 tvg-id="江西卫视" tvg-logo="https://epg.51zmt.top:8001/logos/jxtv.png",江西卫视高清
+#EXTINF:-1 tvg-id="江西卫视" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/江西卫视.png",江西卫视高清
 http://192.168.16.254:8866/udp/239.94.0.79:5140
-#EXTINF:-1 tvg-id="东南卫视" tvg-logo="https://epg.51zmt.top:8001/logos/dntv.png",东南卫视高清
+#EXTINF:-1 tvg-id="东南卫视" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/东南卫视.png",东南卫视高清
 http://192.168.16.254:8866/udp/239.94.0.80:5140
-#EXTINF:-1 tvg-id="黑龙江卫视" tvg-logo="https://epg.51zmt.top:8001/logos/hljtv.png",黑龙江卫视高清
+#EXTINF:-1 tvg-id="黑龙江卫视" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/黑龙江卫视.png",黑龙江卫视高清
 http://192.168.16.254:8866/udp/239.94.0.81:5140
-#EXTINF:-1 tvg-id="贵州卫视" tvg-logo="https://epg.51zmt.top:8001/logos/gztv.png",贵州卫视高清
+#EXTINF:-1 tvg-id="贵州卫视" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/贵州卫视.png",贵州卫视高清
 http://192.168.16.254:8866/udp/239.94.0.83:5140
-#EXTINF:-1 tvg-id="湖北卫视" tvg-logo="https://epg.51zmt.top:8001/logos/hbtv.png",湖北卫视高清
+#EXTINF:-1 tvg-id="湖北卫视" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/湖北卫视.png",湖北卫视高清
 http://192.168.16.254:8866/udp/239.94.0.84:5140
-#EXTINF:-1 tvg-id="安徽卫视" tvg-logo="https://epg.51zmt.top:8001/logos/ahtv.png",安徽卫视高清
+#EXTINF:-1 tvg-id="安徽卫视" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/安徽卫视.png",安徽卫视高清
 http://192.168.16.254:8866/udp/239.94.0.85:5140
-#EXTINF:-1 tvg-id="河北卫视" tvg-logo="https://epg.51zmt.top:8001/logos/hbtv.png",河北卫视高清
+#EXTINF:-1 tvg-id="河北卫视" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/河北卫视.png",河北卫视高清
 http://192.168.16.254:8866/udp/239.94.0.86:5140
-#EXTINF:-1 tvg-id="河南卫视" tvg-logo="https://epg.51zmt.top:8001/logos/hatv.png",河南卫视高清
+#EXTINF:-1 tvg-id="河南卫视" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/河南卫视.png",河南卫视高清
 http://192.168.16.254:8866/udp/239.94.0.88:5140
-#EXTINF:-1 tvg-id="广西卫视" tvg-logo="https://epg.51zmt.top:8001/logos/gxtv.png",广西卫视高清
+#EXTINF:-1 tvg-id="广西卫视" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/广西卫视.png",广西卫视高清
 http://192.168.16.254:8866/udp/239.94.0.89:5140
-#EXTINF:-1 tvg-id="云南卫视" tvg-logo="https://epg.51zmt.top:8001/logos/yntv.png",云南卫视高清
+#EXTINF:-1 tvg-id="云南卫视" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/云南卫视.png",云南卫视高清
 http://192.168.16.254:8866/udp/239.94.0.90:5140
-#EXTINF:-1 tvg-id="吉林卫视" tvg-logo="https://epg.51zmt.top:8001/logos/jltv.png",吉林卫视高清
+#EXTINF:-1 tvg-id="吉林卫视" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/吉林卫视.png",吉林卫视高清
 http://192.168.16.254:8866/udp/239.94.0.91:5140
-#EXTINF:-1 tvg-id="陕西卫视" tvg-logo="https://epg.51zmt.top:8001/logos/sxtv.png",陕西卫视高清
+#EXTINF:-1 tvg-id="陕西卫视" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/陕西卫视.png",陕西卫视高清
 http://192.168.16.254:8866/udp/239.94.0.92:5140
-#EXTINF:-1 tvg-id="山西卫视" tvg-logo="https://epg.51zmt.top:8001/logos/sxtv.png",山西卫视
+#EXTINF:-1 tvg-id="山西卫视" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/shanxi.png",山西卫视
 http://192.168.16.254:8866/udp/239.94.0.93:5140
-#EXTINF:-1 tvg-id="内蒙古卫视" tvg-logo="https://epg.51zmt.top:8001/logos/nmgtv.png",内蒙古卫视
+#EXTINF:-1 tvg-id="内蒙古卫视" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/neimenggu.png",内蒙古卫视
 http://192.168.16.254:8866/udp/239.94.0.94:5140
-#EXTINF:-1 tvg-id="青海卫视" tvg-logo="https://epg.51zmt.top:8001/logos/qhtv.png",青海卫视
+#EXTINF:-1 tvg-id="青海卫视" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/qinghai.png",青海卫视
 http://192.168.16.254:8866/udp/239.94.0.95:5140
-#EXTINF:-1 tvg-id="宁夏卫视" tvg-logo="https://epg.51zmt.top:8001/logos/nxtv.png",宁夏卫视高清
+#EXTINF:-1 tvg-id="宁夏卫视" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/宁夏卫视.png",宁夏卫视高清
 http://192.168.16.254:8866/udp/239.94.0.96:5140
-#EXTINF:-1 tvg-id="西藏卫视" tvg-logo="https://epg.51zmt.top:8001/logos/xztv.png",西藏卫视高清
+#EXTINF:-1 tvg-id="西藏卫视" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/西藏卫视.png",西藏卫视高清
 http://192.168.16.254:8866/udp/239.94.0.97:5140
-#EXTINF:-1 tvg-id="新疆卫视" tvg-logo="https://epg.51zmt.top:8001/logos/xjtv.png",新疆卫视高清
+#EXTINF:-1 tvg-id="新疆卫视" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/新疆卫视.png",新疆卫视高清
 http://192.168.16.254:8866/udp/239.94.0.98:5140
-#EXTINF:-1 tvg-id="甘肃卫视" tvg-logo="https://epg.51zmt.top:8001/logos/gstv.png",甘肃卫视高清
+#EXTINF:-1 tvg-id="甘肃卫视" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/甘肃卫视.png",甘肃卫视高清
 http://192.168.16.254:8866/udp/239.94.0.99:5140
-#EXTINF:-1 tvg-id="海南卫视" tvg-logo="https://epg.51zmt.top:8001/logos/hntv.png",海南卫视
+#EXTINF:-1 tvg-id="海南卫视" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/hainan.png",海南卫视
 http://192.168.16.254:8866/udp/239.94.0.100:5140
-#EXTINF:-1 tvg-id="辽宁卫视" tvg-logo="https://epg.51zmt.top:8001/logos/lntv.png",辽宁卫视高清
+#EXTINF:-1 tvg-id="辽宁卫视" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/辽宁卫视.png",辽宁卫视高清
 http://192.168.16.254:8866/udp/239.94.0.101:5140
-#EXTINF:-1 tvg-id="兵团卫视" tvg-logo="https://epg.51zmt.top:8001/logos/bttv.png",兵团卫视高清
+#EXTINF:-1 tvg-id="兵团卫视" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/兵团卫视.png",兵团卫视高清
 http://192.168.16.254:8866/udp/239.94.0.102:5140
-#EXTINF:-1 tvg-id="厦门卫视" tvg-logo="https://epg.51zmt.top:8001/logos/xmtv.png",厦门卫视
+#EXTINF:-1 tvg-id="厦门卫视" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/厦门卫视.png",厦门卫视
 http://192.168.16.254:8866/udp/239.94.0.104:5140
-#EXTINF:-1 tvg-id="三沙卫视" tvg-logo="https://epg.51zmt.top:8001/logos/sstv.png",三沙卫视
+#EXTINF:-1 tvg-id="三沙卫视" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/三沙卫视.png",三沙卫视
 http://192.168.16.254:8866/udp/239.94.0.105:5140
-#EXTINF:-1 tvg-id="山东教育卫视" tvg-logo="https://epg.51zmt.top:8001/logos/sdjytv.png",山东教育卫视
+#EXTINF:-1 tvg-id="山东教育卫视" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/山东教育卫视.png",山东教育卫视
 http://192.168.16.254:8866/udp/239.94.0.106:5140
-#EXTINF:-1 tvg-id="延边卫视" tvg-logo="https://epg.51zmt.top:8001/logos/ybstv.png",延边卫视
+#EXTINF:-1 tvg-id="延边卫视" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/yanbian.png",延边卫视
 http://192.168.16.254:8866/udp/239.94.0.107:5140
-#EXTINF:-1 tvg-id="安多卫视" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",安多卫视
+#EXTINF:-1 tvg-id="安多卫视" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/安多卫视.png",安多卫视
 http://192.168.16.254:8866/udp/239.94.0.110:5140
-#EXTINF:-1 tvg-id="重庆卫视" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",重庆卫视高清
+#EXTINF:-1 tvg-id="重庆卫视" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/重庆卫视.png",重庆卫视高清
 http://192.168.16.254:8866/udp/239.94.0.82:5140
-#EXTINF:-1 tvg-id="北京卫视" tvg-logo="https://epg.51zmt.top:8001/logos/bjtv4k.png",北京卫视4K
+#EXTINF:-1 tvg-id="北京卫视" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/北京卫视.png",北京卫视4K
 http://192.168.16.254:8866/udp/239.94.0.111:5140
-#EXTGRP:地方台-四川#EXTINF:-1 tvg-id="cdtv1" tvg-logo="https://epg.51zmt.top:8001/logos/cdtv1.png",CDTV-1高清
+#EXTGRP:地方台-四川#EXTINF:-1 tvg-id="cdtv1" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/cdtv-1.png",CDTV-1高清
 http://192.168.16.254:8866/udp/239.94.0.154:5140
-#EXTINF:-1 tvg-id="sctv2" tvg-logo="https://epg.51zmt.top:8001/logos/sctv2.png",SCTV-2高清
+#EXTINF:-1 tvg-id="sctv2" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/sctv-2.png",SCTV-2高清
 http://192.168.16.254:8866/udp/239.94.0.70:5140
-#EXTINF:-1 tvg-id="sctv3" tvg-logo="https://epg.51zmt.top:8001/logos/sctv3.png",SCTV-3高清
+#EXTINF:-1 tvg-id="sctv3" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/sctv-3.png",SCTV-3高清
 http://192.168.16.254:8866/udp/239.94.0.71:5140
-#EXTINF:-1 tvg-id="sctv4" tvg-logo="https://epg.51zmt.top:8001/logos/sctv4.png",SCTV-4高清
+#EXTINF:-1 tvg-id="sctv4" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/sctv-4.png",SCTV-4高清
 http://192.168.16.254:8866/udp/239.94.0.72:5140
-#EXTINF:-1 tvg-id="sctv5" tvg-logo="https://epg.51zmt.top:8001/logos/sctv5.png",SCTV-5高清
+#EXTINF:-1 tvg-id="sctv5" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/sctv-5.png",SCTV-5高清
 http://192.168.16.254:8866/udp/239.94.0.73:5140
-#EXTINF:-1 tvg-id="sctv6" tvg-logo="https://epg.51zmt.top:8001/logos/sctv6.png",SCTV-6高清
+#EXTINF:-1 tvg-id="sctv6" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/sctv-6.png",SCTV-6高清
 http://192.168.16.254:8866/udp/239.94.0.74:5140
-#EXTINF:-1 tvg-id="sctv7" tvg-logo="https://epg.51zmt.top:8001/logos/sctv7.png",SCTV-7高清
+#EXTINF:-1 tvg-id="sctv7" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/sctv-7.png",SCTV-7高清
 http://192.168.16.254:8866/udp/239.94.0.75:5140
-#EXTINF:-1 tvg-id="sctv科教" tvg-logo="https://epg.51zmt.top:8001/logos/sctv8.png",SCTV-科教高清
+#EXTINF:-1 tvg-id="sctv科教" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/sctv-科教.png",SCTV-科教高清
 http://192.168.16.254:8866/udp/239.94.0.76:5140
-#EXTINF:-1 tvg-id="四川乡村" tvg-logo="https://epg.51zmt.top:8001/logos/sctv9.png",四川乡村高清
+#EXTINF:-1 tvg-id="四川乡村" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/四川乡村.png",四川乡村高清
 http://192.168.16.254:8866/udp/239.94.0.77:5140
-#EXTINF:-1 tvg-id="康巴卫视" tvg-logo="https://epg.51zmt.top:8001/logos/kangba.png",康巴卫视高清
+#EXTINF:-1 tvg-id="康巴卫视" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/康巴卫视.png",康巴卫视高清
 http://192.168.16.254:8866/udp/239.94.0.78:5140
-#EXTINF:-1 tvg-id="峨眉电影" tvg-logo="https://epg.51zmt.top:8001/logos/emdy.png",峨眉电影高清
+#EXTINF:-1 tvg-id="峨眉电影" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/峨眉电影.png",峨眉电影高清
 http://192.168.16.254:8866/udp/239.94.0.103:5140
-#EXTINF:-1 tvg-id="cdtv2" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",CDTV-2高清
+#EXTINF:-1 tvg-id="cdtv2" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/cdtv-2.png",CDTV-2高清
 http://192.168.16.254:8866/udp/239.94.0.155:5140
-#EXTINF:-1 tvg-id="cdtv3" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",CDTV-3高清
+#EXTINF:-1 tvg-id="cdtv3" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/cdtv-3.png",CDTV-3高清
 http://192.168.16.254:8866/udp/239.94.0.156:5140
-#EXTINF:-1 tvg-id="cdtv4" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",CDTV-4高清
+#EXTINF:-1 tvg-id="cdtv4" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/cdtv-4.png",CDTV-4高清
 http://192.168.16.254:8866/udp/239.94.0.157:5140
-#EXTINF:-1 tvg-id="cdtv5" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",CDTV-5高清
+#EXTINF:-1 tvg-id="cdtv5" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/cdtv-5.png",CDTV-5高清
 http://192.168.16.254:8866/udp/239.94.0.158:5140
-#EXTINF:-1 tvg-id="cdtv6" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",CDTV-6高清
+#EXTINF:-1 tvg-id="cdtv6" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/cdtv-6.png",CDTV-6高清
 http://192.168.16.254:8866/udp/239.94.0.159:5140
-#EXTINF:-1 tvg-id="cdtv8" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",CDTV-8高清
+#EXTINF:-1 tvg-id="cdtv8" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/cdtv-8.png",CDTV-8高清
 http://192.168.16.254:8866/udp/239.94.0.160:5140
-#EXTGRP:4K专区#EXTINF:-1 tvg-id="爱上专区" tvg-logo="https://epg.51zmt.top:8001/logos/4kzone.png",爱上4K专区
+#EXTGRP:4K专区#EXTINF:-1 tvg-id="爱上专区" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/爱上专区.png",爱上4K专区
 http://192.168.16.254:8866/udp/239.94.0.21:5140
-#EXTINF:-1 tvg-id="熊猫新闻专区" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",熊猫新闻高清专区
+#EXTINF:-1 tvg-id="熊猫新闻专区" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/熊猫新闻专区.png",熊猫新闻高清专区
 http://192.168.16.254:8866/udp/239.94.1.3:5140
-#EXTINF:-1 tvg-id="熊猫体娱专区" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",熊猫体娱高清专区
+#EXTINF:-1 tvg-id="熊猫体娱专区" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/熊猫体娱专区.png",熊猫体娱高清专区
 http://192.168.16.254:8866/udp/239.94.1.4:5140
-#EXTINF:-1 tvg-id="熊猫少儿专区" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",熊猫少儿高清专区
+#EXTINF:-1 tvg-id="熊猫少儿专区" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/熊猫少儿专区.png",熊猫少儿高清专区
 http://192.168.16.254:8866/udp/239.94.1.5:5140
-#EXTINF:-1 tvg-id="熊猫影院专区" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",熊猫影院专区
+#EXTINF:-1 tvg-id="熊猫影院专区" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/熊猫影院专区.png",熊猫影院专区
 http://192.168.16.254:8866/udp/239.94.1.6:5140
-#EXTINF:-1 tvg-id="云看熊猫专区" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",云看熊猫专区
+#EXTINF:-1 tvg-id="云看熊猫专区" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/云看熊猫专区.png",云看熊猫专区
 http://192.168.16.254:8866/udp/239.94.1.7:5140
-#EXTINF:-1 tvg-id="金熊猫卡通专区" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",金熊猫卡通高清专区
+#EXTINF:-1 tvg-id="金熊猫卡通专区" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/金熊猫卡通专区.png",金熊猫卡通高清专区
 http://192.168.16.254:8866/udp/239.94.1.8:5140
-#EXTINF:-1 tvg-id="熊猫爱生活专区" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",熊猫爱生活高清专区
+#EXTINF:-1 tvg-id="熊猫爱生活专区" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/熊猫爱生活专区.png",熊猫爱生活高清专区
 http://192.168.16.254:8866/udp/239.94.1.11:5140
-#EXTINF:-1 tvg-id="大爱四川专区" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",大爱四川高清专区
+#EXTINF:-1 tvg-id="大爱四川专区" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/大爱四川专区.png",大爱四川高清专区
 http://192.168.16.254:8866/udp/239.94.1.12:5140
-#EXTINF:-1 tvg-id="大爱旅游专区" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",大爱旅游高清专区
+#EXTINF:-1 tvg-id="大爱旅游专区" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/大爱旅游专区.png",大爱旅游高清专区
 http://192.168.16.254:8866/udp/239.94.1.13:5140
-#EXTINF:-1 tvg-id="大爱生活专区" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",大爱生活高清专区
+#EXTINF:-1 tvg-id="大爱生活专区" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/大爱生活专区.png",大爱生活高清专区
 http://192.168.16.254:8866/udp/239.94.1.14:5140
-#EXTINF:-1 tvg-id="大爱时尚专区" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",大爱时尚高清专区
+#EXTINF:-1 tvg-id="大爱时尚专区" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/大爱时尚专区.png",大爱时尚高清专区
 http://192.168.16.254:8866/udp/239.94.1.15:5140
-#EXTINF:-1 tvg-id="经典电影专区" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",经典电影专区
+#EXTINF:-1 tvg-id="经典电影专区" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/经典电影专区.png",经典电影专区
 http://192.168.16.254:8866/udp/239.94.1.21:5140
-#EXTINF:-1 tvg-id="华语影院专区" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",华语影院专区
+#EXTINF:-1 tvg-id="华语影院专区" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/华语影院专区.png",华语影院专区
 http://192.168.16.254:8866/udp/239.94.1.22:5140
-#EXTINF:-1 tvg-id="星光院线专区" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",星光院线专区
+#EXTINF:-1 tvg-id="星光院线专区" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/星光院线专区.png",星光院线专区
 http://192.168.16.254:8866/udp/239.94.1.23:5140
-#EXTINF:-1 tvg-id="全球大片专区" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",全球大片专区
+#EXTINF:-1 tvg-id="全球大片专区" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/全球大片专区.png",全球大片专区
 http://192.168.16.254:8866/udp/239.94.1.24:5140
-#EXTINF:-1 tvg-id="热播剧场专区" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",热播剧场专区
+#EXTINF:-1 tvg-id="热播剧场专区" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/热播剧场专区.png",热播剧场专区
 http://192.168.16.254:8866/udp/239.94.1.25:5140
-#EXTINF:-1 tvg-id="热门剧场专区" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",热门剧场专区
+#EXTINF:-1 tvg-id="热门剧场专区" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/热门剧场专区.png",热门剧场专区
 http://192.168.16.254:8866/udp/239.94.1.26:5140
-#EXTINF:-1 tvg-id="健康养生专区" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",健康养生专区
+#EXTINF:-1 tvg-id="健康养生专区" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/健康养生专区.png",健康养生专区
 http://192.168.16.254:8866/udp/239.94.1.27:5140
-#EXTINF:-1 tvg-id="谍战剧场专区" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",谍战剧场专区
+#EXTINF:-1 tvg-id="谍战剧场专区" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/谍战剧场专区.png",谍战剧场专区
 http://192.168.16.254:8866/udp/239.94.1.28:5140
-#EXTINF:-1 tvg-id="宝宝动画专区" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",宝宝动画专区
+#EXTINF:-1 tvg-id="宝宝动画专区" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/宝宝动画专区.png",宝宝动画专区
 http://192.168.16.254:8866/udp/239.94.1.32:5140
-#EXTINF:-1 tvg-id="少儿动画专区" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",少儿动画高清专区
+#EXTINF:-1 tvg-id="少儿动画专区" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/少儿动画专区.png",少儿动画高清专区
 http://192.168.16.254:8866/udp/239.94.1.33:5140
-#EXTINF:-1 tvg-id="青春动漫专区" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",青春动漫专区
+#EXTINF:-1 tvg-id="青春动漫专区" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/青春动漫专区.png",青春动漫专区
 http://192.168.16.254:8866/udp/239.94.1.34:5140
-#EXTINF:-1 tvg-id="热门综艺专区" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",热门综艺高清专区
+#EXTINF:-1 tvg-id="热门综艺专区" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/热门综艺专区.png",热门综艺高清专区
 http://192.168.16.254:8866/udp/239.94.1.35:5140
-#EXTINF:-1 tvg-id="音乐现场专区" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",音乐现场高清专区
+#EXTINF:-1 tvg-id="音乐现场专区" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/音乐现场专区.png",音乐现场高清专区
 http://192.168.16.254:8866/udp/239.94.1.36:5140
-#EXTINF:-1 tvg-id="戏曲精选专区" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",戏曲精选专区
+#EXTINF:-1 tvg-id="戏曲精选专区" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/戏曲精选专区.png",戏曲精选专区
 http://192.168.16.254:8866/udp/239.94.1.37:5140
-#EXTINF:-1 tvg-id="戏曲专区" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",戏曲专区
+#EXTINF:-1 tvg-id="戏曲专区" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/戏曲专区.png",戏曲专区
 http://192.168.16.254:8866/udp/239.94.1.38:5140
-#EXTINF:-1 tvg-id="魅力时尚专区" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",魅力时尚高清专区
+#EXTINF:-1 tvg-id="魅力时尚专区" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/魅力时尚专区.png",魅力时尚高清专区
 http://192.168.16.254:8866/udp/239.94.1.39:5140
-#EXTINF:-1 tvg-id="爱生活专区" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",爱生活高清专区
+#EXTINF:-1 tvg-id="爱生活专区" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/爱生活专区.png",爱生活高清专区
 http://192.168.16.254:8866/udp/239.94.1.41:5140
-#EXTINF:-1 tvg-id="百变课堂专区" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",百变课堂专区
+#EXTINF:-1 tvg-id="百变课堂专区" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/百变课堂专区.png",百变课堂专区
 http://192.168.16.254:8866/udp/239.94.1.43:5140
-#EXTINF:-1 tvg-id="爱体育专区" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",爱体育专区
+#EXTINF:-1 tvg-id="爱体育专区" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/爱体育专区.png",爱体育专区
 http://192.168.16.254:8866/udp/239.94.1.44:5140
-#EXTINF:-1 tvg-id="电竞天堂专区" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",电竞天堂高清专区
+#EXTINF:-1 tvg-id="电竞天堂专区" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/电竞天堂专区.png",电竞天堂高清专区
 http://192.168.16.254:8866/udp/239.94.1.45:5140
-#EXTINF:-1 tvg-id="足球专区" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",足球高清专区
+#EXTINF:-1 tvg-id="足球专区" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/足球专区.png",足球高清专区
 http://192.168.16.254:8866/udp/239.94.1.47:5140
-#EXTINF:-1 tvg-id="红色影院专区" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",红色影院专区
+#EXTINF:-1 tvg-id="红色影院专区" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/红色影院专区.png",红色影院专区
 http://192.168.16.254:8866/udp/239.94.1.48:5140
-#EXTINF:-1 tvg-id="经典剧场专区" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",经典剧场专区
+#EXTINF:-1 tvg-id="经典剧场专区" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/经典剧场专区.png",经典剧场专区
 http://192.168.16.254:8866/udp/239.94.1.49:5140
-#EXTINF:-1 tvg-id="墨宝专区" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",墨宝高清专区
+#EXTINF:-1 tvg-id="墨宝专区" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/墨宝专区.png",墨宝高清专区
 http://192.168.16.254:8866/udp/239.94.1.51:5140
-#EXTINF:-1 tvg-id="军事专区" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",军事高清专区
+#EXTINF:-1 tvg-id="军事专区" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/军事专区.png",军事高清专区
 http://192.168.16.254:8866/udp/239.94.1.52:5140
-#EXTINF:-1 tvg-id="解密专区" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",解密高清专区
+#EXTINF:-1 tvg-id="解密专区" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/解密专区.png",解密高清专区
 http://192.168.16.254:8866/udp/239.94.1.53:5140
-#EXTINF:-1 tvg-id="地理专区" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",地理高清专区
+#EXTINF:-1 tvg-id="地理专区" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/地理专区.png",地理高清专区
 http://192.168.16.254:8866/udp/239.94.1.54:5140
-#EXTINF:-1 tvg-id="看天下精选专区" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",看天下精选专区
+#EXTINF:-1 tvg-id="看天下精选专区" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/看天下精选专区.png",看天下精选专区
 http://192.168.16.254:8866/udp/239.94.1.68:5140
-#EXTINF:-1 tvg-id="导视专区" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",导视专区
+#EXTINF:-1 tvg-id="导视专区" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/导视专区.png",导视专区
 http://192.168.16.254:8866/udp/239.94.1.55:5140
-#EXTINF:-1 tvg-id="收视指南专区" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",收视指南专区
+#EXTINF:-1 tvg-id="收视指南专区" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/收视指南专区.png",收视指南专区
 http://192.168.16.254:8866/udp/239.94.1.56:5140
-#EXTINF:-1 tvg-id="蓉城先锋专区" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",蓉城先锋专区
+#EXTINF:-1 tvg-id="蓉城先锋专区" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/蓉城先锋专区.png",蓉城先锋专区
 http://192.168.16.254:8866/udp/239.94.1.57:5140
-#EXTINF:-1 tvg-id="视界专区" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",4K视界专区
+#EXTINF:-1 tvg-id="视界专区" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/视界专区.png",4K视界专区
 http://192.168.16.254:8866/udp/239.94.1.60:5140
-#EXTINF:-1 tvg-id="纪实专区" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",4K纪实专区
+#EXTINF:-1 tvg-id="纪实专区" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/纪实专区.png",4K纪实专区
 http://192.168.16.254:8866/udp/239.94.1.69:5140
-#EXTINF:-1 tvg-id="少儿专区" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",4K少儿专区
+#EXTINF:-1 tvg-id="少儿专区" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/少儿专区.png",4K少儿专区
 http://192.168.16.254:8866/udp/239.94.1.70:5140
-#EXTINF:-1 tvg-id="爱浪漫专区" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",爱浪漫专区
+#EXTINF:-1 tvg-id="爱浪漫专区" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/爱浪漫专区.png",爱浪漫专区
 http://192.168.16.254:8866/udp/239.94.1.128:5140
-#EXTINF:-1 tvg-id="爱喜剧专区" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",爱喜剧专区
+#EXTINF:-1 tvg-id="爱喜剧专区" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/爱喜剧专区.png",爱喜剧专区
 http://192.168.16.254:8866/udp/239.94.1.129:5140
-#EXTINF:-1 tvg-id="爱奇谈专区" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",爱奇谈专区
+#EXTINF:-1 tvg-id="爱奇谈专区" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/爱奇谈专区.png",爱奇谈专区
 http://192.168.16.254:8866/udp/239.94.1.130:5140
-#EXTINF:-1 tvg-id="爱科幻专区" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",爱科幻专区
+#EXTINF:-1 tvg-id="爱科幻专区" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/爱科幻专区.png",爱科幻专区
 http://192.168.16.254:8866/udp/239.94.1.131:5140
-#EXTINF:-1 tvg-id="爱院线专区" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",爱院线专区
+#EXTINF:-1 tvg-id="爱院线专区" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/爱院线专区.png",爱院线专区
 http://192.168.16.254:8866/udp/239.94.1.132:5140
-#EXTINF:-1 tvg-id="爱谍战专区" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",爱谍战专区
+#EXTINF:-1 tvg-id="爱谍战专区" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/爱谍战专区.png",爱谍战专区
 http://192.168.16.254:8866/udp/239.94.1.134:5140
-#EXTINF:-1 tvg-id="爱历史专区" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",爱历史专区
+#EXTINF:-1 tvg-id="爱历史专区" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/爱历史专区.png",爱历史专区
 http://192.168.16.254:8866/udp/239.94.1.135:5140
-#EXTINF:-1 tvg-id="爱悬疑专区" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",爱悬疑专区
+#EXTINF:-1 tvg-id="爱悬疑专区" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/爱悬疑专区.png",爱悬疑专区
 http://192.168.16.254:8866/udp/239.94.1.136:5140
-#EXTINF:-1 tvg-id="爱旅行专区" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",爱旅行专区
+#EXTINF:-1 tvg-id="爱旅行专区" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/爱旅行专区.png",爱旅行专区
 http://192.168.16.254:8866/udp/239.94.1.137:5140
-#EXTINF:-1 tvg-id="少儿天地专区" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",少儿天地专区
+#EXTINF:-1 tvg-id="少儿天地专区" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/少儿天地专区.png",少儿天地专区
 http://192.168.16.254:8866/udp/239.94.1.138:5140
-#EXTINF:-1 tvg-id="爱幼教专区" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",爱幼教专区
+#EXTINF:-1 tvg-id="爱幼教专区" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/爱幼教专区.png",爱幼教专区
 http://192.168.16.254:8866/udp/239.94.1.139:5140
-#EXTINF:-1 tvg-id="爱玩具专区" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",爱玩具专区
+#EXTINF:-1 tvg-id="爱玩具专区" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/爱玩具专区.png",爱玩具专区
 http://192.168.16.254:8866/udp/239.94.1.140:5140
-#EXTINF:-1 tvg-id="爱动漫专区" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",爱动漫专区
+#EXTINF:-1 tvg-id="爱动漫专区" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/爱动漫专区.png",爱动漫专区
 http://192.168.16.254:8866/udp/239.94.1.141:5140
-#EXTINF:-1 tvg-id="爱体育专区" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",爱体育专区
+#EXTINF:-1 tvg-id="爱体育专区" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/爱体育专区.png",爱体育专区
 http://192.168.16.254:8866/udp/239.94.1.143:5140
-#EXTINF:-1 tvg-id="爱赛车专区" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",爱赛车专区
+#EXTINF:-1 tvg-id="爱赛车专区" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/爱赛车专区.png",爱赛车专区
 http://192.168.16.254:8866/udp/239.94.1.144:5140
-#EXTINF:-1 tvg-id="爱宠宠物专区" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",爱宠宠物专区
+#EXTINF:-1 tvg-id="爱宠宠物专区" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/爱宠宠物专区.png",爱宠宠物专区
 http://192.168.16.254:8866/udp/239.94.1.145:5140
-#EXTINF:-1 tvg-id="来钓鱼吧专区" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",来钓鱼吧专区
+#EXTINF:-1 tvg-id="来钓鱼吧专区" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/来钓鱼吧专区.png",来钓鱼吧专区
 http://192.168.16.254:8866/udp/239.94.1.148:5140
-#EXTINF:-1 tvg-id="麻辣体育专区" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",麻辣体育专区
+#EXTINF:-1 tvg-id="麻辣体育专区" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/麻辣体育专区.png",麻辣体育专区
 http://192.168.16.254:8866/udp/239.94.1.149:5140
-#EXTINF:-1 tvg-id="绚影专区" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",绚影4K专区
+#EXTINF:-1 tvg-id="绚影专区" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/绚影专区.png",绚影4K专区
 http://192.168.16.254:8866/udp/239.94.1.150:5140
-#EXTINF:-1 tvg-id="乐龄学堂专区" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",乐龄学堂专区
+#EXTINF:-1 tvg-id="乐龄学堂专区" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/乐龄学堂专区.png",乐龄学堂专区
 http://192.168.16.254:8866/udp/239.94.1.155:5140
-#EXTINF:-1 tvg-id="亲子趣学4k专区" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",亲子趣学4k专区
+#EXTINF:-1 tvg-id="亲子趣学4k专区" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/亲子趣学4k专区.png",亲子趣学4k专区
 http://192.168.16.254:8866/udp/239.94.1.156:5140
-#EXTINF:-1 tvg-id="乐享超清专区" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",4K乐享超清专区
+#EXTINF:-1 tvg-id="乐享超清专区" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/乐享超清专区.png",4K乐享超清专区
 http://192.168.16.254:8866/udp/239.94.1.162:5140
-#EXTINF:-1 tvg-id="欢笑剧场" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",欢笑剧场4K
+#EXTINF:-1 tvg-id="欢笑剧场" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/欢笑剧场.png",欢笑剧场4K
 http://192.168.16.254:8866/udp/239.94.1.176:5140
-#EXTINF:-1 tvg-id="精彩推荐专区" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",精彩推荐专区
+#EXTINF:-1 tvg-id="精彩推荐专区" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/精彩推荐专区.png",精彩推荐专区
 http://192.168.16.254:8866/udp/239.94.2.10:5140
-#EXTGRP:其他频道#EXTINF:-1 tvg-id="精彩导视" tvg-logo="https://epg.51zmt.top:8001/logos/guide.png",精彩导视
+#EXTGRP:其他频道#EXTINF:-1 tvg-id="精彩导视" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/精彩导视.png",精彩导视
 http://192.168.16.254:8866/udp/239.94.1.63:5140
-#EXTINF:-1 tvg-id="中国交通" tvg-logo="https://epg.51zmt.top:8001/logos/zhongjiaotv.png",中国交通
+#EXTINF:-1 tvg-id="中国交通" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/中国交通.png",中国交通
 http://192.168.16.254:8866/udp/239.94.0.87:5140
-#EXTINF:-1 tvg-id="北京纪实科教" tvg-logo="https://epg.51zmt.top:8001/logos/bjjskj.png",北京纪实科教高清
+#EXTINF:-1 tvg-id="北京纪实科教" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/北京纪实科教.png",北京纪实科教高清
 http://192.168.16.254:8866/udp/239.94.0.109:5140
-#EXTINF:-1 tvg-id="金鹰纪实" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",金鹰纪实高清
+#EXTINF:-1 tvg-id="金鹰纪实" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/金鹰纪实.png",金鹰纪实高清
 http://192.168.16.254:8866/udp/239.94.1.1:5140
-#EXTINF:-1 tvg-id="cetv1" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",CETV-1高清
+#EXTINF:-1 tvg-id="cetv1" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/cetv-1.png",CETV-1高清
 http://192.168.16.254:8866/udp/239.94.1.2:5140
-#EXTINF:-1 tvg-id="嘉佳卡通" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",嘉佳卡通
+#EXTINF:-1 tvg-id="嘉佳卡通" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/嘉佳卡通.png",嘉佳卡通
 http://192.168.16.254:8866/udp/239.94.1.10:5140
-#EXTINF:-1 tvg-id="家政频道" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",家政频道高清
+#EXTINF:-1 tvg-id="家政频道" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/家政频道.png",家政频道高清
 http://192.168.16.254:8866/udp/239.93.42.48:5140
-#EXTINF:-1 tvg-id="cetv2" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",CETV-2
+#EXTINF:-1 tvg-id="cetv2" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/cetv-2.png",CETV-2
 http://192.168.16.254:8866/udp/239.94.1.19:5140
-#EXTINF:-1 tvg-id="cetv4" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",CETV-4高清
+#EXTINF:-1 tvg-id="cetv4" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/cetv-4.png",CETV-4高清
 http://192.168.16.254:8866/udp/239.94.1.20:5140
-#EXTINF:-1 tvg-id="卡酷少儿" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",卡酷少儿
+#EXTINF:-1 tvg-id="卡酷少儿" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/卡酷少儿.png",卡酷少儿
 http://192.168.16.254:8866/udp/239.94.1.29:5140
-#EXTINF:-1 tvg-id="金鹰卡通" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",金鹰卡通
+#EXTINF:-1 tvg-id="金鹰卡通" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/金鹰卡通.png",金鹰卡通
 http://192.168.16.254:8866/udp/239.94.1.30:5140
-#EXTINF:-1 tvg-id="优漫卡通" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",优漫卡通
+#EXTINF:-1 tvg-id="优漫卡通" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/优漫卡通.png",优漫卡通
 http://192.168.16.254:8866/udp/239.94.1.31:5140
-#EXTINF:-1 tvg-id="生活时尚" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",生活时尚
+#EXTINF:-1 tvg-id="生活时尚" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/生活时尚.png",生活时尚
 http://192.168.16.254:8866/udp/239.94.1.40:5140
-#EXTINF:-1 tvg-id="游戏风云" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",游戏风云
+#EXTINF:-1 tvg-id="游戏风云" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/游戏风云.png",游戏风云
 http://192.168.16.254:8866/udp/239.94.1.46:5140
-#EXTINF:-1 tvg-id="家庭理财" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",家庭理财
+#EXTINF:-1 tvg-id="家庭理财" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/家庭理财.png",家庭理财
 http://192.168.16.254:8866/udp/239.94.1.50:5140
-#EXTINF:-1 tvg-id="东方财经" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",东方财经高清
+#EXTINF:-1 tvg-id="东方财经" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/东方财经.png",东方财经高清
 http://192.168.16.254:8866/udp/239.94.1.59:5140
-#EXTINF:-1 tvg-id="都市剧场" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",都市剧场
+#EXTINF:-1 tvg-id="都市剧场" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/都市剧场.png",都市剧场
 http://192.168.16.254:8866/udp/239.94.1.133:5140
-#EXTINF:-1 tvg-id="求索频道" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",求索频道高清
+#EXTINF:-1 tvg-id="求索频道" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/求索频道.png",求索频道高清
 http://192.168.16.254:8866/udp/239.94.1.142:5140
-#EXTINF:-1 tvg-id="生活时尚" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",生活时尚
+#EXTINF:-1 tvg-id="生活时尚" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/生活时尚.png",生活时尚
 http://192.168.16.254:8866/udp/239.94.1.146:5140
-#EXTINF:-1 tvg-id="环球旅游" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",环球旅游
+#EXTINF:-1 tvg-id="环球旅游" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/环球旅游.png",环球旅游
 http://192.168.16.254:8866/udp/239.94.1.147:5140
-#EXTINF:-1 tvg-id="天元围棋" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",天元围棋
+#EXTINF:-1 tvg-id="天元围棋" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/天元围棋.png",天元围棋
 http://192.168.16.254:8866/udp/239.94.1.152:5140
-#EXTINF:-1 tvg-id="快乐垂钓" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",快乐垂钓
+#EXTINF:-1 tvg-id="快乐垂钓" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/快乐垂钓.png",快乐垂钓
 http://192.168.16.254:8866/udp/239.94.1.153:5140
-#EXTINF:-1 tvg-id="茶频道" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",茶频道
+#EXTINF:-1 tvg-id="茶频道" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/茶频道.png",茶频道
 http://192.168.16.254:8866/udp/239.94.1.154:5140
-#EXTINF:-1 tvg-id="书画频道" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",书画频道
+#EXTINF:-1 tvg-id="书画频道" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/书画频道.png",书画频道
 http://192.168.16.254:8866/udp/239.94.1.163:5140
-#EXTINF:-1 tvg-id="乐游" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",乐游
+#EXTINF:-1 tvg-id="乐游" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/乐游.png",乐游
 http://192.168.16.254:8866/udp/239.94.1.164:5140
-#EXTINF:-1 tvg-id="金色学堂" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",金色学堂
+#EXTINF:-1 tvg-id="金色学堂" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/金色学堂.png",金色学堂
 http://192.168.16.254:8866/udp/239.94.1.165:5140
-#EXTINF:-1 tvg-id="法治天地" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",法治天地
+#EXTINF:-1 tvg-id="法治天地" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/法治天地.png",法治天地
 http://192.168.16.254:8866/udp/239.94.1.166:5140
-#EXTINF:-1 tvg-id="中国天气" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",中国天气
+#EXTINF:-1 tvg-id="中国天气" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/中国天气.png",中国天气
 http://192.168.16.254:8866/udp/239.94.1.167:5140
-#EXTINF:-1 tvg-id="四海钓鱼" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",四海钓鱼
+#EXTINF:-1 tvg-id="四海钓鱼" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/四海钓鱼.png",四海钓鱼
 http://192.168.16.254:8866/udp/239.94.1.168:5140
-#EXTINF:-1 tvg-id="动漫秀场" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",动漫秀场
+#EXTINF:-1 tvg-id="动漫秀场" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/动漫秀场.png",动漫秀场
 http://192.168.16.254:8866/udp/239.94.1.171:5140
-#EXTINF:-1 tvg-id="精彩影视" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",精彩影视
+#EXTINF:-1 tvg-id="精彩影视" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/精彩影视.png",精彩影视
 http://192.168.16.254:8866/udp/239.94.1.172:5140
-#EXTINF:-1 tvg-id="chc家庭影院" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",CHC家庭影院
+#EXTINF:-1 tvg-id="chc家庭影院" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/chc家庭影院.png",CHC家庭影院
 http://192.168.16.254:8866/udp/239.94.1.173:5140
-#EXTINF:-1 tvg-id="chc影迷电影" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",CHC影迷电影
+#EXTINF:-1 tvg-id="chc影迷电影" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/chc影迷电影.png",CHC影迷电影
 http://192.168.16.254:8866/udp/239.94.1.174:5140
-#EXTINF:-1 tvg-id="chc动作电影" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",CHC动作电影
+#EXTINF:-1 tvg-id="chc动作电影" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/chc动作电影.png",CHC动作电影
 http://192.168.16.254:8866/udp/239.94.1.175:5140
-#EXTINF:-1 tvg-id="i成都" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",i成都
+#EXTINF:-1 tvg-id="i成都" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/i成都.png",i成都
 http://192.168.16.254:8866/udp/239.94.2.1:5140
-#EXTINF:-1 tvg-id="爱乐山" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",爱乐山
+#EXTINF:-1 tvg-id="爱乐山" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/爱乐山.png",爱乐山
 http://192.168.16.254:8866/udp/239.94.2.2:5140
-#EXTINF:-1 tvg-id="中国体育1" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",中国体育1
+#EXTINF:-1 tvg-id="中国体育1" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/中国体育1.png",中国体育1
 http://192.168.16.254:8866/udp/239.94.2.7:5140
-#EXTINF:-1 tvg-id="中国体育2" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",中国体育2
+#EXTINF:-1 tvg-id="中国体育2" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/中国体育2.png",中国体育2
 http://192.168.16.254:8866/udp/239.94.2.8:5140
-#EXTINF:-1 tvg-id="中国体育3" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",中国体育3
+#EXTINF:-1 tvg-id="中国体育3" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/中国体育3.png",中国体育3
 http://192.168.16.254:8866/udp/239.94.2.9:5140
-#EXTINF:-1 tvg-id="直播室1" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",直播室1
+#EXTINF:-1 tvg-id="直播室1" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/直播室1.png",直播室1
 http://192.168.16.254:8866/udp/239.94.2.11:5140
-#EXTINF:-1 tvg-id="直播室2" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",直播室2
+#EXTINF:-1 tvg-id="直播室2" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/直播室2.png",直播室2
 http://192.168.16.254:8866/udp/239.94.2.12:5140
-#EXTINF:-1 tvg-id="直播室3" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",直播室3
+#EXTINF:-1 tvg-id="直播室3" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/直播室3.png",直播室3
 http://192.168.16.254:8866/udp/239.94.2.13:5140
-#EXTINF:-1 tvg-id="直播室4" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",直播室4
+#EXTINF:-1 tvg-id="直播室4" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/直播室4.png",直播室4
 http://192.168.16.254:8866/udp/239.94.2.14:5140
-#EXTINF:-1 tvg-id="直播室5" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",直播室5
+#EXTINF:-1 tvg-id="直播室5" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/直播室5.png",直播室5
 http://192.168.16.254:8866/udp/239.94.2.15:5140
-#EXTINF:-1 tvg-id="直播室6" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",直播室6
+#EXTINF:-1 tvg-id="直播室6" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/直播室6.png",直播室6
 http://192.168.16.254:8866/udp/239.94.2.16:5140
-#EXTINF:-1 tvg-id="直播室7" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",直播室7
+#EXTINF:-1 tvg-id="直播室7" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/直播室7.png",直播室7
 http://192.168.16.254:8866/udp/239.94.2.17:5140
-#EXTINF:-1 tvg-id="直播室8" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",直播室8
+#EXTINF:-1 tvg-id="直播室8" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/直播室8.png",直播室8
 http://192.168.16.254:8866/udp/239.94.2.18:5140
-#EXTINF:-1 tvg-id="红原日干乔" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",红原日干乔
+#EXTINF:-1 tvg-id="红原日干乔" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/红原日干乔.png",红原日干乔
 http://192.168.16.254:8866/udp/239.94.2.19:5140
-#EXTINF:-1 tvg-id="红原月亮湾" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",红原月亮湾
+#EXTINF:-1 tvg-id="红原月亮湾" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/红原月亮湾.png",红原月亮湾
 http://192.168.16.254:8866/udp/239.94.2.20:5140
-#EXTINF:-1 tvg-id="电信导视3" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",电信导视3
+#EXTINF:-1 tvg-id="电信导视3" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/电信导视3.png",电信导视3
 http://192.168.16.254:8866/udp/239.94.2.21:5140
-#EXTINF:-1 tvg-id="雅克音乐节直播" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",雅克音乐节直播
+#EXTINF:-1 tvg-id="雅克音乐节直播" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/雅克音乐节直播.png",雅克音乐节直播
 http://192.168.16.254:8866/udp/239.94.2.23:5140
-#EXTINF:-1 tvg-id="雅克音乐节宣传" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",雅克音乐节宣传
+#EXTINF:-1 tvg-id="雅克音乐节宣传" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/雅克音乐节宣传.png",雅克音乐节宣传
 http://192.168.16.254:8866/udp/239.94.2.24:5140
-#EXTINF:-1 tvg-id="云演艺宣传" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",云演艺宣传
+#EXTINF:-1 tvg-id="云演艺宣传" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/云演艺宣传.png",云演艺宣传
 http://192.168.16.254:8866/udp/239.94.2.25:5140
-#EXTINF:-1 tvg-id="华西证券" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",华西证券
+#EXTINF:-1 tvg-id="华西证券" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/华西证券.png",华西证券
 http://192.168.16.254:8866/udp/239.94.2.42:5140
-#EXTINF:-1 tvg-id="920全网组播" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",920-全网组播
+#EXTINF:-1 tvg-id="920全网组播" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/920-全网组播.png",920-全网组播
 http://192.168.16.254:8866/udp/239.94.2.128:5140
-#EXTINF:-1 tvg-id="921全网组播" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",921-全网组播
+#EXTINF:-1 tvg-id="921全网组播" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/921-全网组播.png",921-全网组播
 http://192.168.16.254:8866/udp/239.94.2.129:5140
-#EXTINF:-1 tvg-id="922全网组播" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",922-全网组播
+#EXTINF:-1 tvg-id="922全网组播" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/922-全网组播.png",922-全网组播
 http://192.168.16.254:8866/udp/239.94.2.131:5140
-#EXTINF:-1 tvg-id="923全网组播" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",923-全网组播
+#EXTINF:-1 tvg-id="923全网组播" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/923-全网组播.png",923-全网组播
 http://192.168.16.254:8866/udp/239.94.2.132:5140
-#EXTINF:-1 tvg-id="924全网组播" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",924-全网组播
+#EXTINF:-1 tvg-id="924全网组播" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/924-全网组播.png",924-全网组播
 http://192.168.16.254:8866/udp/239.94.2.135:5140
-#EXTINF:-1 tvg-id="925全网组播" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",925-全网组播
+#EXTINF:-1 tvg-id="925全网组播" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/925-全网组播.png",925-全网组播
 http://192.168.16.254:8866/udp/239.94.2.137:5140
-#EXTINF:-1 tvg-id="926全网组播" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",926-全网组播
+#EXTINF:-1 tvg-id="926全网组播" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/926-全网组播.png",926-全网组播
 http://192.168.16.254:8866/udp/239.94.2.139:5140
-#EXTINF:-1 tvg-id="927全网组播" tvg-logo="https://epg.51zmt.top:8001/logos/default.png",927-全网组播
+#EXTINF:-1 tvg-id="927全网组播" tvg-logo="https://github.com/iptv-org/logos/raw/master/logos/927-全网组播.png",927-全网组播
 http://192.168.16.254:8866/udp/239.94.2.140:5140
