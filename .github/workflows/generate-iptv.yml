@@ -1,8 +1,8 @@
-name: 自动生成IPTV m3u8文件
+#name: 自动生成IPTV m3u8文件
 
 on:
   # 定时触发：每天凌晨0点执行（UTC时间，对应北京时间8点，可根据需要调整）
-  schedule:
+#  schedule:
     - cron: '0 0 * * *'  # UTC时间0点 = 北京时间8点
   # 手动触发（方便测试）
   workflow_dispatch:
