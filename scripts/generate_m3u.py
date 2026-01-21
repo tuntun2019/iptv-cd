@@ -10,7 +10,6 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from webdriver_manager.chrome import ChromeDriverManager
 
 # ===================== 核心配置 =====================
 UDPXY_PROXIES = [
@@ -32,7 +31,7 @@ LOCAL_CHANNELS = [
     {"name": "CCTV-5 体育 画中画", "udp_url": "udp://@239.136.116.120:8000"}
 ]
 
-# 台标映射（简化版，保留核心）
+# 台标映射（简化版）
 LOGO_MAPPING = {
     "CCTV-1": "https://epg.pw/logos/cctv1.png",
     "CCTV-2": "https://epg.pw/logos/cctv2.png",
@@ -52,7 +51,7 @@ GROUP_CONFIG = {
 
 # ===================== 动态网页解析函数 =====================
 def fetch_dynamic_multicast_data(url):
-    """使用Selenium解析动态加载的组播数据"""
+    """使用Selenium解析动态加载的组播数据（适配新版Selenium）"""
     try:
         print(f"\n=== 启动无头浏览器解析动态页面 ===")
         # 配置Chrome无头模式
@@ -63,20 +62,22 @@ def fetch_dynamic_multicast_data(url):
         chrome_options.add_argument("--ignore-certificate-errors")  # 忽略SSL错误
         chrome_options.add_experimental_option("excludeSwitches", ["enable-logging"])
         
+        # 适配Selenium 4.10+ 新版本（核心修复）
+        from selenium.webdriver.chrome.service import Service
+        from webdriver_manager.chrome import ChromeDriverManager
+        
         # 自动下载并配置ChromeDriver
-        driver = webdriver.Chrome(
-            executable_path=ChromeDriverManager().install(),
-            options=chrome_options
-        )
+        service = Service(ChromeDriverManager().install())
+        # 初始化浏览器（使用service参数，移除executable_path）
+        driver = webdriver.Chrome(service=service, options=chrome_options)
         
         # 加载页面并等待表格加载（最长等待10秒）
         driver.get(url)
-        # 等待表格元素出现（适配常见的表格class/id）
         wait = WebDriverWait(driver, 10)
-        # 适配多种表格选择器，确保能定位到数据表格
+        # 等待表格元素出现
         table = wait.until(
             EC.presence_of_element_located(
-                (By.XPATH, "//table[contains(@class, 'table') or contains(@class, 'table-striped') or not(@class)]")
+                (By.XPATH, "//table")  # 简化选择器，确保能找到表格
             )
         )
         
@@ -93,11 +94,14 @@ def fetch_dynamic_multicast_data(url):
         print(f"动态解析到{len(all_tables)}个表格，开始提取数据...")
         
         for table in all_tables:
-            rows = table.find_all("tr")[1:]  # 跳过表头
+            rows = table.find_all("tr")
+            # 遍历所有行（不跳过表头，避免漏数据）
             for row_idx, row in enumerate(rows):
                 cells = row.find_all("td")
+                if len(cells) < 2:
+                    cells = row.find_all("th")  # 兼容表头用th的情况
                 if len(cells) >= 2:
-                    # 提取频道名和组播地址（适配任意列顺序）
+                    # 提取频道名和组播地址
                     chan_name = ""
                     udp_url = ""
                     for cell in cells:
@@ -107,10 +111,12 @@ def fetch_dynamic_multicast_data(url):
                         elif cell_text and not chan_name:
                             chan_name = cell_text
                     
-                    # 验证数据有效性
+                    # 去重+验证
                     if chan_name and udp_url and udp_url.startswith("udp://"):
-                        channels.append({"name": chan_name, "udp_url": udp_url})
-                        print(f"动态解析到频道 {row_idx+1}：{chan_name} -> {udp_url}")
+                        # 避免重复添加
+                        if not any(c["name"] == chan_name for c in channels):
+                            channels.append({"name": chan_name, "udp_url": udp_url})
+                            print(f"动态解析到频道 {row_idx+1}：{chan_name} -> {udp_url}")
         
         print(f"=== 动态解析完成，共提取{len(channels)}个频道 ===")
         return channels
@@ -119,7 +125,7 @@ def fetch_dynamic_multicast_data(url):
         print(f"\n=== 动态解析失败：{str(e)} ===")
         return []
 
-# ===================== 原有工具函数（略作简化）=====================
+# ===================== 工具函数 =====================
 def filter_pip_channels(channels):
     """过滤画中画频道"""
     print(f"\n=== 过滤画中画频道 ===")
