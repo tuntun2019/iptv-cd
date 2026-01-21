@@ -14,8 +14,8 @@ from selenium.webdriver.support import expected_conditions as EC
 
 # ===================== 核心配置 =====================
 UDPXY_PROXIES = [
-    {"host": "192.168.16.254", "port": 8866, "name":W},
-    {"host": "192.168.19.254", "port": 8866, "name":T}
+    {"host": "192.168.16.254", "port": 8866, "name": W},
+    {"host": "192.168.19.254", "port": 8866, "name": T}
 ]
 MULTICAST_DATA_URL = "https://epg.51zmt.top:8001/multicast/"
 EPG_URL = "https://epg.112114.xyz/epg.xml"
