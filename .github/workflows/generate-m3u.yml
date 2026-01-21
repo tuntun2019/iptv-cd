@@ -1,13 +1,13 @@
-name: 自动生成M3U文件（稳定容错版）
+name: 自动生成M3U文件（强制输出有效数据）
 
 on:
   schedule:
-    - cron: '0 19 * * *'
+    - cron: '0 19 * * *'  # 北京时间凌晨3点
   workflow_dispatch:
 
-# 增加权限配置（关键：赋予写入权限）
+# 全权限配置
 permissions:
-  contents: write  # 允许修改仓库内容
+  contents: write
   pull-requests: write
 
 jobs:
@@ -17,60 +17,44 @@ jobs:
       - name: 检出代码
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0  # 拉取完整历史，避免推送冲突
+          fetch-depth: 0
 
-      - name: 检查必要文件是否存在
+      - name: 自动创建依赖文件
         run: |
-          if [ ! -f "requirements.txt" ]; then
-            echo "自动创建requirements.txt"
-            touch requirements.txt
-            echo "requests>=2.31.0" >> requirements.txt
-            echo "beautifulsoup4>=4.12.3" >> requirements.txt
-            echo "lxml>=5.1.0" >> requirements.txt
-          fi
-          if [ ! -f "scripts/generate_m3u.py" ]; then
-            echo "错误：缺少generate_m3u.py"
-            exit 1
-          fi
+          echo "requests>=2.31.0" > requirements.txt
+          echo "beautifulsoup4>=4.12.3" >> requirements.txt
+          echo "lxml>=5.1.0" >> requirements.txt
 
       - name: 设置Python环境
         uses: actions/setup-python@v5
         with:
           python-version: '3.10'
 
-      - name: 安装系统依赖
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y libssl-dev libffi-dev
-
-      - name: 安装Python依赖
+      - name: 安装依赖
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: 生成M3U文件
+      - name: 生成M3U文件（强制输出有效数据）
         run: |
           python scripts/generate_m3u.py
 
-      - name: 提交并推送生成的文件（修复权限）
+      - name: 提交并推送（强制成功）
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
-          
-          # 确保output文件夹存在
           mkdir -p output
-          
-          # 添加文件
           git add output/
           
-          # 提交（兼容空变更）
-          if git diff --staged --quiet; then
-            echo "无文件变更，跳过提交"
-          else
+          # 强制提交（即使无变更也不报错）
+          if ! git diff --staged --quiet; then
             git commit -m "自动生成M3U文件: $(date +'%Y-%m-%d %H:%M:%S')"
-            
-            # 强制推送（解决权限/冲突问题）
-            git push origin main --force
+            # 解决权限/冲突问题
+            git pull --rebase origin main
+            git push origin main
+          else
+            echo "无变更，跳过提交"
           fi
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        continue-on-error: false
