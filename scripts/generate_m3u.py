@@ -1,6 +1,7 @@
 import json
 import os
 import re
+import sys
 from datetime import datetime
 import requests
 from bs4 import BeautifulSoup
@@ -20,17 +21,6 @@ MULTICAST_DATA_URL = "https://epg.51zmt.top:8001/multicast/"
 EPG_URL = "https://epg.112114.xyz/epg.xml"
 FILTER_KEYWORDS = ["画中画", "PIP", "pip"]
 
-# 本地兜底数据源
-LOCAL_CHANNELS = [
-    {"name": "CCTV-1 综合", "udp_url": "udp://@239.136.116.100:8000"},
-    {"name": "CCTV-2 财经", "udp_url": "udp://@239.136.116.101:8000"},
-    {"name": "CCTV-3 综艺", "udp_url": "udp://@239.136.116.102:8000"},
-    {"name": "CCTV-5 体育", "udp_url": "udp://@239.136.116.105:8000"},
-    {"name": "湖南卫视", "udp_url": "udp://@239.136.118.101:8000"},
-    {"name": "浙江卫视", "udp_url": "udp://@239.136.118.102:8000"},
-    {"name": "CCTV-5 体育 画中画", "udp_url": "udp://@239.136.116.120:8000"}
-]
-
 # 台标映射
 LOGO_MAPPING = {
     "CCTV-1": "https://epg.pw/logos/cctv1.png",
@@ -49,52 +39,9 @@ GROUP_CONFIG = {
     "其他频道": []
 }
 
-# ===================== 暴力提取函数 =====================
-def extract_multicast_data_from_text(full_text):
-    """从页面全文本中暴力提取频道和组播地址"""
-    channels = []
-    # 正则匹配组播地址（兼容多种格式）
-    # 匹配：239.xxx.xxx.xxx:xxxx 或 udp://@239.xxx.xxx.xxx:xxxx
-    multicast_pattern = r'(udp://@)?239\.\d{1,3}\.\d{1,3}\.\d{1,3}:\d{1,5}'
-    multicast_matches = re.findall(multicast_pattern, full_text, re.IGNORECASE)
-    
-    if not multicast_matches:
-        return channels
-    
-    # 常见频道名列表（用于关联地址）
-    common_channel_names = [
-        "CCTV-1", "CCTV-2", "CCTV-3", "CCTV-4", "CCTV-5", "CCTV-5+",
-        "CCTV-6", "CCTV-7", "CCTV-8", "CCTV-9", "CCTV-10", "CCTV-11",
-        "CCTV-12", "CCTV-13", "CCTV-14", "CCTV-15",
-        "湖南卫视", "浙江卫视", "江苏卫视", "东方卫视", "北京卫视",
-        "广东卫视", "山东卫视", "四川卫视", "深圳卫视"
-    ]
-    
-    # 遍历每个组播地址，匹配上下文的频道名
-    for match in multicast_matches:
-        # 标准化组播地址格式
-        udp_url = match if match.startswith("udp://") else f"udp://@{match}"
-        # 查找地址前后的频道名
-        idx = full_text.find(udp_url.replace("udp://@", ""))
-        # 取地址前后50个字符的上下文
-        context = full_text[max(0, idx-50):min(len(full_text), idx+50)]
-        
-        # 匹配上下文里的常见频道名
-        chan_name = "未知频道"
-        for name in common_channel_names:
-            if name in context:
-                chan_name = name
-                break
-        
-        # 去重并添加
-        if not any(c["udp_url"] == udp_url for c in channels):
-            channels.append({"name": chan_name, "udp_url": udp_url})
-            print(f"暴力提取到：{chan_name} -> {udp_url}")
-    
-    return channels
-
+# ===================== 精准解析函数 =====================
 def fetch_dynamic_multicast_data(url):
-    """动态解析+暴力提取"""
+    """精准解析页面表格，无数据则抛出异常"""
     try:
         print(f"\n=== 启动无头浏览器解析动态页面 ===")
         # Chrome配置
@@ -111,58 +58,79 @@ def fetch_dynamic_multicast_data(url):
         service = Service(ChromeDriverManager().install())
         driver = webdriver.Chrome(service=service, options=chrome_options)
         
-        # 加载页面
+        # 加载页面并等待表格加载（延长到20秒）
         driver.get(url)
-        # 等待页面完全加载（延长等待时间到15秒）
-        WebDriverWait(driver, 15).until(
-            EC.presence_of_element_located((By.TAG_NAME, "body"))
+        wait = WebDriverWait(driver, 20)
+        
+        # 等待表格加载完成（精准定位所有行）
+        rows = wait.until(
+            EC.presence_of_all_elements_located((By.XPATH, "//table//tr"))
         )
         
-        # 获取页面全文本（核心：提取所有文本，而非仅表格）
+        # 获取页面源码和全文本
+        page_source = driver.page_source
         full_text = driver.find_element(By.TAG_NAME, "body").text
         driver.quit()
         
-        print(f"页面全文本前500字符：\n{full_text[:500]}")
+        # 打印关键信息（用于调试）
+        print(f"页面表格行数：{len(rows)}")
+        print(f"页面全文本（前1000字符）：\n{full_text[:1000]}")
         
-        # 第一步：尝试表格解析
-        soup = BeautifulSoup(driver.page_source, "lxml")
-        table_channels = []
-        all_tables = soup.find_all("table")
-        print(f"找到{len(all_tables)}个表格，尝试表格解析...")
+        # 精准解析表格
+        soup = BeautifulSoup(page_source, "lxml")
+        channels = []
+        table = soup.find("table")
         
-        for table in all_tables:
-            rows = table.find_all("tr")
-            for row in rows:
-                cells = row.find_all(["td", "th"])
-                cell_texts = [cell.text.strip() for cell in cells]
-                if len(cell_texts) >= 2:
-                    table_channels.extend(extract_multicast_data_from_text(" ".join(cell_texts)))
+        if not table:
+            raise Exception("页面未找到表格元素")
         
-        # 第二步：表格解析失败则暴力提取全文本
-        if len(table_channels) == 0:
-            print("表格解析无数据，尝试暴力提取全文本...")
-            table_channels = extract_multicast_data_from_text(full_text)
+        # 遍历所有行（包含表头）
+        for row_idx, row in enumerate(table.find_all("tr")):
+            cells = row.find_all(["td", "th"])
+            if len(cells) < 2:
+                continue
+            
+            # 提取所有单元格文本
+            cell_texts = [cell.text.strip() for cell in cells]
+            print(f"第{row_idx+1}行单元格内容：{cell_texts}")
+            
+            # 提取频道名和组播地址（适配任意列顺序）
+            chan_name = ""
+            udp_url = ""
+            for text in cell_texts:
+                # 匹配组播地址（兼容两种格式）
+                if re.match(r'(udp://@)?239\.\d{1,3}\.\d{1,3}\.\d{1,3}:\d{1,5}', text):
+                    udp_url = text if text.startswith("udp://") else f"udp://@{text}"
+                # 提取频道名（非地址、非空的文本）
+                elif text and not re.match(r'^\d+$', text) and not udp_url:
+                    chan_name = text
+            
+            # 验证并添加
+            if chan_name and udp_url:
+                # 过滤画中画（提前过滤）
+                if not any(kw in chan_name for kw in FILTER_KEYWORDS):
+                    channels.append({"name": chan_name, "udp_url": udp_url})
+                    print(f"成功解析频道：{chan_name} -> {udp_url}")
         
-        print(f"=== 动态解析完成，共提取{len(table_channels)}个频道 ===")
-        return table_channels
+        # 验证解析结果
+        if len(channels) == 0:
+            # 尝试暴力提取全文本中的地址
+            multicast_pattern = r'(udp://@)?239\.\d{1,3}\.\d{1,3}\.\d{1,3}:\d{1,5}'
+            udp_matches = re.findall(multicast_pattern, full_text)
+            if udp_matches:
+                raise Exception(f"解析到{len(udp_matches)}个组播地址，但未匹配到频道名")
+            else:
+                raise Exception("页面未解析到任何组播地址")
+        
+        print(f"\n=== 解析完成，共提取{len(channels)}个有效频道 ===")
+        return channels
     
     except Exception as e:
         print(f"\n=== 动态解析失败：{str(e)} ===")
-        return []
+        # 无兜底，直接抛出异常终止脚本
+        raise e
 
 # ===================== 工具函数 =====================
-def filter_pip_channels(channels):
-    """过滤画中画频道"""
-    print(f"\n=== 过滤画中画频道 ===")
-    filtered = []
-    for chan in channels:
-        if not any(kw in chan["name"] for kw in FILTER_KEYWORDS):
-            filtered.append(chan)
-        else:
-            print(f"过滤掉：{chan['name']}")
-    print(f"过滤后剩余：{len(filtered)}个频道")
-    return filtered
-
 def get_channel_group(name):
     """匹配分组"""
     for group, prefixes in GROUP_CONFIG.items():
@@ -207,6 +175,9 @@ def generate_m3u(channels, output_dir):
             grouped[group] = []
         grouped[group].append(chan)
     
+    # 确保输出目录存在
+    os.makedirs(output_dir, exist_ok=True)
+    
     for proxy in UDPXY_PROXIES:
         lines = [
             f"#EXTM3U x-tvg-url=\"{EPG_URL}\"",
@@ -239,29 +210,23 @@ def generate_m3u(channels, output_dir):
 
 # ===================== 主函数 =====================
 def main():
-    # 确保输出目录存在
+    # 初始化输出目录
     output_dir = "./output"
-    os.makedirs(output_dir, exist_ok=True)
     print(f"=== 初始化完成，输出目录：{os.path.abspath(output_dir)} ===")
     
-    # 1. 优先尝试动态+暴力提取远程数据
-    raw_chans = fetch_dynamic_multicast_data(MULTICAST_DATA_URL)
+    try:
+        # 1. 解析远程数据（无兜底，失败则报错）
+        raw_chans = fetch_dynamic_multicast_data(MULTICAST_DATA_URL)
+        
+        # 2. 生成M3U文件
+        generate_m3u(raw_chans, output_dir)
+        
+        print("\n=== 执行完成：成功解析并生成M3U文件 ===")
     
-    # 2. 提取失败时，使用本地兜底数据
-    if len(raw_chans) == 0:
-        print(f"\n=== 远程解析无数据，启用本地兜底 ===")
-        raw_chans = LOCAL_CHANNELS
-    
-    # 3. 过滤画中画频道
-    filtered_chans = filter_pip_channels(raw_chans)
-    
-    # 4. 生成M3U文件
-    if filtered_chans:
-        generate_m3u(filtered_chans, output_dir)
-    else:
-        print("无有效频道（兜底数据也为空，不可能发生）")
-    
-    print("\n=== 执行完成 ===")
+    except Exception as e:
+        print(f"\n=== 执行失败：{str(e)} ===")
+        # 退出并返回错误码，让Actions报错
+        sys.exit(1)
 
 if __name__ == "__main__":
     # 禁用不必要的警告
