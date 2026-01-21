@@ -4,153 +4,132 @@ import re
 from datetime import datetime
 import requests
 from bs4 import BeautifulSoup
+# 新增Selenium相关导入
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from webdriver_manager.chrome import ChromeDriverManager
 
 # ===================== 核心配置 =====================
-# udpxy 代理配置
 UDPXY_PROXIES = [
     {"host": "192.168.16.254", "port": 8866},
     {"host": "192.168.19.254", "port": 8866}
 ]
-
-# 组播数据源地址
 MULTICAST_DATA_URL = "https://epg.51zmt.top:8001/multicast/"
-
-# EPG 配置
 EPG_URL = "https://epg.112114.xyz/epg.xml"
-
-# 过滤配置
 FILTER_KEYWORDS = ["画中画", "PIP", "pip"]
 
-# 本地静态兜底数据源（确保有数据输出）
+# 本地兜底数据源
 LOCAL_CHANNELS = [
     {"name": "CCTV-1 综合", "udp_url": "udp://@239.136.116.100:8000"},
     {"name": "CCTV-2 财经", "udp_url": "udp://@239.136.116.101:8000"},
     {"name": "CCTV-3 综艺", "udp_url": "udp://@239.136.116.102:8000"},
-    {"name": "CCTV-4 中文国际", "udp_url": "udp://@239.136.116.103:8000"},
     {"name": "CCTV-5 体育", "udp_url": "udp://@239.136.116.105:8000"},
-    {"name": "CCTV-5+ 体育赛事", "udp_url": "udp://@239.136.116.106:8000"},
-    {"name": "CCTV-6 电影", "udp_url": "udp://@239.136.116.107:8000"},
-    {"name": "CCTV-7 国防军事", "udp_url": "udp://@239.136.116.108:8000"},
-    {"name": "CCTV-8 电视剧", "udp_url": "udp://@239.136.116.109:8000"},
-    {"name": "CCTV-9 纪录", "udp_url": "udp://@239.136.116.110:8000"},
-    {"name": "CCTV-10 科教", "udp_url": "udp://@239.136.116.111:8000"},
-    {"name": "CCTV-11 戏曲", "udp_url": "udp://@239.136.116.112:8000"},
-    {"name": "CCTV-12 社会与法", "udp_url": "udp://@239.136.116.113:8000"},
-    {"name": "CCTV-13 新闻", "udp_url": "udp://@239.136.116.114:8000"},
-    {"name": "CCTV-14 少儿", "udp_url": "udp://@239.136.116.115:8000"},
-    {"name": "CCTV-15 音乐", "udp_url": "udp://@239.136.116.116:8000"},
     {"name": "湖南卫视", "udp_url": "udp://@239.136.118.101:8000"},
     {"name": "浙江卫视", "udp_url": "udp://@239.136.118.102:8000"},
-    {"name": "江苏卫视", "udp_url": "udp://@239.136.118.103:8000"},
-    {"name": "东方卫视", "udp_url": "udp://@239.136.118.104:8000"},
-    {"name": "北京卫视", "udp_url": "udp://@239.136.118.105:8000"},
-    {"name": "广东卫视", "udp_url": "udp://@239.136.118.106:8000"},
-    {"name": "山东卫视", "udp_url": "udp://@239.136.118.107:8000"},
-    {"name": "四川卫视", "udp_url": "udp://@239.136.118.108:8000"},
-    {"name": "深圳卫视", "udp_url": "udp://@239.136.118.109:8000"},
-    {"name": "CCTV-5 体育 画中画", "udp_url": "udp://@239.136.116.120:8000"}  # 用于测试过滤
+    {"name": "CCTV-5 体育 画中画", "udp_url": "udp://@239.136.116.120:8000"}
 ]
 
-# 台标映射
+# 台标映射（简化版，保留核心）
 LOGO_MAPPING = {
     "CCTV-1": "https://epg.pw/logos/cctv1.png",
     "CCTV-2": "https://epg.pw/logos/cctv2.png",
     "CCTV-3": "https://epg.pw/logos/cctv3.png",
-    "CCTV-4": "https://epg.pw/logos/cctv4.png",
     "CCTV-5": "https://epg.pw/logos/cctv5.png",
-    "CCTV-5+": "https://epg.pw/logos/cctv5plus.png",
-    "CCTV-6": "https://epg.pw/logos/cctv6.png",
-    "CCTV-7": "https://epg.pw/logos/cctv7.png",
-    "CCTV-8": "https://epg.pw/logos/cctv8.png",
-    "CCTV-9": "https://epg.pw/logos/cctv9.png",
-    "CCTV-10": "https://epg.pw/logos/cctv10.png",
-    "CCTV-11": "https://epg.pw/logos/cctv11.png",
-    "CCTV-12": "https://epg.pw/logos/cctv12.png",
-    "CCTV-13": "https://epg.pw/logos/cctv13.png",
-    "CCTV-14": "https://epg.pw/logos/cctv14.png",
-    "CCTV-15": "https://epg.pw/logos/cctv15.png",
     "湖南卫视": "https://epg.pw/logos/hunan.png",
     "浙江卫视": "https://epg.pw/logos/zhejiang.png",
-    "江苏卫视": "https://epg.pw/logos/jiangsu.png",
-    "东方卫视": "https://epg.pw/logos/dongfang.png",
-    "北京卫视": "https://epg.pw/logos/beijing.png",
-    "广东卫视": "https://epg.pw/logos/guangdong.png",
-    "山东卫视": "https://epg.pw/logos/shandong.png",
-    "四川卫视": "https://epg.pw/logos/sichuan.png",
-    "深圳卫视": "https://epg.pw/logos/shenzhen.png",
     "default": "https://via.placeholder.com/120x80?text={}"
 }
 
 # 频道分组配置
 GROUP_CONFIG = {
     "央视频道": ["CCTV-", "中央"],
-    "卫视频道": ["湖南", "浙江", "江苏", "东方", "北京", "安徽", "广东", "山东", "四川", "深圳"],
-    "地方频道": ["上海", "天津", "重庆", "河北", "河南", "辽宁", "黑龙江"],
-    "影视频道": ["电影", "影视", "剧场", "电视剧"],
-    "体育频道": ["体育", "CCTV-5", "CCTV-5+"],
-    "少儿频道": ["少儿", "CCTV-14", "卡通"],
-    "新闻频道": ["新闻", "CCTV-13", "财经"],
-    "综艺频道": ["综艺", "CCTV-3", "湖南卫视"],
-    "科教频道": ["科教", "CCTV-10", "纪录"]
+    "卫视频道": ["湖南", "浙江", "江苏", "东方", "北京", "广东"],
+    "其他频道": []
 }
 
-# ===================== 工具函数 =====================
-def fetch_multicast_data(url):
-    """远程数据源解析 + 本地兜底"""
+# ===================== 动态网页解析函数 =====================
+def fetch_dynamic_multicast_data(url):
+    """使用Selenium解析动态加载的组播数据"""
     try:
-        print(f"\n=== 尝试获取远程组播数据：{url} ===")
-        response = requests.get(url, verify=False, timeout=30)
-        response.raise_for_status()
+        print(f"\n=== 启动无头浏览器解析动态页面 ===")
+        # 配置Chrome无头模式
+        chrome_options = Options()
+        chrome_options.add_argument("--headless=new")  # 新版无头模式
+        chrome_options.add_argument("--no-sandbox")    # 适配GitHub Actions环境
+        chrome_options.add_argument("--disable-dev-shm-usage")
+        chrome_options.add_argument("--ignore-certificate-errors")  # 忽略SSL错误
+        chrome_options.add_experimental_option("excludeSwitches", ["enable-logging"])
         
-        # 极致适配：遍历所有可能的表格结构
-        soup = BeautifulSoup(response.text, "lxml")
+        # 自动下载并配置ChromeDriver
+        driver = webdriver.Chrome(
+            executable_path=ChromeDriverManager().install(),
+            options=chrome_options
+        )
+        
+        # 加载页面并等待表格加载（最长等待10秒）
+        driver.get(url)
+        # 等待表格元素出现（适配常见的表格class/id）
+        wait = WebDriverWait(driver, 10)
+        # 适配多种表格选择器，确保能定位到数据表格
+        table = wait.until(
+            EC.presence_of_element_located(
+                (By.XPATH, "//table[contains(@class, 'table') or contains(@class, 'table-striped') or not(@class)]")
+            )
+        )
+        
+        # 获取加载完成后的页面源码
+        page_source = driver.page_source
+        driver.quit()  # 关闭浏览器
+        
+        # 解析加载完成后的HTML
+        soup = BeautifulSoup(page_source, "lxml")
         channels = []
         
-        # 适配1：所有class包含table的表格
-        tables = soup.find_all("table", class_=re.compile("table"))
-        # 适配2：所有div下的表格
-        div_tables = soup.find_all("div", class_=re.compile("table"))
-        all_tables = tables + div_tables
+        # 提取所有表格行数据
+        all_tables = soup.find_all("table")
+        print(f"动态解析到{len(all_tables)}个表格，开始提取数据...")
         
         for table in all_tables:
-            rows = table.find_all("tr")
-            for row in rows:
-                cells = row.find_all(["td", "th"])
+            rows = table.find_all("tr")[1:]  # 跳过表头
+            for row_idx, row in enumerate(rows):
+                cells = row.find_all("td")
                 if len(cells) >= 2:
-                    # 提取所有单元格文本，查找UDP地址
-                    cell_texts = [cell.text.strip() for cell in cells]
-                    udp_url = ""
+                    # 提取频道名和组播地址（适配任意列顺序）
                     chan_name = ""
-                    for text in cell_texts:
-                        if text.startswith("udp://"):
-                            udp_url = text
-                        elif text and not udp_url:
-                            chan_name = text
-                    if chan_name and udp_url:
+                    udp_url = ""
+                    for cell in cells:
+                        cell_text = cell.text.strip()
+                        if cell_text.startswith("udp://"):
+                            udp_url = cell_text
+                        elif cell_text and not chan_name:
+                            chan_name = cell_text
+                    
+                    # 验证数据有效性
+                    if chan_name and udp_url and udp_url.startswith("udp://"):
                         channels.append({"name": chan_name, "udp_url": udp_url})
+                        print(f"动态解析到频道 {row_idx+1}：{chan_name} -> {udp_url}")
         
-        print(f"远程解析到频道数：{len(channels)}")
-        
-        # 远程无数据时，使用本地静态数据源
-        if len(channels) == 0:
-            print("远程无数据，启用本地静态数据源")
-            return LOCAL_CHANNELS
+        print(f"=== 动态解析完成，共提取{len(channels)}个频道 ===")
         return channels
     
     except Exception as e:
-        print(f"远程数据源解析失败：{str(e)}，启用本地静态数据源")
-        return LOCAL_CHANNELS
+        print(f"\n=== 动态解析失败：{str(e)} ===")
+        return []
 
+# ===================== 原有工具函数（略作简化）=====================
 def filter_pip_channels(channels):
     """过滤画中画频道"""
-    print(f"\n=== 过滤画中画频道（关键词：{FILTER_KEYWORDS}）===")
+    print(f"\n=== 过滤画中画频道 ===")
     filtered = []
     for chan in channels:
         if not any(kw in chan["name"] for kw in FILTER_KEYWORDS):
             filtered.append(chan)
         else:
             print(f"过滤掉：{chan['name']}")
-    print(f"过滤后剩余频道数：{len(filtered)}")
+    print(f"过滤后剩余：{len(filtered)}个频道")
     return filtered
 
 def get_channel_group(name):
@@ -171,10 +150,6 @@ def get_channel_logo(name):
     except:
         return "https://via.placeholder.com/120x80?text=TV"
 
-def get_epg_id(name):
-    """生成EPG ID"""
-    return re.sub(r"[^a-zA-Z0-9]", "", name).lower()
-
 def parse_udp_url(udp_url):
     """解析UDP地址"""
     try:
@@ -193,7 +168,7 @@ def generate_udpxy_url(udp_info, host, port):
 
 def generate_m3u(channels, output_dir):
     """生成M3U文件"""
-    print(f"\n=== 生成M3U文件到：{output_dir} ===")
+    print(f"\n=== 生成M3U文件 ===")
     grouped = {}
     for chan in channels:
         group = get_channel_group(chan["name"])
@@ -218,7 +193,7 @@ def generate_m3u(channels, output_dir):
                     continue
                 
                 logo = get_channel_logo(chan["name"])
-                epg_id = get_epg_id(chan["name"])
+                epg_id = re.sub(r"[^a-zA-Z0-9]", "", chan["name"]).lower()
                 
                 lines.append(f"#EXTINF:-1 group-title=\"{group_name}\" tvg-id=\"{epg_id}\" tvg-logo=\"{logo}\",{chan['name']}")
                 lines.append(udpxy)
@@ -238,20 +213,26 @@ def main():
     os.makedirs(output_dir, exist_ok=True)
     print(f"=== 初始化完成，输出目录：{os.path.abspath(output_dir)} ===")
     
-    # 1. 获取频道数据（远程+本地兜底）
-    raw_chans = fetch_multicast_data(MULTICAST_DATA_URL)
+    # 1. 优先尝试动态解析远程数据
+    raw_chans = fetch_dynamic_multicast_data(MULTICAST_DATA_URL)
     
-    # 2. 过滤画中画
+    # 2. 动态解析失败时，使用本地兜底数据
+    if len(raw_chans) == 0:
+        print(f"\n=== 远程动态解析无数据，启用本地兜底 ===")
+        raw_chans = LOCAL_CHANNELS
+    
+    # 3. 过滤画中画频道
     filtered_chans = filter_pip_channels(raw_chans)
     
-    # 3. 生成M3U（强制生成有效数据）
+    # 4. 生成M3U文件
     if filtered_chans:
         generate_m3u(filtered_chans, output_dir)
     else:
-        print("无有效频道（不可能发生，因为本地有兜底）")
+        print("无有效频道（兜底数据也为空，不可能发生）")
     
-    print("\n=== 执行完成，已生成有效M3U文件 ===")
+    print("\n=== 执行完成 ===")
 
 if __name__ == "__main__":
+    # 禁用不必要的警告
     requests.packages.urllib3.disable_warnings()
     main()
