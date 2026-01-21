@@ -1,0 +1,49 @@
+name: 自动生成M3U文件（含组播解析+画中画过滤）
+
+on:
+  # 每天凌晨3点（北京时间）运行（UTC+8 = UTC+19）
+  schedule:
+    - cron: '0 19 * * *'
+  # 手动触发
+  workflow_dispatch:
+
+jobs:
+  generate-m3u:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v4
+
+      - name: 设置Python环境
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: 安装系统依赖（解决SSL问题）
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libssl-dev libffi-dev
+
+      - name: 安装Python依赖
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: 生成M3U文件
+        run: |
+          python scripts/generate_m3u.py
+
+      - name: 提交并推送生成的文件
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git add output/
+          # 检查是否有变更
+          if git diff --staged --quiet; then
+            echo "没有文件变更，无需提交"
+          else
+            git commit -m "自动生成M3U文件: $(date +'%Y-%m-%d %H:%M:%S')"
+            git push
+          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
