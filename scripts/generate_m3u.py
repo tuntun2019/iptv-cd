@@ -4,7 +4,7 @@ import re
 from datetime import datetime
 import requests
 from bs4 import BeautifulSoup
-# 新增Selenium相关导入
+# Selenium相关导入
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
@@ -31,7 +31,7 @@ LOCAL_CHANNELS = [
     {"name": "CCTV-5 体育 画中画", "udp_url": "udp://@239.136.116.120:8000"}
 ]
 
-# 台标映射（简化版）
+# 台标映射
 LOGO_MAPPING = {
     "CCTV-1": "https://epg.pw/logos/cctv1.png",
     "CCTV-2": "https://epg.pw/logos/cctv2.png",
@@ -49,77 +49,102 @@ GROUP_CONFIG = {
     "其他频道": []
 }
 
-# ===================== 动态网页解析函数 =====================
+# ===================== 暴力提取函数 =====================
+def extract_multicast_data_from_text(full_text):
+    """从页面全文本中暴力提取频道和组播地址"""
+    channels = []
+    # 正则匹配组播地址（兼容多种格式）
+    # 匹配：239.xxx.xxx.xxx:xxxx 或 udp://@239.xxx.xxx.xxx:xxxx
+    multicast_pattern = r'(udp://@)?239\.\d{1,3}\.\d{1,3}\.\d{1,3}:\d{1,5}'
+    multicast_matches = re.findall(multicast_pattern, full_text, re.IGNORECASE)
+    
+    if not multicast_matches:
+        return channels
+    
+    # 常见频道名列表（用于关联地址）
+    common_channel_names = [
+        "CCTV-1", "CCTV-2", "CCTV-3", "CCTV-4", "CCTV-5", "CCTV-5+",
+        "CCTV-6", "CCTV-7", "CCTV-8", "CCTV-9", "CCTV-10", "CCTV-11",
+        "CCTV-12", "CCTV-13", "CCTV-14", "CCTV-15",
+        "湖南卫视", "浙江卫视", "江苏卫视", "东方卫视", "北京卫视",
+        "广东卫视", "山东卫视", "四川卫视", "深圳卫视"
+    ]
+    
+    # 遍历每个组播地址，匹配上下文的频道名
+    for match in multicast_matches:
+        # 标准化组播地址格式
+        udp_url = match if match.startswith("udp://") else f"udp://@{match}"
+        # 查找地址前后的频道名
+        idx = full_text.find(udp_url.replace("udp://@", ""))
+        # 取地址前后50个字符的上下文
+        context = full_text[max(0, idx-50):min(len(full_text), idx+50)]
+        
+        # 匹配上下文里的常见频道名
+        chan_name = "未知频道"
+        for name in common_channel_names:
+            if name in context:
+                chan_name = name
+                break
+        
+        # 去重并添加
+        if not any(c["udp_url"] == udp_url for c in channels):
+            channels.append({"name": chan_name, "udp_url": udp_url})
+            print(f"暴力提取到：{chan_name} -> {udp_url}")
+    
+    return channels
+
 def fetch_dynamic_multicast_data(url):
-    """使用Selenium解析动态加载的组播数据（适配新版Selenium）"""
+    """动态解析+暴力提取"""
     try:
         print(f"\n=== 启动无头浏览器解析动态页面 ===")
-        # 配置Chrome无头模式
+        # Chrome配置
         chrome_options = Options()
-        chrome_options.add_argument("--headless=new")  # 新版无头模式
-        chrome_options.add_argument("--no-sandbox")    # 适配GitHub Actions环境
+        chrome_options.add_argument("--headless=new")
+        chrome_options.add_argument("--no-sandbox")
         chrome_options.add_argument("--disable-dev-shm-usage")
-        chrome_options.add_argument("--ignore-certificate-errors")  # 忽略SSL错误
+        chrome_options.add_argument("--ignore-certificate-errors")
         chrome_options.add_experimental_option("excludeSwitches", ["enable-logging"])
         
-        # 适配Selenium 4.10+ 新版本（核心修复）
+        # 适配新版Selenium
         from selenium.webdriver.chrome.service import Service
         from webdriver_manager.chrome import ChromeDriverManager
-        
-        # 自动下载并配置ChromeDriver
         service = Service(ChromeDriverManager().install())
-        # 初始化浏览器（使用service参数，移除executable_path）
         driver = webdriver.Chrome(service=service, options=chrome_options)
         
-        # 加载页面并等待表格加载（最长等待10秒）
+        # 加载页面
         driver.get(url)
-        wait = WebDriverWait(driver, 10)
-        # 等待表格元素出现
-        table = wait.until(
-            EC.presence_of_element_located(
-                (By.XPATH, "//table")  # 简化选择器，确保能找到表格
-            )
+        # 等待页面完全加载（延长等待时间到15秒）
+        WebDriverWait(driver, 15).until(
+            EC.presence_of_element_located((By.TAG_NAME, "body"))
         )
         
-        # 获取加载完成后的页面源码
-        page_source = driver.page_source
-        driver.quit()  # 关闭浏览器
+        # 获取页面全文本（核心：提取所有文本，而非仅表格）
+        full_text = driver.find_element(By.TAG_NAME, "body").text
+        driver.quit()
         
-        # 解析加载完成后的HTML
-        soup = BeautifulSoup(page_source, "lxml")
-        channels = []
+        print(f"页面全文本前500字符：\n{full_text[:500]}")
         
-        # 提取所有表格行数据
+        # 第一步：尝试表格解析
+        soup = BeautifulSoup(driver.page_source, "lxml")
+        table_channels = []
         all_tables = soup.find_all("table")
-        print(f"动态解析到{len(all_tables)}个表格，开始提取数据...")
+        print(f"找到{len(all_tables)}个表格，尝试表格解析...")
         
         for table in all_tables:
             rows = table.find_all("tr")
-            # 遍历所有行（不跳过表头，避免漏数据）
-            for row_idx, row in enumerate(rows):
-                cells = row.find_all("td")
-                if len(cells) < 2:
-                    cells = row.find_all("th")  # 兼容表头用th的情况
-                if len(cells) >= 2:
-                    # 提取频道名和组播地址
-                    chan_name = ""
-                    udp_url = ""
-                    for cell in cells:
-                        cell_text = cell.text.strip()
-                        if cell_text.startswith("udp://"):
-                            udp_url = cell_text
-                        elif cell_text and not chan_name:
-                            chan_name = cell_text
-                    
-                    # 去重+验证
-                    if chan_name and udp_url and udp_url.startswith("udp://"):
-                        # 避免重复添加
-                        if not any(c["name"] == chan_name for c in channels):
-                            channels.append({"name": chan_name, "udp_url": udp_url})
-                            print(f"动态解析到频道 {row_idx+1}：{chan_name} -> {udp_url}")
+            for row in rows:
+                cells = row.find_all(["td", "th"])
+                cell_texts = [cell.text.strip() for cell in cells]
+                if len(cell_texts) >= 2:
+                    table_channels.extend(extract_multicast_data_from_text(" ".join(cell_texts)))
         
-        print(f"=== 动态解析完成，共提取{len(channels)}个频道 ===")
-        return channels
+        # 第二步：表格解析失败则暴力提取全文本
+        if len(table_channels) == 0:
+            print("表格解析无数据，尝试暴力提取全文本...")
+            table_channels = extract_multicast_data_from_text(full_text)
+        
+        print(f"=== 动态解析完成，共提取{len(table_channels)}个频道 ===")
+        return table_channels
     
     except Exception as e:
         print(f"\n=== 动态解析失败：{str(e)} ===")
@@ -219,12 +244,12 @@ def main():
     os.makedirs(output_dir, exist_ok=True)
     print(f"=== 初始化完成，输出目录：{os.path.abspath(output_dir)} ===")
     
-    # 1. 优先尝试动态解析远程数据
+    # 1. 优先尝试动态+暴力提取远程数据
     raw_chans = fetch_dynamic_multicast_data(MULTICAST_DATA_URL)
     
-    # 2. 动态解析失败时，使用本地兜底数据
+    # 2. 提取失败时，使用本地兜底数据
     if len(raw_chans) == 0:
-        print(f"\n=== 远程动态解析无数据，启用本地兜底 ===")
+        print(f"\n=== 远程解析无数据，启用本地兜底 ===")
         raw_chans = LOCAL_CHANNELS
     
     # 3. 过滤画中画频道
