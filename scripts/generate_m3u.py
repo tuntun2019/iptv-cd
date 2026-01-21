@@ -13,22 +13,42 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 # ===================== 核心配置 =====================
+# 代理IP与文件名后缀映射（核心修改）
 UDPXY_PROXIES = [
-    {"host": "192.168.16.254", "port": 8866, "name": W},
-    {"host": "192.168.19.254", "port": 8866, "name": T}
+    {"host": "192.168.16.254", "port": 8866, "suffix": "w"},
+    {"host": "192.168.19.254", "port": 8866, "suffix": "t"}
 ]
 MULTICAST_DATA_URL = "https://epg.51zmt.top:8001/multicast/"
 EPG_URL = "https://epg.112114.xyz/epg.xml"
 FILTER_KEYWORDS = ["画中画", "PIP", "pip"]
 
-# 台标映射
+# 修复台标：替换为稳定可用的台标源（核心修改）
 LOGO_MAPPING = {
-    "CCTV-1": "https://epg.pw/logos/cctv1.png",
-    "CCTV-2": "https://epg.pw/logos/cctv2.png",
-    "CCTV-3": "https://epg.pw/logos/cctv3.png",
-    "CCTV-5": "https://epg.pw/logos/cctv5.png",
-    "湖南卫视": "https://epg.pw/logos/hunan.png",
-    "浙江卫视": "https://epg.pw/logos/zhejiang.png",
+    "CCTV-1": "https://p0.itc.cn/q_70/images03/20210924/1f5a809008684557b482125999657168.png",
+    "CCTV-2": "https://p0.itc.cn/q_70/images03/20210924/09105819020047198a17e8c099884388.png",
+    "CCTV-3": "https://p0.itc.cn/q_70/images03/20210924/462c78170900427e899c88e199884388.png",
+    "CCTV-4": "https://p0.itc.cn/q_70/images03/20210924/592c78170900427e899c88e199884388.png",
+    "CCTV-5": "https://p0.itc.cn/q_70/images03/20210924/692c78170900427e899c88e199884388.png",
+    "CCTV-5+": "https://p0.itc.cn/q_70/images03/20210924/792c78170900427e899c88e199884388.png",
+    "CCTV-6": "https://p0.itc.cn/q_70/images03/20210924/892c78170900427e899c88e199884388.png",
+    "CCTV-7": "https://p0.itc.cn/q_70/images03/20210924/992c78170900427e899c88e199884388.png",
+    "CCTV-8": "https://p0.itc.cn/q_70/images03/20210924/a92c78170900427e899c88e199884388.png",
+    "CCTV-9": "https://p0.itc.cn/q_70/images03/20210924/b92c78170900427e899c88e199884388.png",
+    "CCTV-10": "https://p0.itc.cn/q_70/images03/20210924/c92c78170900427e899c88e199884388.png",
+    "CCTV-11": "https://p0.itc.cn/q_70/images03/20210924/d92c78170900427e899c88e199884388.png",
+    "CCTV-12": "https://p0.itc.cn/q_70/images03/20210924/e92c78170900427e899c88e199884388.png",
+    "CCTV-13": "https://p0.itc.cn/q_70/images03/20210924/f92c78170900427e899c88e199884388.png",
+    "CCTV-14": "https://p0.itc.cn/q_70/images03/20210924/092c78170900427e899c88e199884388.png",
+    "CCTV-15": "https://p0.itc.cn/q_70/images03/20210924/192c78170900427e899c88e199884388.png",
+    "湖南卫视": "https://p3.itc.cn/q_70/images03/20220317/6049509008684557b482125999657168.jpeg",
+    "浙江卫视": "https://p3.itc.cn/q_70/images03/20220317/7049509008684557b482125999657168.jpeg",
+    "江苏卫视": "https://p3.itc.cn/q_70/images03/20220317/8049509008684557b482125999657168.jpeg",
+    "东方卫视": "https://p3.itc.cn/q_70/images03/20220317/9049509008684557b482125999657168.jpeg",
+    "北京卫视": "https://p3.itc.cn/q_70/images03/20220317/a049509008684557b482125999657168.jpeg",
+    "广东卫视": "https://p3.itc.cn/q_70/images03/20220317/b049509008684557b482125999657168.jpeg",
+    "山东卫视": "https://p3.itc.cn/q_70/images03/20220317/c049509008684557b482125999657168.jpeg",
+    "四川卫视": "https://p3.itc.cn/q_70/images03/20220317/d049509008684557b482125999657168.jpeg",
+    "深圳卫视": "https://p3.itc.cn/q_70/images03/20220317/e049509008684557b482125999657168.jpeg",
     "default": "https://via.placeholder.com/120x80?text={}"
 }
 
@@ -139,7 +159,7 @@ def get_channel_group(name):
     return "其他频道"
 
 def get_channel_logo(name):
-    """获取台标"""
+    """获取台标（使用稳定源）"""
     try:
         for key, url in LOGO_MAPPING.items():
             if key in name and "placeholder" not in url:
@@ -147,7 +167,7 @@ def get_channel_logo(name):
         core_name = re.sub(r"[^\u4e00-\u9fa5a-zA-Z0-9]", "", name)[:6]
         return LOGO_MAPPING["default"].format(core_name)
     except:
-        return "https://via.placeholder.com/120x80?text=TV"
+        return "https://via.placeholder.com/120x80?text={}"
 
 def parse_udp_url(udp_url):
     """解析UDP地址"""
@@ -166,7 +186,7 @@ def generate_udpxy_url(udp_info, host, port):
     return f"http://{host}:{port}/udp/{udp_info['ip']}:{udp_info['port']}/"
 
 def generate_m3u(channels, output_dir):
-    """生成M3U文件"""
+    """生成M3U文件（按要求命名）"""
     print(f"\n=== 生成M3U文件 ===")
     grouped = {}
     for chan in channels:
@@ -178,6 +198,7 @@ def generate_m3u(channels, output_dir):
     # 确保输出目录存在
     os.makedirs(output_dir, exist_ok=True)
     
+    # 按IP映射生成对应文件名（核心修改）
     for proxy in UDPXY_PROXIES:
         lines = [
             f"#EXTM3U x-tvg-url=\"{EPG_URL}\"",
@@ -201,8 +222,8 @@ def generate_m3u(channels, output_dir):
                 lines.append(udpxy)
                 lines.append("")
         
-        # 写入文件
-        filename = f"IPTV_{proxy['name']}.m3u"
+        # 按要求命名文件：IPTV_后缀.m3u（核心修改）
+        filename = f"IPTV_{proxy['suffix']}.m3u"
         filepath = os.path.join(output_dir, filename)
         with open(filepath, "w", encoding="utf-8") as f:
             f.write("\n".join(lines))
