@@ -221,6 +221,24 @@ def generate_m3u8(channels, udpxy_url, output_file):
     return output_file
 
 def main():
+    # 先创建output文件夹（关键：确保文件夹存在）
+    os.makedirs("./output", exist_ok=True)
+    
+    # 获取原始组播数据
+    raw_channels = fetch_multicast_data(MULTICAST_DATA_URL)
+    if not raw_channels:
+        print("未获取到任何组播数据，生成空的output文件夹")
+        return
+    
+    # 过滤画中画频道
+    filtered_channels = filter_pip_channels(raw_channels)
+    if not filtered_channels:
+        print("过滤后无有效频道，生成空的output文件夹")
+        return
+    
+    # 生成M3U文件
+    generate_m3u(filtered_channels, "./output")
+    
     """主函数：批量生成多udpxy地址的m3u8文件"""
     try:
         # 1. 获取并解析数据源（只解析一次，复用频道数据）
