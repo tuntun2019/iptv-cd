@@ -1,10 +1,11 @@
-name: 自动生成M3U文件（动态解析+兜底）
+name: 自动生成M3U文件（精准解析+失败报错）
 
 on:
   schedule:
-    - cron: '0 19 * * *'
+    - cron: '0 19 * * *'  # 北京时间凌晨3点
   workflow_dispatch:
 
+# 全权限配置
 permissions:
   contents: write
   pull-requests: write
@@ -22,7 +23,6 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y chromium-browser chromium-chromedriver libnss3-dev
-          # 配置ChromeDriver路径
           export PATH=$PATH:/usr/lib/chromium-browser/
 
       - name: 自动创建依赖文件
@@ -43,23 +43,27 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: 生成M3U文件
+      - name: 生成M3U文件（解析失败则终止）
         run: |
           python scripts/generate_m3u.py
+        # 解析失败时直接终止工作流
+        continue-on-error: false
 
-      - name: 提交并推送
+      - name: 提交并推送（仅解析成功时执行）
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
-          mkdir -p output
+          
+          # 添加生成的文件
           git add output/
           
+          # 仅当有变更时提交
           if ! git diff --staged --quiet; then
             git commit -m "自动生成M3U文件: $(date +'%Y-%m-%d %H:%M:%S')"
-            git pull --rebase origin main
-            git push origin main
+            # 稳定推送（无rebase，避免冲突）
+            git push origin main || git push origin main --force-with-lease
           else
-            echo "无变更，跳过提交"
+            echo "无文件变更，跳过提交"
           fi
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
