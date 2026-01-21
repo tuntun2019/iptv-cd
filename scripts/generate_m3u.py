@@ -14,8 +14,8 @@ from selenium.webdriver.support import expected_conditions as EC
 
 # ===================== 核心配置 =====================
 UDPXY_PROXIES = [
-    {"host": "192.168.16.254", "port": 8866},
-    {"host": "192.168.19.254", "port": 8866}
+    {"host": "192.168.16.254", "port": 8866, "name":W},
+    {"host": "192.168.19.254", "port": 8866, "name":T}
 ]
 MULTICAST_DATA_URL = "https://epg.51zmt.top:8001/multicast/"
 EPG_URL = "https://epg.112114.xyz/epg.xml"
@@ -202,7 +202,7 @@ def generate_m3u(channels, output_dir):
                 lines.append("")
         
         # 写入文件
-        filename = f"tv_channels_{proxy['host']}_{proxy['port']}.m3u"
+        filename = f"IPTV_{proxy['name']}.m3u"
         filepath = os.path.join(output_dir, filename)
         with open(filepath, "w", encoding="utf-8") as f:
             f.write("\n".join(lines))
