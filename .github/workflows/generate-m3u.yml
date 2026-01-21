@@ -2,7 +2,7 @@ name: 自动生成M3U文件（精准解析+失败报错）
 
 on:
   schedule:
-    - cron: '0 19 * * *'  # 北京时间凌晨3点
+    - cron: '0 0 * * *'  # 北京时间凌晨8点
   workflow_dispatch:
 
 # 全权限配置
