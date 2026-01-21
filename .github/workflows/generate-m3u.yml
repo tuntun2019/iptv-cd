@@ -1,10 +1,8 @@
 name: 自动生成M3U文件（含组播解析+画中画过滤）
 
 on:
-  # 每天凌晨3点（北京时间）运行（UTC+8 = UTC+19）
   schedule:
-    - cron: '0 19 * * *'
-  # 手动触发
+    - cron: '0 19 * * *'  # 北京时间凌晨3点
   workflow_dispatch:
 
 jobs:
@@ -14,12 +12,24 @@ jobs:
       - name: 检出代码
         uses: actions/checkout@v4
 
+      - name: 检查必要文件是否存在
+        run: |
+          # 检查核心文件是否存在
+          if [ ! -f "requirements.txt" ]; then
+            echo "错误：根目录缺少 requirements.txt 文件"
+            exit 1
+          fi
+          if [ ! -f "scripts/generate_m3u.py" ]; then
+            echo "错误：scripts目录缺少 generate_m3u.py 文件"
+            exit 1
+          fi
+
       - name: 设置Python环境
         uses: actions/setup-python@v5
         with:
           python-version: '3.10'
 
-      - name: 安装系统依赖（解决SSL问题）
+      - name: 安装系统依赖
         run: |
           sudo apt-get update
           sudo apt-get install -y libssl-dev libffi-dev
@@ -27,18 +37,17 @@ jobs:
       - name: 安装Python依赖
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt
+          pip install -r requirements.txt  # 根目录的requirements.txt
 
       - name: 生成M3U文件
         run: |
-          python scripts/generate_m3u.py
+          python scripts/generate_m3u.py  # 执行脚本
 
       - name: 提交并推送生成的文件
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
           git add output/
-          # 检查是否有变更
           if git diff --staged --quiet; then
             echo "没有文件变更，无需提交"
           else
