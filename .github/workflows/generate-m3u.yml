@@ -1,8 +1,10 @@
-name: 自动生成M3U文件（含组播解析+画中画过滤）
+name: 自动生成M3U文件（稳定容错版）
 
 on:
+  # 每天凌晨3点（北京时间）运行
   schedule:
-    - cron: '0 19 * * *'  # 北京时间凌晨3点
+    - cron: '0 19 * * *'
+  # 手动触发
   workflow_dispatch:
 
 jobs:
@@ -14,11 +16,15 @@ jobs:
 
       - name: 检查必要文件是否存在
         run: |
-          # 检查核心文件是否存在
+          # 检查requirements.txt
           if [ ! -f "requirements.txt" ]; then
-            echo "错误：根目录缺少 requirements.txt 文件"
-            exit 1
+            echo "错误：根目录缺少 requirements.txt 文件，自动创建空文件"
+            touch requirements.txt
+            echo "requests>=2.31.0" >> requirements.txt
+            echo "beautifulsoup4>=4.12.3" >> requirements.txt
+            echo "lxml>=5.1.0" >> requirements.txt
           fi
+          # 检查核心脚本
           if [ ! -f "scripts/generate_m3u.py" ]; then
             echo "错误：scripts目录缺少 generate_m3u.py 文件"
             exit 1
@@ -37,31 +43,29 @@ jobs:
       - name: 安装Python依赖
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt  # 根目录的requirements.txt
+          pip install -r requirements.txt
 
-      - name: 生成M3U文件
+      - name: 生成M3U文件（打印详细日志）
         run: |
-          python scripts/generate_m3u.py  # 执行脚本
+          python scripts/generate_m3u.py
 
-      - name: 提交并推送生成的文件
+      - name: 提交并推送生成的文件（容错版）
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
-              # 先检查output文件夹是否存在，不存在则创建
-          if [ ! -d "output" ]; then
-            mkdir output
-          echo "创建空的output文件夹"
-           fi
-    
-    # 添加output文件夹（即使为空）
-            git add output/
-    
-    # 检查是否有实际变更（避免空提交）
-         if git diff --staged --quiet; then
+          
+          # 确保output文件夹存在
+          mkdir -p output
+          
+          # 添加output文件夹（即使为空）
+          git add output/
+          
+          # 检查是否有实际变更
+          if git diff --staged --quiet; then
             echo "没有文件变更，无需提交"
           else
             git commit -m "自动生成M3U文件: $(date +'%Y-%m-%d %H:%M:%S')"
-         git push
-        fi
-  env:
-    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+            git push
+          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
