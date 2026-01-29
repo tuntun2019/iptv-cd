@@ -1,5 +1,5 @@
 #EXTM3U x-tvg-url="https://epg.112114.xyz/epg.xml"
-# 生成时间：2026-01-28 01:24:16
+# 生成时间：2026-01-29 01:44:54
 # 代理地址：192.168.16.254:8866
 
 #EXTINF:-1 tvg-id="cctv1" tvg-name="CCTV-1高清" tvg-logo="https://epg.pw/logos/cctv1.png" group-title="央视频道",CCTV-1高清
@@ -160,6 +160,9 @@ http://192.168.16.254:8866/udp/239.94.0.92:5140/
 
 #EXTINF:-1 tvg-id="" tvg-name="山西卫视" tvg-logo="https://via.placeholder.com/120x80?text=山西卫视" group-title="其他频道",山西卫视
 http://192.168.16.254:8866/udp/239.94.0.93:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="内蒙古卫视高清" tvg-logo="https://via.placeholder.com/120x80?text=内蒙古卫视高清" group-title="其他频道",内蒙古卫视高清
+http://192.168.16.254:8866/udp/239.94.0.94:5140/
 
 #EXTINF:-1 tvg-id="" tvg-name="内蒙古卫视" tvg-logo="https://via.placeholder.com/120x80?text=内蒙古卫视" group-title="其他频道",内蒙古卫视
 http://192.168.16.254:8866/udp/239.94.0.94:5140/
