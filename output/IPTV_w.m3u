@@ -1,5 +1,5 @@
 #EXTM3U x-tvg-url="https://epg.112114.xyz/epg.xml"
-# 生成时间：2026-03-20 01:49:26
+# 生成时间：2026-03-21 01:43:12
 # 代理地址：192.168.16.254:8866
 
 #EXTINF:-1 tvg-id="cctv1" tvg-name="CCTV-1高清" tvg-logo="https://epg.pw/logos/cctv1.png" group-title="央视频道",CCTV-1高清
@@ -161,10 +161,10 @@ http://192.168.16.254:8866/udp/239.94.0.92:5140/
 #EXTINF:-1 tvg-id="" tvg-name="山西卫视" tvg-logo="https://via.placeholder.com/120x80?text=山西卫视" group-title="其他频道",山西卫视
 http://192.168.16.254:8866/udp/239.94.0.93:5140/
 
-#EXTINF:-1 tvg-id="" tvg-name="内蒙古卫视高清" tvg-logo="https://via.placeholder.com/120x80?text=内蒙古卫视高清" group-title="其他频道",内蒙古卫视高清
+#EXTINF:-1 tvg-id="" tvg-name="内蒙古卫视" tvg-logo="https://via.placeholder.com/120x80?text=内蒙古卫视" group-title="其他频道",内蒙古卫视
 http://192.168.16.254:8866/udp/239.94.0.94:5140/
 
-#EXTINF:-1 tvg-id="" tvg-name="内蒙古卫视" tvg-logo="https://via.placeholder.com/120x80?text=内蒙古卫视" group-title="其他频道",内蒙古卫视
+#EXTINF:-1 tvg-id="" tvg-name="内蒙古卫视高清" tvg-logo="https://via.placeholder.com/120x80?text=内蒙古卫视高清" group-title="其他频道",内蒙古卫视高清
 http://192.168.16.254:8866/udp/239.94.0.94:5140/
 
 #EXTINF:-1 tvg-id="" tvg-name="青海卫视" tvg-logo="https://via.placeholder.com/120x80?text=青海卫视" group-title="其他频道",青海卫视
