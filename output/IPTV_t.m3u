@@ -1,5 +1,5 @@
 #EXTM3U x-tvg-url="https://epg.112114.xyz/epg.xml"
-# 生成时间：2026-04-20 02:13:49
+# 生成时间：2026-04-21 02:10:04
 # 代理地址：192.168.19.254:8866
 
 #EXTINF:-1 tvg-id="cctv1" tvg-name="CCTV-1高清" tvg-logo="https://epg.pw/logos/cctv1.png" group-title="央视频道",CCTV-1高清
@@ -404,6 +404,15 @@ http://192.168.19.254:8866/udp/239.94.1.65:5140/
 #EXTINF:-1 tvg-id="cgtn" tvg-name="CGTN法语" tvg-logo="https://via.placeholder.com/120x80?text=CGTN法语" group-title="其他频道",CGTN法语
 http://192.168.19.254:8866/udp/239.94.1.66:5140/
 
+#EXTINF:-1 tvg-id="" tvg-name="CGTN纪录" tvg-logo="https://via.placeholder.com/120x80?text=CGTN纪录" group-title="其他频道",CGTN纪录
+http://192.168.19.254:8866/udp/239.94.2.141:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="CGTN阿拉伯语" tvg-logo="https://via.placeholder.com/120x80?text=CGTN阿拉伯语" group-title="其他频道",CGTN阿拉伯语
+http://192.168.19.254:8866/udp/239.94.2.144:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="CGTN俄语" tvg-logo="https://via.placeholder.com/120x80?text=CGTN俄语" group-title="其他频道",CGTN俄语
+http://192.168.19.254:8866/udp/239.94.2.145:5140/
+
 #EXTINF:-1 tvg-id="" tvg-name="爱浪漫专区" tvg-logo="https://via.placeholder.com/120x80?text=爱浪漫专区" group-title="其他频道",爱浪漫专区
 http://192.168.19.254:8866/udp/239.94.1.128:5140/
 
@@ -473,20 +482,20 @@ http://192.168.19.254:8866/udp/239.94.1.149:5140/
 #EXTINF:-1 tvg-id="" tvg-name="绚影4K专区" tvg-logo="https://via.placeholder.com/120x80?text=绚影4K专区" group-title="其他频道",绚影4K专区
 http://192.168.19.254:8866/udp/239.94.1.150:5140/
 
+#EXTINF:-1 tvg-id="" tvg-name="茶频道" tvg-logo="https://via.placeholder.com/120x80?text=茶频道" group-title="其他频道",茶频道
+http://192.168.19.254:8866/udp/239.94.1.154:5140/
+
 #EXTINF:-1 tvg-id="" tvg-name="天元围棋" tvg-logo="https://via.placeholder.com/120x80?text=天元围棋" group-title="其他频道",天元围棋
 http://192.168.19.254:8866/udp/239.94.1.152:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="乐龄学堂专区" tvg-logo="https://via.placeholder.com/120x80?text=乐龄学堂专区" group-title="其他频道",乐龄学堂专区
+http://192.168.19.254:8866/udp/239.94.1.155:5140/
 
 #EXTINF:-1 tvg-id="" tvg-name="快乐垂钓" tvg-logo="https://via.placeholder.com/120x80?text=快乐垂钓" group-title="其他频道",快乐垂钓
 http://192.168.19.254:8866/udp/239.94.1.153:5140/
 
-#EXTINF:-1 tvg-id="" tvg-name="茶频道" tvg-logo="https://via.placeholder.com/120x80?text=茶频道" group-title="其他频道",茶频道
-http://192.168.19.254:8866/udp/239.94.1.154:5140/
-
 #EXTINF:-1 tvg-id="" tvg-name="亲子趣学4k专区" tvg-logo="https://via.placeholder.com/120x80?text=亲子趣学4k专区" group-title="其他频道",亲子趣学4k专区
 http://192.168.19.254:8866/udp/239.94.1.156:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="乐龄学堂专区" tvg-logo="https://via.placeholder.com/120x80?text=乐龄学堂专区" group-title="其他频道",乐龄学堂专区
-http://192.168.19.254:8866/udp/239.94.1.155:5140/
 
 #EXTINF:-1 tvg-id="" tvg-name="4K乐享超清专区" tvg-logo="https://via.placeholder.com/120x80?text=4K乐享超清专区" group-title="其他频道",4K乐享超清专区
 http://192.168.19.254:8866/udp/239.94.1.162:5140/
@@ -521,13 +530,13 @@ http://192.168.19.254:8866/udp/239.94.1.173:5140/
 #EXTINF:-1 tvg-id="chc" tvg-name="CHC影迷电影" tvg-logo="https://via.placeholder.com/120x80?text=CHC影迷电影" group-title="其他频道",CHC影迷电影
 http://192.168.19.254:8866/udp/239.94.1.174:5140/
 
+#EXTINF:-1 tvg-id="" tvg-name="欢笑剧场4K" tvg-logo="https://via.placeholder.com/120x80?text=欢笑剧场4K" group-title="其他频道",欢笑剧场4K
+http://192.168.19.254:8866/udp/239.94.1.176:5140/
+
 #EXTINF:-1 tvg-id="chc" tvg-name="CHC动作电影" tvg-logo="https://via.placeholder.com/120x80?text=CHC动作电影" group-title="其他频道",CHC动作电影
 http://192.168.19.254:8866/udp/239.94.1.175:5140/
 
 #EXTINF:-1 tvg-id="" tvg-name="多彩文体4K" tvg-logo="https://via.placeholder.com/120x80?text=多彩文体4K" group-title="其他频道",多彩文体4K
-http://192.168.19.254:8866/udp/239.94.1.176:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="欢笑剧场4K" tvg-logo="https://via.placeholder.com/120x80?text=欢笑剧场4K" group-title="其他频道",欢笑剧场4K
 http://192.168.19.254:8866/udp/239.94.1.176:5140/
 
 #EXTINF:-1 tvg-id="i" tvg-name="i成都" tvg-logo="https://via.placeholder.com/120x80?text=i成都" group-title="其他频道",i成都
