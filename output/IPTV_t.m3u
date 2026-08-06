@@ -1,5 +1,5 @@
 #EXTM3U x-tvg-url="https://epg.112114.xyz/epg.xml"
-# 生成时间：2026-08-05 02:03:58
+# 生成时间：2026-08-06 02:07:35
 # 代理地址：192.168.19.254:8866
 
 #EXTINF:-1 tvg-id="cctv1" tvg-name="CCTV-1高清" tvg-logo="https://epg.pw/logos/cctv1.png" group-title="央视频道",CCTV-1高清
@@ -213,22 +213,22 @@ http://192.168.19.254:8866/udp/239.94.0.110:5140/
 http://192.168.19.254:8866/udp/239.94.0.82:5140/
 
 #EXTINF:-1 tvg-id="cdtv2" tvg-name="CDTV-2高清" tvg-logo="https://via.placeholder.com/120x80?text=CDTV2高清" group-title="其他频道",CDTV-2高清
-http://192.168.19.254:8866/udp/239.94.0.155:5140/
+http://192.168.19.254:8866/udp/239.94.0.165:5140/
 
 #EXTINF:-1 tvg-id="cdtv3" tvg-name="CDTV-3高清" tvg-logo="https://via.placeholder.com/120x80?text=CDTV3高清" group-title="其他频道",CDTV-3高清
-http://192.168.19.254:8866/udp/239.94.0.156:5140/
+http://192.168.19.254:8866/udp/239.94.0.174:5140/
 
 #EXTINF:-1 tvg-id="cdtv4" tvg-name="CDTV-4高清" tvg-logo="https://via.placeholder.com/120x80?text=CDTV4高清" group-title="其他频道",CDTV-4高清
-http://192.168.19.254:8866/udp/239.94.0.157:5140/
+http://192.168.19.254:8866/udp/239.94.0.177:5140/
 
 #EXTINF:-1 tvg-id="cdtv5" tvg-name="CDTV-5高清" tvg-logo="https://via.placeholder.com/120x80?text=CDTV5高清" group-title="其他频道",CDTV-5高清
-http://192.168.19.254:8866/udp/239.94.0.158:5140/
+http://192.168.19.254:8866/udp/239.94.0.184:5140/
 
 #EXTINF:-1 tvg-id="cdtv6" tvg-name="CDTV-6高清" tvg-logo="https://via.placeholder.com/120x80?text=CDTV6高清" group-title="其他频道",CDTV-6高清
-http://192.168.19.254:8866/udp/239.94.0.159:5140/
+http://192.168.19.254:8866/udp/239.94.0.185:5140/
 
 #EXTINF:-1 tvg-id="cdtv8" tvg-name="CDTV-8高清" tvg-logo="https://via.placeholder.com/120x80?text=CDTV8高清" group-title="其他频道",CDTV-8高清
-http://192.168.19.254:8866/udp/239.94.0.160:5140/
+http://192.168.19.254:8866/udp/239.94.0.186:5140/
 
 #EXTINF:-1 tvg-id="" tvg-name="金鹰纪实高清" tvg-logo="https://via.placeholder.com/120x80?text=金鹰纪实高清" group-title="其他频道",金鹰纪实高清
 http://192.168.19.254:8866/udp/239.94.1.1:5140/
