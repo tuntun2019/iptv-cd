@@ -1,5 +1,5 @@
 #EXTM3U x-tvg-url="https://epg.112114.xyz/epg.xml"
-# 生成时间：2026-10-21 03:03:20
+# 生成时间：2026-10-22 03:02:09
 # 代理地址：192.168.19.254:8866
 
 #EXTINF:-1 tvg-id="cctv1" tvg-name="CCTV-1高清" tvg-logo="https://epg.pw/logos/cctv1.png" group-title="央视频道",CCTV-1高清
@@ -473,17 +473,17 @@ http://192.168.19.254:8866/udp/239.94.1.148:5140/
 #EXTINF:-1 tvg-id="" tvg-name="麻辣体育专区" tvg-logo="https://via.placeholder.com/120x80?text=麻辣体育专区" group-title="其他频道",麻辣体育专区
 http://192.168.19.254:8866/udp/239.94.1.149:5140/
 
-#EXTINF:-1 tvg-id="" tvg-name="茶频道" tvg-logo="https://via.placeholder.com/120x80?text=茶频道" group-title="其他频道",茶频道
-http://192.168.19.254:8866/udp/239.94.1.154:5140/
-
 #EXTINF:-1 tvg-id="" tvg-name="绚影4K专区" tvg-logo="https://via.placeholder.com/120x80?text=绚影4K专区" group-title="其他频道",绚影4K专区
 http://192.168.19.254:8866/udp/239.94.1.150:5140/
 
-#EXTINF:-1 tvg-id="" tvg-name="乐龄学堂专区" tvg-logo="https://via.placeholder.com/120x80?text=乐龄学堂专区" group-title="其他频道",乐龄学堂专区
-http://192.168.19.254:8866/udp/239.94.1.155:5140/
+#EXTINF:-1 tvg-id="" tvg-name="茶频道" tvg-logo="https://via.placeholder.com/120x80?text=茶频道" group-title="其他频道",茶频道
+http://192.168.19.254:8866/udp/239.94.1.154:5140/
 
 #EXTINF:-1 tvg-id="" tvg-name="天元围棋" tvg-logo="https://via.placeholder.com/120x80?text=天元围棋" group-title="其他频道",天元围棋
 http://192.168.19.254:8866/udp/239.94.1.152:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="乐龄学堂专区" tvg-logo="https://via.placeholder.com/120x80?text=乐龄学堂专区" group-title="其他频道",乐龄学堂专区
+http://192.168.19.254:8866/udp/239.94.1.155:5140/
 
 #EXTINF:-1 tvg-id="" tvg-name="快乐垂钓" tvg-logo="https://via.placeholder.com/120x80?text=快乐垂钓" group-title="其他频道",快乐垂钓
 http://192.168.19.254:8866/udp/239.94.1.153:5140/
@@ -521,11 +521,11 @@ http://192.168.19.254:8866/udp/239.94.1.172:5140/
 #EXTINF:-1 tvg-id="chc" tvg-name="CHC家庭影院" tvg-logo="https://via.placeholder.com/120x80?text=CHC家庭影院" group-title="其他频道",CHC家庭影院
 http://192.168.19.254:8866/udp/239.94.1.173:5140/
 
-#EXTINF:-1 tvg-id="" tvg-name="欢笑剧场4K" tvg-logo="https://via.placeholder.com/120x80?text=欢笑剧场4K" group-title="其他频道",欢笑剧场4K
-http://192.168.19.254:8866/udp/239.94.1.176:5140/
-
 #EXTINF:-1 tvg-id="chc" tvg-name="CHC影迷电影" tvg-logo="https://via.placeholder.com/120x80?text=CHC影迷电影" group-title="其他频道",CHC影迷电影
 http://192.168.19.254:8866/udp/239.94.1.174:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="欢笑剧场4K" tvg-logo="https://via.placeholder.com/120x80?text=欢笑剧场4K" group-title="其他频道",欢笑剧场4K
+http://192.168.19.254:8866/udp/239.94.1.176:5140/
 
 #EXTINF:-1 tvg-id="chc" tvg-name="CHC动作电影" tvg-logo="https://via.placeholder.com/120x80?text=CHC动作电影" group-title="其他频道",CHC动作电影
 http://192.168.19.254:8866/udp/239.94.1.175:5140/
@@ -548,23 +548,23 @@ http://192.168.19.254:8866/udp/239.94.2.1:5140/
 #EXTINF:-1 tvg-id="" tvg-name="爱乐山" tvg-logo="https://via.placeholder.com/120x80?text=爱乐山" group-title="其他频道",爱乐山
 http://192.168.19.254:8866/udp/239.94.2.2:5140/
 
-#EXTINF:-1 tvg-id="1" tvg-name="中国体育1" tvg-logo="https://via.placeholder.com/120x80?text=中国体育1" group-title="其他频道",中国体育1
-http://192.168.19.254:8866/udp/239.94.2.7:5140/
-
-#EXTINF:-1 tvg-id="2" tvg-name="中国体育2" tvg-logo="https://via.placeholder.com/120x80?text=中国体育2" group-title="其他频道",中国体育2
-http://192.168.19.254:8866/udp/239.94.2.8:5140/
-
-#EXTINF:-1 tvg-id="3" tvg-name="中国体育3" tvg-logo="https://via.placeholder.com/120x80?text=中国体育3" group-title="其他频道",中国体育3
-http://192.168.19.254:8866/udp/239.94.2.9:5140/
-
 #EXTINF:-1 tvg-id="" tvg-name="精彩推荐专区" tvg-logo="https://via.placeholder.com/120x80?text=精彩推荐专区" group-title="其他频道",精彩推荐专区
 http://192.168.19.254:8866/udp/239.94.2.10:5140/
+
+#EXTINF:-1 tvg-id="1" tvg-name="中国体育1" tvg-logo="https://via.placeholder.com/120x80?text=中国体育1" group-title="其他频道",中国体育1
+http://192.168.19.254:8866/udp/239.94.2.7:5140/
 
 #EXTINF:-1 tvg-id="" tvg-name="直播室1" tvg-logo="https://via.placeholder.com/120x80?text=直播室1" group-title="其他频道",直播室1
 http://192.168.19.254:8866/udp/239.94.2.11:5140/
 
+#EXTINF:-1 tvg-id="2" tvg-name="中国体育2" tvg-logo="https://via.placeholder.com/120x80?text=中国体育2" group-title="其他频道",中国体育2
+http://192.168.19.254:8866/udp/239.94.2.8:5140/
+
 #EXTINF:-1 tvg-id="" tvg-name="直播室2" tvg-logo="https://via.placeholder.com/120x80?text=直播室2" group-title="其他频道",直播室2
 http://192.168.19.254:8866/udp/239.94.2.12:5140/
+
+#EXTINF:-1 tvg-id="3" tvg-name="中国体育3" tvg-logo="https://via.placeholder.com/120x80?text=中国体育3" group-title="其他频道",中国体育3
+http://192.168.19.254:8866/udp/239.94.2.9:5140/
 
 #EXTINF:-1 tvg-id="" tvg-name="直播室3" tvg-logo="https://via.placeholder.com/120x80?text=直播室3" group-title="其他频道",直播室3
 http://192.168.19.254:8866/udp/239.94.2.13:5140/
@@ -590,20 +590,11 @@ http://192.168.19.254:8866/udp/239.94.2.19:5140/
 #EXTINF:-1 tvg-id="" tvg-name="红原月亮湾" tvg-logo="https://via.placeholder.com/120x80?text=红原月亮湾" group-title="其他频道",红原月亮湾
 http://192.168.19.254:8866/udp/239.94.2.20:5140/
 
-#EXTINF:-1 tvg-id="" tvg-name="电信导视3" tvg-logo="https://via.placeholder.com/120x80?text=电信导视3" group-title="其他频道",电信导视3
-http://192.168.19.254:8866/udp/239.94.2.21:5140/
-
 #EXTINF:-1 tvg-id="" tvg-name="雅克音乐节直播" tvg-logo="https://via.placeholder.com/120x80?text=雅克音乐节直播" group-title="其他频道",雅克音乐节直播
 http://192.168.19.254:8866/udp/239.94.2.23:5140/
 
-#EXTINF:-1 tvg-id="" tvg-name="雅克音乐节宣传" tvg-logo="https://via.placeholder.com/120x80?text=雅克音乐节宣传" group-title="其他频道",雅克音乐节宣传
-http://192.168.19.254:8866/udp/239.94.2.24:5140/
-
 #EXTINF:-1 tvg-id="" tvg-name="云演艺宣传" tvg-logo="https://via.placeholder.com/120x80?text=云演艺宣传" group-title="其他频道",云演艺宣传
 http://192.168.19.254:8866/udp/239.94.2.25:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="华西证券" tvg-logo="https://via.placeholder.com/120x80?text=华西证券" group-title="其他频道",华西证券
-http://192.168.19.254:8866/udp/239.94.2.42:5140/
 
 #EXTINF:-1 tvg-id="" tvg-name="920-全网组播" tvg-logo="https://via.placeholder.com/120x80?text=920全网组播" group-title="其他频道",920-全网组播
 http://192.168.19.254:8866/udp/239.94.2.128:5140/
@@ -611,17 +602,26 @@ http://192.168.19.254:8866/udp/239.94.2.128:5140/
 #EXTINF:-1 tvg-id="" tvg-name="921-全网组播" tvg-logo="https://via.placeholder.com/120x80?text=921全网组播" group-title="其他频道",921-全网组播
 http://192.168.19.254:8866/udp/239.94.2.129:5140/
 
+#EXTINF:-1 tvg-id="" tvg-name="电信导视3" tvg-logo="https://via.placeholder.com/120x80?text=电信导视3" group-title="其他频道",电信导视3
+http://192.168.19.254:8866/udp/239.94.2.21:5140/
+
 #EXTINF:-1 tvg-id="" tvg-name="922-全网组播" tvg-logo="https://via.placeholder.com/120x80?text=922全网组播" group-title="其他频道",922-全网组播
 http://192.168.19.254:8866/udp/239.94.2.131:5140/
 
 #EXTINF:-1 tvg-id="" tvg-name="923-全网组播" tvg-logo="https://via.placeholder.com/120x80?text=923全网组播" group-title="其他频道",923-全网组播
 http://192.168.19.254:8866/udp/239.94.2.132:5140/
 
+#EXTINF:-1 tvg-id="" tvg-name="雅克音乐节宣传" tvg-logo="https://via.placeholder.com/120x80?text=雅克音乐节宣传" group-title="其他频道",雅克音乐节宣传
+http://192.168.19.254:8866/udp/239.94.2.24:5140/
+
 #EXTINF:-1 tvg-id="" tvg-name="924-全网组播" tvg-logo="https://via.placeholder.com/120x80?text=924全网组播" group-title="其他频道",924-全网组播
 http://192.168.19.254:8866/udp/239.94.2.135:5140/
 
 #EXTINF:-1 tvg-id="" tvg-name="925-全网组播" tvg-logo="https://via.placeholder.com/120x80?text=925全网组播" group-title="其他频道",925-全网组播
 http://192.168.19.254:8866/udp/239.94.2.137:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="华西证券" tvg-logo="https://via.placeholder.com/120x80?text=华西证券" group-title="其他频道",华西证券
+http://192.168.19.254:8866/udp/239.94.2.42:5140/
 
 #EXTINF:-1 tvg-id="" tvg-name="926-全网组播" tvg-logo="https://via.placeholder.com/120x80?text=926全网组播" group-title="其他频道",926-全网组播
 http://192.168.19.254:8866/udp/239.94.2.139:5140/
