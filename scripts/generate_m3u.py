@@ -15,57 +15,6 @@ MULTICAST_DATA_URL = "https://epg.51zmt.top:8001/multicast/"
 EPG_URL = "http://epg.51zmt.top:8000/e.xml.gz"
 FILTER_KEYWORDS = ["画中画", "PIP", "pip", "测试", "广告"]
 
-LOGO_SOURCES = {
-    "A": {
-        "prefix": "https://epg.pw/logos/",
-        "mapping": {
-            "CCTV-1": "cctv1.png",
-            "CCTV-2": "cctv2.png",
-            "CCTV-3": "cctv3.png",
-            "CCTV-5": "cctv5.png",
-            "湖南卫视": "hunan.png",
-            "浙江卫视": "zhejiang.png",
-            "江苏卫视": "jiangsu.png",
-            "东方卫视": "dongfang.png",
-            "北京卫视": "beijing.png",
-            "广东卫视": "guangdong.png",
-        }
-    },
-    "B": {
-        "prefix": "https://iptv-logo.com/logos/",
-        "mapping": {
-            "CCTV-1": "cctv-1.png",
-            "CCTV-2": "cctv-2.png",
-            "CCTV-3": "cctv-3.png",
-            "CCTV-4": "cctv-4.png",
-            "CCTV-5": "cctv-5.png",
-            "CCTV-6": "cctv-6.png",
-            "湖南卫视": "hunan-tv.png",
-            "浙江卫视": "zhejiang-tv.png",
-            "江苏卫视": "jiangsu-tv.png",
-            "东方卫视": "dongfang-tv.png",
-            "北京卫视": "beijing-tv.png",
-            "广东卫视": "guangdong-tv.png",
-            "深圳卫视": "shenzhen-tv.png",
-            "山东卫视": "shandong-tv.png",
-            "四川卫视": "sichuan-tv.png",
-        }
-    },
-    "C": {
-        "prefix": "https://tv-logo.com/images/",
-        "mapping": {
-            "CCTV-1": "cctv1-hd.png",
-            "CCTV-2": "cctv2-hd.png",
-            "CCTV-3": "cctv3-hd.png",
-            "CCTV-5": "cctv5-hd.png",
-            "湖南卫视": "hunan-hd.png",
-            "浙江卫视": "zhejiang-hd.png",
-            "江苏卫视": "jiangsu-hd.png",
-            "东方卫视": "dongfang-hd.png",
-        }
-    }
-}
-
 TVG_ID_MAPPING = {
     "CCTV-1": "cctv1",
     "CCTV-2": "cctv2",
@@ -82,7 +31,6 @@ TVG_ID_MAPPING = {
     "CCTV-13": "cctv13",
     "CCTV-14": "cctv14",
     "CCTV-15": "cctv15",
-    "CCTV-16": "cctv16",
     "CCTV-17": "cctv17",
     "CCTV-4K": "cctv4k",
     "CCTV-5+": "cctv5",
@@ -131,14 +79,12 @@ TVG_ID_MAPPING = {
 }
 
 # 分组规则：顺序优先，先命中为准
+# r"卫视$"：所有名字以「卫视」结尾的频道归入卫视频道
 GROUP_RULES = [
     ("央视频道", [r"^CCTV\-", r"^CETV\-", r"CGTN"]),
-    ("卫视频道", [
-        "湖南卫视", "浙江卫视", "江苏卫视", "东方卫视", "北京卫视",
-        "广东卫视", "深圳卫视", "山东卫视", "四川卫视"
-    ]),
-    ("四川地方", [r"^CDTV\-", r"^SCTV\-", "i成都"]),
-    ("CHC影院", ["CHC"]),
+    ("卫视频道", [r"卫视$"]),
+    ("四川地方", [r"^CDTV\-", r"^SCTV\-", r"i成都"]),
+    ("CHC影院", [r"CHC"]),
 ]
 
 # ===================== 清洗辅助 =====================
@@ -155,27 +101,21 @@ def extract_core_name(name: str) -> str:
     return core
 
 def get_channel_logo(name: str) -> str:
-    core = extract_core_name(name)
-    for src_key in ("A", "B", "C"):
-        src = LOGO_SOURCES[src_key]
-        if core in src["mapping"]:
-            url = f"{src['prefix']}{src['mapping'][core]}"
-            print(f"[LOGO {src_key}] {name} -> {url}")
-            return url
-    txt = re.sub(r"[^\u4e00-\u9fa5a-zA-Z0-9]", "", name)[:8]
-    placeholder = f"https://via.placeholder.com/120x80?text={txt}"
-    print(f"[LOGO fallback] {name} -> placeholder")
-    return placeholder
+    """简化台标，直接使用频道名作为 placeholder text"""
+    if not name:
+        name = "Channel"
+    # 移除 url 不安全字符
+    text = re.sub(r"[^\u4e00-\u9fa5a-zA-Z0-9：·\-_ ]+", "", name).strip()
+    text = text.replace(" ", "_")
+    logo_url = f"https://via.placeholder.com/120x80?text={text}"
+    print(f"[LOGO] {name} -> {logo_url}")
+    return logo_url
 
 def get_channel_group(name: str) -> str:
     for group, patterns in GROUP_RULES:
         for pat in patterns:
-            if isinstance(pat, str):
-                if pat in name:
-                    return group
-            else:
-                if re.search(pat, name):
-                    return group
+            if re.search(pat, name):
+                return group
     return "其他频道"
 
 def get_tvg_id(name: str) -> str | None:
@@ -254,10 +194,6 @@ def parse_page_channels(soup: BeautifulSoup, raw_text: str):
         seen.add(key)
         found.append({"name": chan_name, "udp_url": udp_url})
 
-    if not found:
-        # 兜底：全文正则配对（简单方案：相邻行配对）
-        all_udp = udp_re.findall(raw_text)
-        print(f"表格解析失败，全文找到 {len(all_udp)} 个组播地址，无法自动配对，放弃兜底配对")
     return found
 
 def fetch_with_selenium(url: str):
@@ -275,7 +211,6 @@ def fetch_with_selenium(url: str):
     chrome_options.add_argument("--ignore-certificate-errors")
     chrome_options.add_experimental_option("excludeSwitches", ["enable-logging"])
 
-    # GitHub Actions 推荐：如果预装 chromedriver，不要用 webdriver-manager
     try:
         from webdriver_manager.chrome import ChromeDriverManager
         service = Service(ChromeDriverManager().install())
@@ -327,7 +262,6 @@ def generate_m3u(channels, output_dir: str):
                         f'tvg-logo="{tvg_logo}" group-title="{group_title}",{tvg_name}'
                     )
                 else:
-                    # 没有 tvg-id 就删掉这个属性，避免播放器异常
                     extinf = (
                         f'#EXTINF:-1 tvg-name="{tvg_name}" '
                         f'tvg-logo="{tvg_logo}" group-title="{group_title}",{tvg_name}'
