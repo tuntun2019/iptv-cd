@@ -13,90 +13,93 @@ UDPXY_PROXIES = [
 ]
 
 MULTICAST_DATA_URL = "https://epg.51zmt.top:8001/multicast/"
+# ========== 修改为你实际在用的EPG源 ==========
 EPG_URL = "http://epg.51zmt.top:8000/e1.xml.gz"
 FILTER_KEYWORDS = ["画中画", "PIP", "pip", "测试", "广告"]
 
+# 适配 epg.51zmt.top:8000/e1.xml.gz，value为数字id字符串
 TVG_ID_MAPPING = {
-    "CCTV-1": "cctv1",
-    "CCTV-2": "cctv2",
-    "CCTV-3": "cctv3",
-    "CCTV-4": "cctv4",
-    "CCTV-5": "cctv5",
-    "CCTV-6": "cctv6",
-    "CCTV-7": "cctv7",
-    "CCTV-8": "cctv8",
-    "CCTV-9": "cctv9",
-    "CCTV-10": "cctv10",
-    "CCTV-11": "cctv11",
-    "CCTV-12": "cctv12",
-    "CCTV-13": "cctv13",
-    "CCTV-14": "cctv14",
-    "CCTV-15": "cctv15",
-    "CCTV-17": "cctv17",
-    "CCTV-5+": "cctv5plus",
-    "CCTV-4K": "cctv4k",
-    "湖南卫视": "hunan",
-    "浙江卫视": "zhejiang",
-    "江苏卫视": "jiangsu",
-    "东方卫视": "dongfang",
-    "北京卫视": "btv",
-    "广东卫视": "guangdong",
-    "深圳卫视": "shenzhen",
-    "山东卫视": "shandong",
-    "四川卫视": "sichuan",
-    "安徽卫视": "anhui",
-    "河南卫视": "henan",
-    "湖北卫视": "hubei",
-    "河北卫视": "hebei",
-    "江西卫视": "jiangxi",
-    "辽宁卫视": "liaoning",
-    "重庆卫视": "chongqing",
-    "贵州卫视": "guizhou",
-    "云南卫视": "yunnan",
-    "广西卫视": "guangxi",
-    "陕西卫视": "shaanxi",
-    "山西卫视": "shanxi",
-    "吉林卫视": "jilin",
-    "黑龙江卫视": "heilongjiang",
-    "海南卫视": "hainan",
-    "宁夏卫视": "ningxia",
-    "甘肃卫视": "gansu",
-    "新疆卫视": "xinjiang",
-    "内蒙古卫视": "neimenggu",
-    "西藏卫视": "xizang",
-    "青海卫视": "qinghai",
-    "CETV-1": "cetv1",
-    "CETV-2": "cetv2",
-    "CETV-4": "cetv4",
-    "CGTN英语": "cgtnen",
-    "CGTN西班牙语": "cgtnes",
-    "CGTN法语": "cgtnfr",
-    "CGTN阿拉伯语": "cgtnar",
-    "CGTN俄语": "cgtnru",
-    "CHC家庭影院": "chc_home",
-    "CHC影迷电影": "chc_movie",
-    "CHC动作电影": "chc_action",
-    "CDTV-1": "cdtv1",
-    "CDTV-2": "cdtv2",
-    "CDTV-3": "cdtv3",
-    "CDTV-4": "cdtv4",
-    "CDTV-5": "cdtv5",
-    "CDTV-6": "cdtv6",
-    "CDTV-8": "cdtv8",
-    "SCTV-2": "sctv2",
-    "SCTV-3": "sctv3",
-    "SCTV-4": "sctv4",
-    "SCTV-5": "sctv5",
-    "SCTV-6": "sctv6",
-    "SCTV-7": "sctv7",
-    "SCTV-科教": "sctvke",
-    "i成都": "ichengdu"
+    "CCTV-1": "1",
+    "CCTV-2": "2",
+    "CCTV-3": "3",
+    "CCTV-4": "4",
+    "CCTV-5": "5",
+    "CCTV-6": "6",
+    "CCTV-7": "7",
+    "CCTV-8": "8",
+    "CCTV-9": "9",
+    "CCTV-10": "10",
+    "CCTV-11": "11",
+    "CCTV-12": "12",
+    "CCTV-13": "13",
+    "CCTV-14": "14",
+    "CCTV-15": "15",
+    "CCTV-17": "17",
+    "CCTV-5+": "16",
+    "CCTV-4K": "18",
+
+    "湖南卫视": "31",
+    "浙江卫视": "32",
+    "江苏卫视": "33",
+    "深圳卫视": "34",
+    "广东卫视": "35",
+    "辽宁卫视": "36",
+    "山东卫视": "37",
+    "北京卫视": "38",
+    "东方卫视": "39",
+    "重庆卫视": "40",
+    "安徽卫视": "41",
+    "河南卫视": "47",
+    "湖北卫视": "48",
+    "河北卫视": "49",
+    "江西卫视": "50",
+    "吉林卫视": "51",
+    "内蒙古卫视": "52",
+    "宁夏卫视": "53",
+    "山西卫视": "54",
+    "陕西卫视": "55",
+    "四川卫视": "56",
+    "新疆卫视": "57",
+    "甘肃卫视": "58",
+    "贵州卫视": "59",
+    "云南卫视": "60",
+    "广西卫视": "61",
+    "海南卫视": "62",
+    "青海卫视": "63",
+    "东南卫视": "64",
+
+    "CETV-1": "70",
+    "CETV-2": "71",
+    "CETV-4": "73",
+
+    "CGTN英语": "80",
+    "CGTN西班牙语": "81",
+    "CGTN法语": "82",
+    "CGTN阿拉伯语": "83",
+    "CGTN俄语": "84",
+
+    "CDTV-1": "201",
+    "CDTV-2": "202",
+    "CDTV-3": "203",
+    "CDTV-4": "204",
+    "CDTV-5": "205",
+    "CDTV-6": "206",
+    "CDTV-8": "208",
+
+    "SCTV-2": "212",
+    "SCTV-3": "213",
+    "SCTV-4": "214",
+    "SCTV-5": "215",
+    "SCTV-6": "216",
+    "SCTV-7": "217",
+    "SCTV-科教": "218",
+    "i成都": "230"
 }
 
 GROUP_RULES = [
     ("央视频道", [r"^CCTV\-", r"^CETV\-", r"CGTN"]),
     ("卫视频道", [r"卫视"]),
-    ("四川地方", [r"^CDTV\-", r"^SCTV\-", r"i成都"]),
+    ("四川地方", [r"^CDTV\-",r"四川", r"成都", r"^SCTV\-", r"i成都"]),
     ("CHC影院", [r"CHC"]),
 ]
 
@@ -114,7 +117,7 @@ def extract_core_name(name: str) -> str:
     return core
 
 def get_channel_logo(name: str) -> str:
-    """生成内嵌SVG base64占位图，原生支持中文，无外网依赖"""
+    """SVG base64内置中文，无外部图片依赖"""
     display_name = name if name else "Channel"
     svg = f'''<svg width="120" height="80" xmlns="http://www.w3.org/2000/svg">
   <rect width="120" height="80" fill="#8899aa"/>
@@ -135,7 +138,10 @@ def get_channel_group(name: str) -> str:
 
 def get_tvg_id(name: str) -> str | None:
     core = extract_core_name(name)
-    return TVG_ID_MAPPING.get(core)
+    tid = TVG_ID_MAPPING.get(core)
+    # DEBUG打印，看哪个频道没有匹配
+    print(f"[EPG DEBUG] raw={name} → core={core} → tvg-id={tid}")
+    return tid
 
 def get_tvg_name(name: str) -> str:
     return name
@@ -304,4 +310,3 @@ def main():
 
 if __name__ == "__main__":
     requests.packages.urllib3.disable_warnings()
-    main()
