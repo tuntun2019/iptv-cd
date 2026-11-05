@@ -1,5 +1,5 @@
-#EXTM3U x-tvg-url="https://epg.pw/xmltv/epg.xml"
-# 生成时间：2026-11-05 07:32:16
+#EXTM3U x-tvg-url="http://epg.51zmt.top:8000/e.xml.gz"
+# 生成时间：2026-11-05 07:41:41
 # udpxy：192.168.16.254:8866
 
 #EXTINF:-1 tvg-id="cctv1" tvg-name="CCTV-1高清" tvg-logo="https://epg.pw/logos/cctv1.png" group-title="其他频道",CCTV-1高清
@@ -47,7 +47,7 @@ http://192.168.16.254:8866/udp/239.94.0.14:5140/
 #EXTINF:-1 tvg-id="cctv15" tvg-name="CCTV-15高清" tvg-logo="https://via.placeholder.com/120x80?text=CCTV15高清" group-title="其他频道",CCTV-15高清
 http://192.168.16.254:8866/udp/239.94.0.38:5140/
 
-#EXTINF:-1 tvg-name="CCTV-16 4K" tvg-logo="https://via.placeholder.com/120x80?text=CCTV164K" group-title="其他频道",CCTV-16 4K
+#EXTINF:-1 tvg-id="cctv16" tvg-name="CCTV-16 4K" tvg-logo="https://via.placeholder.com/120x80?text=CCTV164K" group-title="其他频道",CCTV-16 4K
 http://192.168.16.254:8866/udp/239.94.0.129:5140/
 
 #EXTINF:-1 tvg-id="cctv17" tvg-name="CCTV-17高清" tvg-logo="https://via.placeholder.com/120x80?text=CCTV17高清" group-title="其他频道",CCTV-17高清
