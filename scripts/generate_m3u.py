@@ -13,11 +13,10 @@ UDPXY_PROXIES = [
 ]
 
 MULTICAST_DATA_URL = "https://epg.51zmt.top:8001/multicast/"
-# ========== EPG源 ==========
 EPG_URL = "http://epg.51zmt.top:8000/e1.xml.gz"
 FILTER_KEYWORDS = ["画中画", "PIP", "pip", "测试", "广告"]
 
-# 适配 epg.51zmt.top:8000/e1.xml.gz，value为数字id字符串
+# 适配 epg.51zmt.top:8000/e1.xml.gz
 TVG_ID_MAPPING = {
     "CCTV-1": "1",
     "CCTV-2": "2",
@@ -99,7 +98,7 @@ TVG_ID_MAPPING = {
 GROUP_RULES = [
     ("央视频道", [r"^CCTV\-", r"^CETV\-", r"CGTN"]),
     ("卫视频道", [r"卫视"]),
-    ("四川地方", [r"^CDTV\-",r"四川", r"成都", r"^SCTV\-", r"i成都"]),
+    ("四川地方", [r"^CDTV\-", r"^SCTV\-", r"i成都"]),
     ("CHC影院", [r"CHC"]),
 ]
 
@@ -117,7 +116,6 @@ def extract_core_name(name: str) -> str:
     return core
 
 def get_channel_logo(name: str) -> str:
-    """SVG base64内置中文，无外部图片依赖"""
     display_name = name if name else "Channel"
     svg = f'''<svg width="120" height="80" xmlns="http://www.w3.org/2000/svg">
   <rect width="120" height="80" fill="#8899aa"/>
@@ -126,7 +124,6 @@ def get_channel_logo(name: str) -> str:
     b = svg.encode("utf-8")
     b64 = base64.b64encode(b).decode("ascii")
     data_uri = f"data:image/svg+xml;base64,{b64}"
-    print(f"[LOGO] {name} -> svg base64")
     return data_uri
 
 def get_channel_group(name: str) -> str:
@@ -139,7 +136,6 @@ def get_channel_group(name: str) -> str:
 def get_tvg_id(name: str) -> str | None:
     core = extract_core_name(name)
     tid = TVG_ID_MAPPING.get(core)
-    # DEBUG打印，看哪个频道没有匹配
     print(f"[EPG DEBUG] raw={name} → core={core} → tvg-id={tid}")
     return tid
 
@@ -159,7 +155,7 @@ def generate_udpxy_url(udp_info, host, port) -> str:
         return ""
     return f"http://{host}:{port}/udp/{udp_info['ip']}:{udp_info['port']}/"
 
-# ===================== 页面抓取：优先静态，失败再动态 =====================
+# ===================== 页面抓取 =====================
 def fetch_multicast_data(url: str):
     sess = requests.Session()
     sess.verify = False
@@ -232,11 +228,8 @@ def fetch_with_selenium(url: str):
     chrome_options.add_argument("--ignore-certificate-errors")
     chrome_options.add_experimental_option("excludeSwitches", ["enable-logging"])
 
-    try:
-        from webdriver_manager.chrome import ChromeDriverManager
-        service = Service(ChromeDriverManager().install())
-    except ImportError:
-        service = Service()
+    chrome_options.binary_location = "/usr/bin/chromium-browser"
+    service = Service("/usr/lib/chromium-browser/chromedriver")
 
     driver = webdriver.Chrome(service=service, options=chrome_options)
     try:
@@ -310,3 +303,4 @@ def main():
 
 if __name__ == "__main__":
     requests.packages.urllib3.disable_warnings()
+    main()
