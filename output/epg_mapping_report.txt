@@ -1,311 +1,309 @@
-匹配统计：命中 21 / 缺失 288
+匹配统计：命中 82 / 缺失 225
 
-[HIT] 1                         -> tvg-id=CCTV10
-[HIT] 2                         -> tvg-id=CCTV12
-[HIT] 3                         -> tvg-id=CCTV13
-[HIT] 4                         -> tvg-id=CCTV14
-[HIT] 5                         -> tvg-id=CCTV15
-[HIT] 6                         -> tvg-id=CCTV16
-[HIT] 7                         -> tvg-id=CCTV17
-[HIT] 8                         -> tvg-id=CCTV8
-[HIT] 9                         -> tvg-id=CCTV9
-[HIT] 10                        -> tvg-id=CCTV10
-[HIT] 11                        -> tvg-id=CCTV11
-[HIT] 12                        -> tvg-id=CCTV12
-[HIT] 13                        -> tvg-id=CCTV13
-[HIT] 14                        -> tvg-id=CCTV14
-[HIT] 15                        -> tvg-id=CCTV15
-[HIT] 16                        -> tvg-id=CCTV16
-[HIT] 17                        -> tvg-id=CCTV17
-[MISS] 18                        -> NO tvg-id
-[MISS] 19                        -> NO tvg-id
-[HIT] 20                        -> tvg-id=CCTV9-TVMAO-2026
-[MISS] 21                        -> NO tvg-id
-[MISS] 22                        -> NO tvg-id
-[MISS] 23                        -> NO tvg-id
-[HIT] 24                        -> tvg-id=歌手2024
-[MISS] 34                        -> NO tvg-id
-[MISS] 35                        -> NO tvg-id
-[MISS] 36                        -> NO tvg-id
-[MISS] 37                        -> NO tvg-id
-[MISS] 38                        -> NO tvg-id
-[MISS] 39                        -> NO tvg-id
-[MISS] 40                        -> NO tvg-id
-[MISS] 41                        -> NO tvg-id
-[MISS] 42                        -> NO tvg-id
-[MISS] 43                        -> NO tvg-id
-[MISS] 44                        -> NO tvg-id
-[MISS] 45                        -> NO tvg-id
-[MISS] 46                        -> NO tvg-id
-[MISS] 47                        -> NO tvg-id
-[MISS] 48                        -> NO tvg-id
-[MISS] 49                        -> NO tvg-id
-[MISS] 50                        -> NO tvg-id
-[MISS] 51                        -> NO tvg-id
-[MISS] 52                        -> NO tvg-id
-[MISS] 53                        -> NO tvg-id
-[MISS] 54                        -> NO tvg-id
-[MISS] 55                        -> NO tvg-id
-[MISS] 56                        -> NO tvg-id
-[MISS] 57                        -> NO tvg-id
-[MISS] 58                        -> NO tvg-id
-[MISS] 59                        -> NO tvg-id
-[MISS] 60                        -> NO tvg-id
-[MISS] 61                        -> NO tvg-id
-[MISS] 62                        -> NO tvg-id
-[MISS] 63                        -> NO tvg-id
-[MISS] 64                        -> NO tvg-id
-[MISS] 65                        -> NO tvg-id
-[MISS] 66                        -> NO tvg-id
-[MISS] 66                        -> NO tvg-id
-[MISS] 67                        -> NO tvg-id
-[MISS] 68                        -> NO tvg-id
-[MISS] 69                        -> NO tvg-id
-[MISS] 70                        -> NO tvg-id
-[MISS] 71                        -> NO tvg-id
-[MISS] 72                        -> NO tvg-id
-[MISS] 73                        -> NO tvg-id
-[MISS] 74                        -> NO tvg-id
-[MISS] 75                        -> NO tvg-id
-[MISS] 76                        -> NO tvg-id
-[MISS] 77                        -> NO tvg-id
-[MISS] 78                        -> NO tvg-id
-[MISS] 79                        -> NO tvg-id
-[MISS] 80                        -> NO tvg-id
-[MISS] 81                        -> NO tvg-id
-[MISS] 82                        -> NO tvg-id
-[MISS] 83                        -> NO tvg-id
-[MISS] 84                        -> NO tvg-id
-[MISS] 85                        -> NO tvg-id
-[MISS] 86                        -> NO tvg-id
-[MISS] 87                        -> NO tvg-id
-[MISS] 88                        -> NO tvg-id
-[MISS] 89                        -> NO tvg-id
-[MISS] 90                        -> NO tvg-id
-[MISS] 91                        -> NO tvg-id
-[MISS] 92                        -> NO tvg-id
-[MISS] 93                        -> NO tvg-id
-[MISS] 94                        -> NO tvg-id
-[MISS] 95                        -> NO tvg-id
-[MISS] 96                        -> NO tvg-id
-[MISS] 97                        -> NO tvg-id
-[MISS] 98                        -> NO tvg-id
-[MISS] 99                        -> NO tvg-id
-[MISS] 100                       -> NO tvg-id
-[MISS] 101                       -> NO tvg-id
-[MISS] 102                       -> NO tvg-id
-[MISS] 103                       -> NO tvg-id
-[MISS] 103                       -> NO tvg-id
-[MISS] 104                       -> NO tvg-id
-[MISS] 105                       -> NO tvg-id
-[MISS] 106                       -> NO tvg-id
-[MISS] 107                       -> NO tvg-id
-[MISS] 108                       -> NO tvg-id
-[MISS] 109                       -> NO tvg-id
-[MISS] 110                       -> NO tvg-id
-[MISS] 111                       -> NO tvg-id
-[MISS] 112                       -> NO tvg-id
-[MISS] 113                       -> NO tvg-id
-[MISS] 114                       -> NO tvg-id
-[MISS] 115                       -> NO tvg-id
-[MISS] 116                       -> NO tvg-id
-[MISS] 117                       -> NO tvg-id
-[MISS] 118                       -> NO tvg-id
-[MISS] 119                       -> NO tvg-id
-[MISS] 120                       -> NO tvg-id
-[MISS] 121                       -> NO tvg-id
-[MISS] 122                       -> NO tvg-id
-[MISS] 123                       -> NO tvg-id
-[MISS] 125                       -> NO tvg-id
-[MISS] 126                       -> NO tvg-id
-[MISS] 128                       -> NO tvg-id
-[MISS] 129                       -> NO tvg-id
-[MISS] 130                       -> NO tvg-id
-[MISS] 131                       -> NO tvg-id
-[MISS] 132                       -> NO tvg-id
-[MISS] 133                       -> NO tvg-id
-[MISS] 134                       -> NO tvg-id
-[MISS] 135                       -> NO tvg-id
-[MISS] 136                       -> NO tvg-id
-[MISS] 137                       -> NO tvg-id
-[MISS] 138                       -> NO tvg-id
-[MISS] 139                       -> NO tvg-id
-[MISS] 140                       -> NO tvg-id
-[MISS] 141                       -> NO tvg-id
-[MISS] 142                       -> NO tvg-id
-[MISS] 143                       -> NO tvg-id
-[MISS] 144                       -> NO tvg-id
-[MISS] 145                       -> NO tvg-id
-[MISS] 146                       -> NO tvg-id
-[MISS] 147                       -> NO tvg-id
-[MISS] 148                       -> NO tvg-id
-[MISS] 149                       -> NO tvg-id
-[MISS] 150                       -> NO tvg-id
-[MISS] 151                       -> NO tvg-id
-[MISS] 152                       -> NO tvg-id
-[MISS] 153                       -> NO tvg-id
-[MISS] 154                       -> NO tvg-id
-[MISS] 155                       -> NO tvg-id
-[MISS] 156                       -> NO tvg-id
-[MISS] 157                       -> NO tvg-id
-[MISS] 158                       -> NO tvg-id
-[MISS] 159                       -> NO tvg-id
-[MISS] 160                       -> NO tvg-id
-[MISS] 161                       -> NO tvg-id
-[MISS] 162                       -> NO tvg-id
-[MISS] 163                       -> NO tvg-id
-[MISS] 164                       -> NO tvg-id
-[MISS] 165                       -> NO tvg-id
-[MISS] 166                       -> NO tvg-id
-[MISS] 167                       -> NO tvg-id
-[MISS] 168                       -> NO tvg-id
-[MISS] 169                       -> NO tvg-id
-[MISS] 170                       -> NO tvg-id
-[MISS] 171                       -> NO tvg-id
-[MISS] 172                       -> NO tvg-id
-[MISS] 173                       -> NO tvg-id
-[MISS] 173                       -> NO tvg-id
-[MISS] 174                       -> NO tvg-id
-[MISS] 174                       -> NO tvg-id
-[MISS] 175                       -> NO tvg-id
-[MISS] 176                       -> NO tvg-id
-[MISS] 177                       -> NO tvg-id
-[MISS] 178                       -> NO tvg-id
-[MISS] 179                       -> NO tvg-id
-[MISS] 180                       -> NO tvg-id
-[MISS] 181                       -> NO tvg-id
-[MISS] 182                       -> NO tvg-id
-[MISS] 183                       -> NO tvg-id
-[MISS] 184                       -> NO tvg-id
-[MISS] 185                       -> NO tvg-id
-[MISS] 186                       -> NO tvg-id
-[MISS] 187                       -> NO tvg-id
-[MISS] 187                       -> NO tvg-id
-[MISS] 188                       -> NO tvg-id
-[MISS] 189                       -> NO tvg-id
-[MISS] 190                       -> NO tvg-id
-[MISS] 191                       -> NO tvg-id
-[MISS] 192                       -> NO tvg-id
-[MISS] 193                       -> NO tvg-id
-[MISS] 194                       -> NO tvg-id
-[MISS] 195                       -> NO tvg-id
-[MISS] 196                       -> NO tvg-id
-[MISS] 197                       -> NO tvg-id
-[MISS] 198                       -> NO tvg-id
-[MISS] 199                       -> NO tvg-id
-[MISS] 200                       -> NO tvg-id
-[MISS] 201                       -> NO tvg-id
-[HIT] 202                       -> tvg-id=CCTV9-TVMAO-2026
-[HIT] 202                       -> tvg-id=CCTV9-TVMAO-2026
-[MISS] 203                       -> NO tvg-id
-[MISS] 203                       -> NO tvg-id
-[MISS] 204                       -> NO tvg-id
-[MISS] 204                       -> NO tvg-id
-[MISS] 205                       -> NO tvg-id
-[MISS] 206                       -> NO tvg-id
-[MISS] 207                       -> NO tvg-id
-[MISS] 208                       -> NO tvg-id
-[MISS] 209                       -> NO tvg-id
-[MISS] 210                       -> NO tvg-id
-[MISS] 211                       -> NO tvg-id
-[MISS] 212                       -> NO tvg-id
-[MISS] 213                       -> NO tvg-id
-[MISS] 214                       -> NO tvg-id
-[MISS] 215                       -> NO tvg-id
-[MISS] 216                       -> NO tvg-id
-[MISS] 216                       -> NO tvg-id
-[MISS] 217                       -> NO tvg-id
-[MISS] 218                       -> NO tvg-id
-[MISS] 218                       -> NO tvg-id
-[MISS] 219                       -> NO tvg-id
-[MISS] 220                       -> NO tvg-id
-[MISS] 220                       -> NO tvg-id
-[MISS] 221                       -> NO tvg-id
-[MISS] 222                       -> NO tvg-id
-[MISS] 223                       -> NO tvg-id
-[MISS] 224                       -> NO tvg-id
-[MISS] 225                       -> NO tvg-id
-[MISS] 226                       -> NO tvg-id
-[MISS] 227                       -> NO tvg-id
-[MISS] 228                       -> NO tvg-id
-[MISS] 229                       -> NO tvg-id
-[MISS] 230                       -> NO tvg-id
-[MISS] 231                       -> NO tvg-id
-[MISS] 232                       -> NO tvg-id
-[MISS] 233                       -> NO tvg-id
-[MISS] 234                       -> NO tvg-id
-[MISS] 235                       -> NO tvg-id
-[MISS] 236                       -> NO tvg-id
-[MISS] 237                       -> NO tvg-id
-[MISS] 238                       -> NO tvg-id
-[MISS] 239                       -> NO tvg-id
-[MISS] 240                       -> NO tvg-id
-[MISS] 241                       -> NO tvg-id
-[MISS] 242                       -> NO tvg-id
-[MISS] 243                       -> NO tvg-id
-[MISS] 244                       -> NO tvg-id
-[MISS] 245                       -> NO tvg-id
-[MISS] 246                       -> NO tvg-id
-[MISS] 247                       -> NO tvg-id
-[MISS] 248                       -> NO tvg-id
-[MISS] 249                       -> NO tvg-id
-[MISS] 250                       -> NO tvg-id
-[MISS] 251                       -> NO tvg-id
-[MISS] 252                       -> NO tvg-id
-[MISS] 253                       -> NO tvg-id
-[MISS] 254                       -> NO tvg-id
-[MISS] 255                       -> NO tvg-id
-[MISS] 256                       -> NO tvg-id
-[MISS] 257                       -> NO tvg-id
-[MISS] 258                       -> NO tvg-id
-[MISS] 259                       -> NO tvg-id
-[MISS] 260                       -> NO tvg-id
-[MISS] 261                       -> NO tvg-id
-[MISS] 262                       -> NO tvg-id
-[MISS] 263                       -> NO tvg-id
-[MISS] 264                       -> NO tvg-id
-[MISS] 265                       -> NO tvg-id
-[MISS] 266                       -> NO tvg-id
-[MISS] 267                       -> NO tvg-id
-[MISS] 268                       -> NO tvg-id
-[MISS] 269                       -> NO tvg-id
-[MISS] 270                       -> NO tvg-id
-[MISS] 271                       -> NO tvg-id
-[MISS] 272                       -> NO tvg-id
-[MISS] 273                       -> NO tvg-id
-[MISS] 274                       -> NO tvg-id
-[MISS] 275                       -> NO tvg-id
-[MISS] 276                       -> NO tvg-id
-[MISS] 277                       -> NO tvg-id
-[MISS] 278                       -> NO tvg-id
-[MISS] 279                       -> NO tvg-id
-[MISS] 280                       -> NO tvg-id
-[MISS] 281                       -> NO tvg-id
-[MISS] 282                       -> NO tvg-id
-[MISS] 283                       -> NO tvg-id
-[MISS] 284                       -> NO tvg-id
-[MISS] 285                       -> NO tvg-id
-[MISS] 286                       -> NO tvg-id
-[MISS] 287                       -> NO tvg-id
-[MISS] 288                       -> NO tvg-id
-[MISS] 289                       -> NO tvg-id
-[MISS] 290                       -> NO tvg-id
-[MISS] 291                       -> NO tvg-id
-[MISS] 292                       -> NO tvg-id
-[MISS] 293                       -> NO tvg-id
-[MISS] 294                       -> NO tvg-id
-[MISS] 295                       -> NO tvg-id
-[MISS] 296                       -> NO tvg-id
-[MISS] 297                       -> NO tvg-id
-[MISS] 298                       -> NO tvg-id
-[MISS] 299                       -> NO tvg-id
-[MISS] 300                       -> NO tvg-id
-[MISS] 301                       -> NO tvg-id
-[MISS] 302                       -> NO tvg-id
-[MISS] 303                       -> NO tvg-id
-[MISS] 304                       -> NO tvg-id
-[MISS] 305                       -> NO tvg-id
-[MISS] 306                       -> NO tvg-id
-[MISS] 307                       -> NO tvg-id
-[MISS] 308                       -> NO tvg-id
-[MISS] 309                       -> NO tvg-id
+[HIT] CCTV-1高清                  -> tvg-id=CCTV4K
+[HIT] CCTV-2高清                  -> tvg-id=CCTV4K
+[HIT] CCTV-3高清                  -> tvg-id=CCTV4K
+[HIT] CCTV-4高清                  -> tvg-id=CCTV4K
+[HIT] CCTV-5高清                  -> tvg-id=CCTV4K
+[HIT] CCTV-6高清                  -> tvg-id=CCTV4K
+[HIT] CCTV-7高清                  -> tvg-id=CCTV4K
+[HIT] CCTV-8高清                  -> tvg-id=CCTV4K
+[HIT] CCTV-9高清                  -> tvg-id=CCTV4K
+[HIT] CCTV-10高清                 -> tvg-id=CCTV4K
+[HIT] CCTV-11高清                 -> tvg-id=CCTV4K
+[HIT] CCTV-12高清                 -> tvg-id=CCTV4K
+[HIT] CCTV-13高清                 -> tvg-id=CCTV4K
+[HIT] CCTV-少儿高清                 -> tvg-id=CCTV4K
+[HIT] CCTV-15高清                 -> tvg-id=CCTV4K
+[HIT] CCTV-17高清                 -> tvg-id=CCTV4K
+[HIT] 四川卫视高清                    -> tvg-id=四川卫视
+[MISS] CDTV-1高清                  -> NO tvg-id
+[MISS] 爱上4K专区                    -> NO tvg-id
+[MISS] CGTN英语                    -> NO tvg-id
+[HIT] CCTV-5＋高清                 -> tvg-id=CCTV4K
+[MISS] 精彩导视                      -> NO tvg-id
+[HIT] 湖南卫视高清                    -> tvg-id=湖南卫视
+[HIT] 江苏卫视高清                    -> tvg-id=江苏卫视
+[HIT] 浙江卫视高清                    -> tvg-id=浙江卫视
+[HIT] 东方卫视高清                    -> tvg-id=东方卫视
+[HIT] 北京卫视高清                    -> tvg-id=北京卫视
+[HIT] 深圳卫视高清                    -> tvg-id=深圳卫视
+[HIT] 广东卫视高清                    -> tvg-id=广东卫视
+[HIT] 天津卫视高清                    -> tvg-id=天津卫视
+[HIT] 山东卫视高清                    -> tvg-id=山东卫视
+[MISS] SCTV-2高清                  -> NO tvg-id
+[MISS] SCTV-3高清                  -> NO tvg-id
+[MISS] SCTV-4高清                  -> NO tvg-id
+[MISS] SCTV-5高清                  -> NO tvg-id
+[MISS] SCTV-6高清                  -> NO tvg-id
+[MISS] SCTV-7高清                  -> NO tvg-id
+[MISS] SCTV-科教高清                 -> NO tvg-id
+[HIT] 四川乡村高清                    -> tvg-id=四川卫视
+[HIT] 康巴卫视高清                    -> tvg-id=康巴卫视
+[MISS] 峨眉电影高清                    -> NO tvg-id
+[HIT] 江西卫视高清                    -> tvg-id=江西卫视
+[HIT] 东南卫视高清                    -> tvg-id=东南卫视
+[HIT] 黑龙江卫视高清                   -> tvg-id=黑龙江卫视
+[HIT] 贵州卫视高清                    -> tvg-id=贵州卫视
+[HIT] 湖北卫视高清                    -> tvg-id=湖北卫视
+[HIT] 安徽卫视高清                    -> tvg-id=安徽卫视
+[HIT] 河北卫视高清                    -> tvg-id=河北卫视
+[MISS] 中国交通                      -> NO tvg-id
+[HIT] 河南卫视高清                    -> tvg-id=河南卫视
+[HIT] 广西卫视高清                    -> tvg-id=广西卫视
+[HIT] 云南卫视高清                    -> tvg-id=云南卫视
+[HIT] 吉林卫视高清                    -> tvg-id=吉林卫视
+[HIT] 陕西卫视高清                    -> tvg-id=陕西卫视
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[HIT] 内蒙古卫视高清                   -> tvg-id=内蒙古卫视
+[MISS] 未能检测                      -> NO tvg-id
+[HIT] 宁夏卫视高清                    -> tvg-id=宁夏卫视
+[HIT] 西藏卫视高清                    -> tvg-id=西藏卫视
+[HIT] 新疆卫视高清                    -> tvg-id=新疆卫视
+[HIT] 甘肃卫视高清                    -> tvg-id=甘肃卫视
+[MISS] 未能检测                      -> NO tvg-id
+[HIT] 辽宁卫视高清                    -> tvg-id=辽宁卫视
+[HIT] 兵团卫视高清                    -> tvg-id=兵团卫视
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[HIT] 重庆卫视高清                    -> tvg-id=重庆卫视
+[MISS] CDTV-2高清                  -> NO tvg-id
+[MISS] CDTV-3高清                  -> NO tvg-id
+[MISS] CDTV-4高清                  -> NO tvg-id
+[MISS] CDTV-5高清                  -> NO tvg-id
+[MISS] CDTV-6高清                  -> NO tvg-id
+[MISS] CDTV-8高清                  -> NO tvg-id
+[MISS] 金鹰纪实高清                    -> NO tvg-id
+[MISS] CETV-1高清                  -> NO tvg-id
+[MISS] 熊猫新闻高清专区                  -> NO tvg-id
+[MISS] 熊猫体娱高清专区                  -> NO tvg-id
+[MISS] 熊猫少儿高清专区                  -> NO tvg-id
+[MISS] 熊猫影院专区                    -> NO tvg-id
+[MISS] 云看熊猫专区                    -> NO tvg-id
+[MISS] 金熊猫卡通高清专区                 -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 熊猫爱生活高清专区                 -> NO tvg-id
+[HIT] 大爱四川高清专区                  -> tvg-id=四川卫视
+[MISS] 大爱旅游高清专区                  -> NO tvg-id
+[MISS] 大爱生活高清专区                  -> NO tvg-id
+[MISS] 大爱时尚高清专区                  -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] CETV-4高清                  -> NO tvg-id
+[MISS] 经典电影专区                    -> NO tvg-id
+[MISS] 华语影院专区                    -> NO tvg-id
+[MISS] 星光院线专区                    -> NO tvg-id
+[MISS] 全球大片专区                    -> NO tvg-id
+[MISS] 热播剧场专区                    -> NO tvg-id
+[MISS] 热门剧场专区                    -> NO tvg-id
+[MISS] 健康养生专区                    -> NO tvg-id
+[MISS] 谍战剧场专区                    -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 宝宝动画专区                    -> NO tvg-id
+[MISS] 少儿动画高清专区                  -> NO tvg-id
+[MISS] 青春动漫专区                    -> NO tvg-id
+[MISS] 热门综艺高清专区                  -> NO tvg-id
+[MISS] 音乐现场高清专区                  -> NO tvg-id
+[MISS] 戏曲精选专区                    -> NO tvg-id
+[HIT] 戏曲专区                      -> tvg-id=郑州戏曲
+[MISS] 魅力时尚高清专区                  -> NO tvg-id
+[MISS] 爱生活高清专区                   -> NO tvg-id
+[MISS] 百变课堂专区                    -> NO tvg-id
+[MISS] 电竞天堂高清专区                  -> NO tvg-id
+[HIT] 游戏风云                      -> tvg-id=游戏风云
+[HIT] 足球高清专区                    -> tvg-id=咪咕足球
+[MISS] 红色影院专区                    -> NO tvg-id
+[HIT] 经典剧场专区                    -> tvg-id=经典剧场
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 墨宝高清专区                    -> NO tvg-id
+[HIT] 军事高清专区                    -> tvg-id=newtv军事评论
+[MISS] 解密高清专区                    -> NO tvg-id
+[MISS] 地理高清专区                    -> NO tvg-id
+[MISS] 看天下精选专区                   -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 收视指南专区                    -> NO tvg-id
+[MISS] 蓉城先锋专区                    -> NO tvg-id
+[HIT] 东方财经高清                    -> tvg-id=东方卫视
+[MISS] 4K视界专区                    -> NO tvg-id
+[HIT] 4K纪实专区                    -> tvg-id=冬奥纪实
+[HIT] 4K少儿专区                    -> tvg-id=内蒙古少儿
+[MISS] CGTN西班牙语                  -> NO tvg-id
+[HIT] CGTN法语                    -> tvg-id=CGTN法语
+[HIT] CGTN纪录                    -> tvg-id=CGTN纪录
+[MISS] CGTN阿拉伯语                  -> NO tvg-id
+[HIT] CGTN俄语                    -> tvg-id=CGTN俄语
+[MISS] 爱浪漫专区                     -> NO tvg-id
+[MISS] 爱喜剧专区                     -> NO tvg-id
+[MISS] 爱奇谈专区                     -> NO tvg-id
+[MISS] 爱科幻专区                     -> NO tvg-id
+[MISS] 爱院线专区                     -> NO tvg-id
+[HIT] 都市剧场                      -> tvg-id=都市剧场
+[MISS] 爱谍战专区                     -> NO tvg-id
+[MISS] 爱历史专区                     -> NO tvg-id
+[MISS] 爱悬疑专区                     -> NO tvg-id
+[MISS] 爱旅行专区                     -> NO tvg-id
+[MISS] 少儿天地专区                    -> NO tvg-id
+[MISS] 爱幼教专区                     -> NO tvg-id
+[MISS] 爱玩具专区                     -> NO tvg-id
+[MISS] 爱动漫专区                     -> NO tvg-id
+[HIT] 求索频道高清                    -> tvg-id=求索生活
+[MISS] 爱体育专区                     -> NO tvg-id
+[MISS] 爱赛车专区                     -> NO tvg-id
+[MISS] 爱宠宠物专区                    -> NO tvg-id
+[HIT] 生活时尚                      -> tvg-id=生活时尚
+[HIT] 环球旅游                      -> tvg-id=环球旅游
+[MISS] 来钓鱼吧专区                    -> NO tvg-id
+[MISS] 麻辣体育专区                    -> NO tvg-id
+[MISS] 绚影4K专区                    -> NO tvg-id
+[MISS] 茶频道                       -> NO tvg-id
+[MISS] 天元围棋                      -> NO tvg-id
+[MISS] 乐龄学堂专区                    -> NO tvg-id
+[HIT] 快乐垂钓                      -> tvg-id=快乐垂钓
+[MISS] 亲子趣学4k专区                  -> NO tvg-id
+[MISS] 4K乐享超清专区                  -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[HIT] 乐游                        -> tvg-id=乐游
+[HIT] 金色学堂                      -> tvg-id=金色学堂
+[HIT] 法治天地                      -> tvg-id=法治天地
+[MISS] 中国天气                      -> NO tvg-id
+[MISS] 四海钓鱼                      -> NO tvg-id
+[HIT] 动漫秀场                      -> tvg-id=动漫秀场
+[MISS] 精彩影视                      -> NO tvg-id
+[HIT] CHC家庭影院                   -> tvg-id=CHC家庭影院
+[MISS] CHC影迷电影                   -> NO tvg-id
+[HIT] 欢笑剧场4K                    -> tvg-id=欢笑剧场
+[HIT] CHC动作电影                   -> tvg-id=CHC动作电影
+[MISS] 多彩文体4K                    -> NO tvg-id
+[HIT] 四川卫视4K                    -> tvg-id=四川卫视
+[HIT] 北京卫视4K                    -> tvg-id=北京卫视
+[HIT] 湖南卫视4K                    -> tvg-id=湖南卫视
+[HIT] 江苏卫视4K                    -> tvg-id=江苏卫视
+[HIT] 浙江卫视4K                    -> tvg-id=浙江卫视
+[HIT] 东方卫视4K                    -> tvg-id=东方卫视
+[HIT] 深圳卫视4K                    -> tvg-id=深圳卫视
+[HIT] 广东卫视4K                    -> tvg-id=广东卫视
+[HIT] 山东卫视4K                    -> tvg-id=山东卫视
+[MISS] i成都                       -> NO tvg-id
+[MISS] 爱乐山                       -> NO tvg-id
+[MISS] 精彩推荐专区                    -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 直播室1                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 直播室2                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 直播室3                      -> NO tvg-id
+[MISS] 直播室4                      -> NO tvg-id
+[MISS] 直播室5                      -> NO tvg-id
+[MISS] 直播室6                      -> NO tvg-id
+[MISS] 直播室7                      -> NO tvg-id
+[MISS] 直播室8                      -> NO tvg-id
+[MISS] 红原日干乔                     -> NO tvg-id
+[MISS] 红原月亮湾                     -> NO tvg-id
+[MISS] 雅克音乐节直播                   -> NO tvg-id
+[MISS] 云演艺宣传                     -> NO tvg-id
+[MISS] 920-全网组播                  -> NO tvg-id
+[MISS] 921-全网组播                  -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 922-全网组播                  -> NO tvg-id
+[MISS] 923-全网组播                  -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 924-全网组播                  -> NO tvg-id
+[MISS] 925-全网组播                  -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 926-全网组播                  -> NO tvg-id
+[MISS] 927-全网组播                  -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id
+[MISS] 未能检测                      -> NO tvg-id

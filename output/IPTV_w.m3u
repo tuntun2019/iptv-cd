@@ -1,930 +1,924 @@
 #EXTM3U x-tvg-url="https://epg.112114.xyz/pp.xml"
-# Generated: 2026-11-05 06:53:35
+# Generated: 2026-11-05 07:10:39
 # udpxy: 192.168.16.254:8866
 
-#EXTINF:-1 tvg-id="CCTV10" tvg-name="1" tvg-logo="https://epg.51zmt.top:8000/tb1/ys/CCTV10.png" group-title="其他频道",1
-http://192.168.16.254:8866/udp/239.94.0.31:5140/
-
-#EXTINF:-1 tvg-id="CCTV10" tvg-name="10" tvg-logo="https://epg.51zmt.top:8000/tb1/ys/CCTV10.png" group-title="其他频道",10
+#EXTINF:-1 tvg-id="CCTV4K" tvg-name="CCTV-10高清" tvg-logo="https://epg.51zmt.top:8000/tb1/ys/CCTV4K.png" group-title="央视频道",CCTV-10高清
 http://192.168.16.254:8866/udp/239.94.0.10:5140/
 
-#EXTINF:-1 tvg-id="" tvg-name="100" tvg-logo="https://via.placeholder.com/120x80?text=100" group-title="其他频道",100
-http://192.168.16.254:8866/udp/239.94.1.13:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="101" tvg-logo="https://via.placeholder.com/120x80?text=101" group-title="其他频道",101
-http://192.168.16.254:8866/udp/239.94.1.14:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="102" tvg-logo="https://via.placeholder.com/120x80?text=102" group-title="其他频道",102
-http://192.168.16.254:8866/udp/239.94.1.15:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="103" tvg-logo="https://via.placeholder.com/120x80?text=103" group-title="其他频道",103
-http://192.168.16.254:8866/udp/239.93.42.48:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="103" tvg-logo="https://via.placeholder.com/120x80?text=103" group-title="其他频道",103
-http://192.168.16.254:8866/udp/239.94.1.19:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="104" tvg-logo="https://via.placeholder.com/120x80?text=104" group-title="其他频道",104
-http://192.168.16.254:8866/udp/239.94.1.20:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="105" tvg-logo="https://via.placeholder.com/120x80?text=105" group-title="其他频道",105
-http://192.168.16.254:8866/udp/239.94.1.21:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="106" tvg-logo="https://via.placeholder.com/120x80?text=106" group-title="其他频道",106
-http://192.168.16.254:8866/udp/239.94.1.22:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="107" tvg-logo="https://via.placeholder.com/120x80?text=107" group-title="其他频道",107
-http://192.168.16.254:8866/udp/239.94.1.23:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="108" tvg-logo="https://via.placeholder.com/120x80?text=108" group-title="其他频道",108
-http://192.168.16.254:8866/udp/239.94.1.24:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="109" tvg-logo="https://via.placeholder.com/120x80?text=109" group-title="其他频道",109
-http://192.168.16.254:8866/udp/239.94.1.25:5140/
-
-#EXTINF:-1 tvg-id="CCTV11" tvg-name="11" tvg-logo="https://epg.51zmt.top:8000/tb1/ys/CCTV11.png" group-title="其他频道",11
+#EXTINF:-1 tvg-id="CCTV4K" tvg-name="CCTV-11高清" tvg-logo="https://epg.51zmt.top:8000/tb1/ys/CCTV4K.png" group-title="央视频道",CCTV-11高清
 http://192.168.16.254:8866/udp/239.94.0.36:5140/
 
-#EXTINF:-1 tvg-id="" tvg-name="110" tvg-logo="https://via.placeholder.com/120x80?text=110" group-title="其他频道",110
-http://192.168.16.254:8866/udp/239.94.1.26:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="111" tvg-logo="https://via.placeholder.com/120x80?text=111" group-title="其他频道",111
-http://192.168.16.254:8866/udp/239.94.1.27:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="112" tvg-logo="https://via.placeholder.com/120x80?text=112" group-title="其他频道",112
-http://192.168.16.254:8866/udp/239.94.1.28:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="113" tvg-logo="https://via.placeholder.com/120x80?text=113" group-title="其他频道",113
-http://192.168.16.254:8866/udp/239.94.1.29:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="114" tvg-logo="https://via.placeholder.com/120x80?text=114" group-title="其他频道",114
-http://192.168.16.254:8866/udp/239.94.1.30:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="115" tvg-logo="https://via.placeholder.com/120x80?text=115" group-title="其他频道",115
-http://192.168.16.254:8866/udp/239.94.1.31:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="116" tvg-logo="https://via.placeholder.com/120x80?text=116" group-title="其他频道",116
-http://192.168.16.254:8866/udp/239.94.1.32:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="117" tvg-logo="https://via.placeholder.com/120x80?text=117" group-title="其他频道",117
-http://192.168.16.254:8866/udp/239.94.1.33:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="118" tvg-logo="https://via.placeholder.com/120x80?text=118" group-title="其他频道",118
-http://192.168.16.254:8866/udp/239.94.1.34:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="119" tvg-logo="https://via.placeholder.com/120x80?text=119" group-title="其他频道",119
-http://192.168.16.254:8866/udp/239.94.1.35:5140/
-
-#EXTINF:-1 tvg-id="CCTV12" tvg-name="12" tvg-logo="https://epg.51zmt.top:8000/tb1/ys/CCTV12.png" group-title="其他频道",12
+#EXTINF:-1 tvg-id="CCTV4K" tvg-name="CCTV-12高清" tvg-logo="https://epg.51zmt.top:8000/tb1/ys/CCTV4K.png" group-title="央视频道",CCTV-12高清
 http://192.168.16.254:8866/udp/239.94.0.12:5140/
 
-#EXTINF:-1 tvg-id="" tvg-name="120" tvg-logo="https://via.placeholder.com/120x80?text=120" group-title="其他频道",120
-http://192.168.16.254:8866/udp/239.94.1.36:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="121" tvg-logo="https://via.placeholder.com/120x80?text=121" group-title="其他频道",121
-http://192.168.16.254:8866/udp/239.94.1.37:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="122" tvg-logo="https://via.placeholder.com/120x80?text=122" group-title="其他频道",122
-http://192.168.16.254:8866/udp/239.94.1.38:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="123" tvg-logo="https://via.placeholder.com/120x80?text=123" group-title="其他频道",123
-http://192.168.16.254:8866/udp/239.94.1.39:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="125" tvg-logo="https://via.placeholder.com/120x80?text=125" group-title="其他频道",125
-http://192.168.16.254:8866/udp/239.94.1.41:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="126" tvg-logo="https://via.placeholder.com/120x80?text=126" group-title="其他频道",126
-http://192.168.16.254:8866/udp/239.94.1.43:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="128" tvg-logo="https://via.placeholder.com/120x80?text=128" group-title="其他频道",128
-http://192.168.16.254:8866/udp/239.94.1.45:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="129" tvg-logo="https://via.placeholder.com/120x80?text=129" group-title="其他频道",129
-http://192.168.16.254:8866/udp/239.94.1.46:5140/
-
-#EXTINF:-1 tvg-id="CCTV13" tvg-name="13" tvg-logo="https://epg.51zmt.top:8000/tb1/ys/CCTV13.png" group-title="其他频道",13
+#EXTINF:-1 tvg-id="CCTV4K" tvg-name="CCTV-13高清" tvg-logo="https://epg.51zmt.top:8000/tb1/ys/CCTV4K.png" group-title="央视频道",CCTV-13高清
 http://192.168.16.254:8866/udp/239.94.0.37:5140/
 
-#EXTINF:-1 tvg-id="" tvg-name="130" tvg-logo="https://via.placeholder.com/120x80?text=130" group-title="其他频道",130
-http://192.168.16.254:8866/udp/239.94.1.47:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="131" tvg-logo="https://via.placeholder.com/120x80?text=131" group-title="其他频道",131
-http://192.168.16.254:8866/udp/239.94.1.48:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="132" tvg-logo="https://via.placeholder.com/120x80?text=132" group-title="其他频道",132
-http://192.168.16.254:8866/udp/239.94.1.49:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="133" tvg-logo="https://via.placeholder.com/120x80?text=133" group-title="其他频道",133
-http://192.168.16.254:8866/udp/239.94.1.50:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="134" tvg-logo="https://via.placeholder.com/120x80?text=134" group-title="其他频道",134
-http://192.168.16.254:8866/udp/239.94.1.51:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="135" tvg-logo="https://via.placeholder.com/120x80?text=135" group-title="其他频道",135
-http://192.168.16.254:8866/udp/239.94.1.52:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="136" tvg-logo="https://via.placeholder.com/120x80?text=136" group-title="其他频道",136
-http://192.168.16.254:8866/udp/239.94.1.53:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="137" tvg-logo="https://via.placeholder.com/120x80?text=137" group-title="其他频道",137
-http://192.168.16.254:8866/udp/239.94.1.54:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="138" tvg-logo="https://via.placeholder.com/120x80?text=138" group-title="其他频道",138
-http://192.168.16.254:8866/udp/239.94.1.68:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="139" tvg-logo="https://via.placeholder.com/120x80?text=139" group-title="其他频道",139
-http://192.168.16.254:8866/udp/239.94.1.55:5140/
-
-#EXTINF:-1 tvg-id="CCTV14" tvg-name="14" tvg-logo="https://epg.51zmt.top:8000/tb1/ys/CCTV14.png" group-title="其他频道",14
-http://192.168.16.254:8866/udp/239.94.0.14:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="140" tvg-logo="https://via.placeholder.com/120x80?text=140" group-title="其他频道",140
-http://192.168.16.254:8866/udp/239.94.1.56:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="141" tvg-logo="https://via.placeholder.com/120x80?text=141" group-title="其他频道",141
-http://192.168.16.254:8866/udp/239.94.1.57:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="142" tvg-logo="https://via.placeholder.com/120x80?text=142" group-title="其他频道",142
-http://192.168.16.254:8866/udp/239.94.1.59:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="143" tvg-logo="https://via.placeholder.com/120x80?text=143" group-title="其他频道",143
-http://192.168.16.254:8866/udp/239.94.1.60:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="144" tvg-logo="https://via.placeholder.com/120x80?text=144" group-title="其他频道",144
-http://192.168.16.254:8866/udp/239.94.1.69:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="145" tvg-logo="https://via.placeholder.com/120x80?text=145" group-title="其他频道",145
-http://192.168.16.254:8866/udp/239.94.1.70:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="146" tvg-logo="https://via.placeholder.com/120x80?text=146" group-title="其他频道",146
-http://192.168.16.254:8866/udp/239.94.1.65:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="147" tvg-logo="https://via.placeholder.com/120x80?text=147" group-title="其他频道",147
-http://192.168.16.254:8866/udp/239.94.1.66:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="148" tvg-logo="https://via.placeholder.com/120x80?text=148" group-title="其他频道",148
-http://192.168.16.254:8866/udp/239.94.2.141:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="149" tvg-logo="https://via.placeholder.com/120x80?text=149" group-title="其他频道",149
-http://192.168.16.254:8866/udp/239.94.2.144:5140/
-
-#EXTINF:-1 tvg-id="CCTV15" tvg-name="15" tvg-logo="https://epg.51zmt.top:8000/tb1/ys/CCTV15.png" group-title="其他频道",15
+#EXTINF:-1 tvg-id="CCTV4K" tvg-name="CCTV-15高清" tvg-logo="https://epg.51zmt.top:8000/tb1/ys/CCTV4K.png" group-title="央视频道",CCTV-15高清
 http://192.168.16.254:8866/udp/239.94.0.38:5140/
 
-#EXTINF:-1 tvg-id="" tvg-name="150" tvg-logo="https://via.placeholder.com/120x80?text=150" group-title="其他频道",150
-http://192.168.16.254:8866/udp/239.94.2.145:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="151" tvg-logo="https://via.placeholder.com/120x80?text=151" group-title="其他频道",151
-http://192.168.16.254:8866/udp/239.94.1.128:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="152" tvg-logo="https://via.placeholder.com/120x80?text=152" group-title="其他频道",152
-http://192.168.16.254:8866/udp/239.94.1.129:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="153" tvg-logo="https://via.placeholder.com/120x80?text=153" group-title="其他频道",153
-http://192.168.16.254:8866/udp/239.94.1.130:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="154" tvg-logo="https://via.placeholder.com/120x80?text=154" group-title="其他频道",154
-http://192.168.16.254:8866/udp/239.94.1.131:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="155" tvg-logo="https://via.placeholder.com/120x80?text=155" group-title="其他频道",155
-http://192.168.16.254:8866/udp/239.94.1.132:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="156" tvg-logo="https://via.placeholder.com/120x80?text=156" group-title="其他频道",156
-http://192.168.16.254:8866/udp/239.94.1.133:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="157" tvg-logo="https://via.placeholder.com/120x80?text=157" group-title="其他频道",157
-http://192.168.16.254:8866/udp/239.94.1.134:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="158" tvg-logo="https://via.placeholder.com/120x80?text=158" group-title="其他频道",158
-http://192.168.16.254:8866/udp/239.94.1.135:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="159" tvg-logo="https://via.placeholder.com/120x80?text=159" group-title="其他频道",159
-http://192.168.16.254:8866/udp/239.94.1.136:5140/
-
-#EXTINF:-1 tvg-id="CCTV16" tvg-name="16" tvg-logo="https://via.placeholder.com/120x80?text=16" group-title="其他频道",16
-http://192.168.16.254:8866/udp/239.94.0.129:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="160" tvg-logo="https://via.placeholder.com/120x80?text=160" group-title="其他频道",160
-http://192.168.16.254:8866/udp/239.94.1.137:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="161" tvg-logo="https://via.placeholder.com/120x80?text=161" group-title="其他频道",161
-http://192.168.16.254:8866/udp/239.94.1.138:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="162" tvg-logo="https://via.placeholder.com/120x80?text=162" group-title="其他频道",162
-http://192.168.16.254:8866/udp/239.94.1.139:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="163" tvg-logo="https://via.placeholder.com/120x80?text=163" group-title="其他频道",163
-http://192.168.16.254:8866/udp/239.94.1.140:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="164" tvg-logo="https://via.placeholder.com/120x80?text=164" group-title="其他频道",164
-http://192.168.16.254:8866/udp/239.94.1.141:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="165" tvg-logo="https://via.placeholder.com/120x80?text=165" group-title="其他频道",165
-http://192.168.16.254:8866/udp/239.94.1.142:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="166" tvg-logo="https://via.placeholder.com/120x80?text=166" group-title="其他频道",166
-http://192.168.16.254:8866/udp/239.94.1.143:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="167" tvg-logo="https://via.placeholder.com/120x80?text=167" group-title="其他频道",167
-http://192.168.16.254:8866/udp/239.94.1.144:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="168" tvg-logo="https://via.placeholder.com/120x80?text=168" group-title="其他频道",168
-http://192.168.16.254:8866/udp/239.94.1.145:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="169" tvg-logo="https://via.placeholder.com/120x80?text=169" group-title="其他频道",169
-http://192.168.16.254:8866/udp/239.94.1.146:5140/
-
-#EXTINF:-1 tvg-id="CCTV17" tvg-name="17" tvg-logo="https://epg.51zmt.top:8000/tb1/ys/CCTV17.png" group-title="其他频道",17
+#EXTINF:-1 tvg-id="CCTV4K" tvg-name="CCTV-17高清" tvg-logo="https://epg.51zmt.top:8000/tb1/ys/CCTV4K.png" group-title="央视频道",CCTV-17高清
 http://192.168.16.254:8866/udp/239.94.0.39:5140/
 
-#EXTINF:-1 tvg-id="" tvg-name="170" tvg-logo="https://via.placeholder.com/120x80?text=170" group-title="其他频道",170
-http://192.168.16.254:8866/udp/239.94.1.147:5140/
+#EXTINF:-1 tvg-id="CCTV4K" tvg-name="CCTV-1高清" tvg-logo="https://epg.51zmt.top:8000/tb1/ys/CCTV4K.png" group-title="央视频道",CCTV-1高清
+http://192.168.16.254:8866/udp/239.94.0.31:5140/
 
-#EXTINF:-1 tvg-id="" tvg-name="171" tvg-logo="https://via.placeholder.com/120x80?text=171" group-title="其他频道",171
-http://192.168.16.254:8866/udp/239.94.1.148:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="172" tvg-logo="https://via.placeholder.com/120x80?text=172" group-title="其他频道",172
-http://192.168.16.254:8866/udp/239.94.1.149:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="173" tvg-logo="https://via.placeholder.com/120x80?text=173" group-title="其他频道",173
-http://192.168.16.254:8866/udp/239.94.1.150:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="173" tvg-logo="https://via.placeholder.com/120x80?text=173" group-title="其他频道",173
-http://192.168.16.254:8866/udp/239.94.1.154:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="174" tvg-logo="https://via.placeholder.com/120x80?text=174" group-title="其他频道",174
-http://192.168.16.254:8866/udp/239.94.1.152:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="174" tvg-logo="https://via.placeholder.com/120x80?text=174" group-title="其他频道",174
-http://192.168.16.254:8866/udp/239.94.1.155:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="175" tvg-logo="https://via.placeholder.com/120x80?text=175" group-title="其他频道",175
-http://192.168.16.254:8866/udp/239.94.1.153:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="176" tvg-logo="https://via.placeholder.com/120x80?text=176" group-title="其他频道",176
-http://192.168.16.254:8866/udp/239.94.1.156:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="177" tvg-logo="https://via.placeholder.com/120x80?text=177" group-title="其他频道",177
-http://192.168.16.254:8866/udp/239.94.1.162:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="178" tvg-logo="https://via.placeholder.com/120x80?text=178" group-title="其他频道",178
-http://192.168.16.254:8866/udp/239.94.1.163:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="179" tvg-logo="https://via.placeholder.com/120x80?text=179" group-title="其他频道",179
-http://192.168.16.254:8866/udp/239.94.1.164:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="18" tvg-logo="https://via.placeholder.com/120x80?text=18" group-title="其他频道",18
-http://192.168.16.254:8866/udp/239.94.0.59:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="180" tvg-logo="https://via.placeholder.com/120x80?text=180" group-title="其他频道",180
-http://192.168.16.254:8866/udp/239.94.1.165:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="181" tvg-logo="https://via.placeholder.com/120x80?text=181" group-title="其他频道",181
-http://192.168.16.254:8866/udp/239.94.1.166:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="182" tvg-logo="https://via.placeholder.com/120x80?text=182" group-title="其他频道",182
-http://192.168.16.254:8866/udp/239.94.1.167:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="183" tvg-logo="https://via.placeholder.com/120x80?text=183" group-title="其他频道",183
-http://192.168.16.254:8866/udp/239.94.1.168:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="184" tvg-logo="https://via.placeholder.com/120x80?text=184" group-title="其他频道",184
-http://192.168.16.254:8866/udp/239.94.1.171:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="185" tvg-logo="https://via.placeholder.com/120x80?text=185" group-title="其他频道",185
-http://192.168.16.254:8866/udp/239.94.1.172:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="186" tvg-logo="https://via.placeholder.com/120x80?text=186" group-title="其他频道",186
-http://192.168.16.254:8866/udp/239.94.1.173:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="187" tvg-logo="https://via.placeholder.com/120x80?text=187" group-title="其他频道",187
-http://192.168.16.254:8866/udp/239.94.1.174:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="187" tvg-logo="https://via.placeholder.com/120x80?text=187" group-title="其他频道",187
-http://192.168.16.254:8866/udp/239.94.1.176:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="188" tvg-logo="https://via.placeholder.com/120x80?text=188" group-title="其他频道",188
-http://192.168.16.254:8866/udp/239.94.1.175:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="189" tvg-logo="https://via.placeholder.com/120x80?text=189" group-title="其他频道",189
-http://192.168.16.254:8866/udp/239.94.1.176:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="19" tvg-logo="https://via.placeholder.com/120x80?text=19" group-title="其他频道",19
-http://192.168.16.254:8866/udp/239.94.0.154:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="190" tvg-logo="https://via.placeholder.com/120x80?text=190" group-title="其他频道",190
-http://192.168.16.254:8866/udp/239.94.0.121:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="191" tvg-logo="https://via.placeholder.com/120x80?text=191" group-title="其他频道",191
-http://192.168.16.254:8866/udp/239.94.0.111:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="192" tvg-logo="https://via.placeholder.com/120x80?text=192" group-title="其他频道",192
-http://192.168.16.254:8866/udp/239.94.0.122:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="193" tvg-logo="https://via.placeholder.com/120x80?text=193" group-title="其他频道",193
-http://192.168.16.254:8866/udp/239.94.0.123:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="194" tvg-logo="https://via.placeholder.com/120x80?text=194" group-title="其他频道",194
-http://192.168.16.254:8866/udp/239.94.0.124:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="195" tvg-logo="https://via.placeholder.com/120x80?text=195" group-title="其他频道",195
-http://192.168.16.254:8866/udp/239.94.0.125:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="196" tvg-logo="https://via.placeholder.com/120x80?text=196" group-title="其他频道",196
-http://192.168.16.254:8866/udp/239.94.0.126:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="197" tvg-logo="https://via.placeholder.com/120x80?text=197" group-title="其他频道",197
-http://192.168.16.254:8866/udp/239.94.0.127:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="198" tvg-logo="https://via.placeholder.com/120x80?text=198" group-title="其他频道",198
-http://192.168.16.254:8866/udp/239.94.0.128:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="199" tvg-logo="https://via.placeholder.com/120x80?text=199" group-title="其他频道",199
-http://192.168.16.254:8866/udp/239.94.2.1:5140/
-
-#EXTINF:-1 tvg-id="CCTV12" tvg-name="2" tvg-logo="https://epg.51zmt.top:8000/tb1/ys/CCTV12.png" group-title="其他频道",2
+#EXTINF:-1 tvg-id="CCTV4K" tvg-name="CCTV-2高清" tvg-logo="https://epg.51zmt.top:8000/tb1/ys/CCTV4K.png" group-title="央视频道",CCTV-2高清
 http://192.168.16.254:8866/udp/239.94.0.2:5140/
 
-#EXTINF:-1 tvg-id="CCTV9-TVMAO-2026" tvg-name="20" tvg-logo="https://via.placeholder.com/120x80?text=20" group-title="其他频道",20
-http://192.168.16.254:8866/udp/239.94.0.20:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="200" tvg-logo="https://via.placeholder.com/120x80?text=200" group-title="其他频道",200
-http://192.168.16.254:8866/udp/239.94.2.2:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="201" tvg-logo="https://via.placeholder.com/120x80?text=201" group-title="其他频道",201
-http://192.168.16.254:8866/udp/239.94.2.10:5140/
-
-#EXTINF:-1 tvg-id="CCTV9-TVMAO-2026" tvg-name="202" tvg-logo="https://via.placeholder.com/120x80?text=202" group-title="其他频道",202
-http://192.168.16.254:8866/udp/239.94.2.7:5140/
-
-#EXTINF:-1 tvg-id="CCTV9-TVMAO-2026" tvg-name="202" tvg-logo="https://via.placeholder.com/120x80?text=202" group-title="其他频道",202
-http://192.168.16.254:8866/udp/239.94.2.11:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="203" tvg-logo="https://via.placeholder.com/120x80?text=203" group-title="其他频道",203
-http://192.168.16.254:8866/udp/239.94.2.8:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="203" tvg-logo="https://via.placeholder.com/120x80?text=203" group-title="其他频道",203
-http://192.168.16.254:8866/udp/239.94.2.12:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="204" tvg-logo="https://via.placeholder.com/120x80?text=204" group-title="其他频道",204
-http://192.168.16.254:8866/udp/239.94.2.9:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="204" tvg-logo="https://via.placeholder.com/120x80?text=204" group-title="其他频道",204
-http://192.168.16.254:8866/udp/239.94.2.13:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="205" tvg-logo="https://via.placeholder.com/120x80?text=205" group-title="其他频道",205
-http://192.168.16.254:8866/udp/239.94.2.14:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="206" tvg-logo="https://via.placeholder.com/120x80?text=206" group-title="其他频道",206
-http://192.168.16.254:8866/udp/239.94.2.15:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="207" tvg-logo="https://via.placeholder.com/120x80?text=207" group-title="其他频道",207
-http://192.168.16.254:8866/udp/239.94.2.16:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="208" tvg-logo="https://via.placeholder.com/120x80?text=208" group-title="其他频道",208
-http://192.168.16.254:8866/udp/239.94.2.17:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="209" tvg-logo="https://via.placeholder.com/120x80?text=209" group-title="其他频道",209
-http://192.168.16.254:8866/udp/239.94.2.18:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="21" tvg-logo="https://via.placeholder.com/120x80?text=21" group-title="其他频道",21
-http://192.168.16.254:8866/udp/239.94.0.21:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="210" tvg-logo="https://via.placeholder.com/120x80?text=210" group-title="其他频道",210
-http://192.168.16.254:8866/udp/239.94.2.19:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="211" tvg-logo="https://via.placeholder.com/120x80?text=211" group-title="其他频道",211
-http://192.168.16.254:8866/udp/239.94.2.20:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="212" tvg-logo="https://via.placeholder.com/120x80?text=212" group-title="其他频道",212
-http://192.168.16.254:8866/udp/239.94.2.23:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="213" tvg-logo="https://via.placeholder.com/120x80?text=213" group-title="其他频道",213
-http://192.168.16.254:8866/udp/239.94.2.25:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="214" tvg-logo="https://via.placeholder.com/120x80?text=214" group-title="其他频道",214
-http://192.168.16.254:8866/udp/239.94.2.128:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="215" tvg-logo="https://via.placeholder.com/120x80?text=215" group-title="其他频道",215
-http://192.168.16.254:8866/udp/239.94.2.129:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="216" tvg-logo="https://via.placeholder.com/120x80?text=216" group-title="其他频道",216
-http://192.168.16.254:8866/udp/239.94.2.21:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="216" tvg-logo="https://via.placeholder.com/120x80?text=216" group-title="其他频道",216
-http://192.168.16.254:8866/udp/239.94.2.131:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="217" tvg-logo="https://via.placeholder.com/120x80?text=217" group-title="其他频道",217
-http://192.168.16.254:8866/udp/239.94.2.132:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="218" tvg-logo="https://via.placeholder.com/120x80?text=218" group-title="其他频道",218
-http://192.168.16.254:8866/udp/239.94.2.24:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="218" tvg-logo="https://via.placeholder.com/120x80?text=218" group-title="其他频道",218
-http://192.168.16.254:8866/udp/239.94.2.135:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="219" tvg-logo="https://via.placeholder.com/120x80?text=219" group-title="其他频道",219
-http://192.168.16.254:8866/udp/239.94.2.137:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="22" tvg-logo="https://via.placeholder.com/120x80?text=22" group-title="其他频道",22
-http://192.168.16.254:8866/udp/239.94.0.40:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="220" tvg-logo="https://via.placeholder.com/120x80?text=220" group-title="其他频道",220
-http://192.168.16.254:8866/udp/239.94.2.42:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="220" tvg-logo="https://via.placeholder.com/120x80?text=220" group-title="其他频道",220
-http://192.168.16.254:8866/udp/239.94.2.139:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="221" tvg-logo="https://via.placeholder.com/120x80?text=221" group-title="其他频道",221
-http://192.168.16.254:8866/udp/239.94.2.140:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="222" tvg-logo="https://via.placeholder.com/120x80?text=222" group-title="其他频道",222
-http://192.168.16.254:8866/udp/239.94.2.146:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="223" tvg-logo="https://via.placeholder.com/120x80?text=223" group-title="其他频道",223
-http://192.168.16.254:8866/udp/239.94.2.147:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="224" tvg-logo="https://via.placeholder.com/120x80?text=224" group-title="其他频道",224
-http://192.168.16.254:8866/udp/239.94.2.148:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="225" tvg-logo="https://via.placeholder.com/120x80?text=225" group-title="其他频道",225
-http://192.168.16.254:8866/udp/239.94.2.149:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="226" tvg-logo="https://via.placeholder.com/120x80?text=226" group-title="其他频道",226
-http://192.168.16.254:8866/udp/239.94.2.150:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="227" tvg-logo="https://via.placeholder.com/120x80?text=227" group-title="其他频道",227
-http://192.168.16.254:8866/udp/239.94.2.151:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="228" tvg-logo="https://via.placeholder.com/120x80?text=228" group-title="其他频道",228
-http://192.168.16.254:8866/udp/239.94.2.152:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="229" tvg-logo="https://via.placeholder.com/120x80?text=229" group-title="其他频道",229
-http://192.168.16.254:8866/udp/239.94.2.153:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="23" tvg-logo="https://via.placeholder.com/120x80?text=23" group-title="其他频道",23
-http://192.168.16.254:8866/udp/239.94.0.23:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="230" tvg-logo="https://via.placeholder.com/120x80?text=230" group-title="其他频道",230
-http://192.168.16.254:8866/udp/239.94.2.154:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="231" tvg-logo="https://via.placeholder.com/120x80?text=231" group-title="其他频道",231
-http://192.168.16.254:8866/udp/239.94.2.155:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="232" tvg-logo="https://via.placeholder.com/120x80?text=232" group-title="其他频道",232
-http://192.168.16.254:8866/udp/239.94.2.156:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="233" tvg-logo="https://via.placeholder.com/120x80?text=233" group-title="其他频道",233
-http://192.168.16.254:8866/udp/239.94.2.157:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="234" tvg-logo="https://via.placeholder.com/120x80?text=234" group-title="其他频道",234
-http://192.168.16.254:8866/udp/239.94.2.158:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="235" tvg-logo="https://via.placeholder.com/120x80?text=235" group-title="其他频道",235
-http://192.168.16.254:8866/udp/239.94.2.159:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="236" tvg-logo="https://via.placeholder.com/120x80?text=236" group-title="其他频道",236
-http://192.168.16.254:8866/udp/239.94.2.160:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="237" tvg-logo="https://via.placeholder.com/120x80?text=237" group-title="其他频道",237
-http://192.168.16.254:8866/udp/239.94.2.161:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="238" tvg-logo="https://via.placeholder.com/120x80?text=238" group-title="其他频道",238
-http://192.168.16.254:8866/udp/239.94.2.165:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="239" tvg-logo="https://via.placeholder.com/120x80?text=239" group-title="其他频道",239
-http://192.168.16.254:8866/udp/239.94.2.166:5140/
-
-#EXTINF:-1 tvg-id="歌手2024" tvg-name="24" tvg-logo="https://via.placeholder.com/120x80?text=24" group-title="其他频道",24
-http://192.168.16.254:8866/udp/239.94.1.63:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="240" tvg-logo="https://via.placeholder.com/120x80?text=240" group-title="其他频道",240
-http://192.168.16.254:8866/udp/239.94.2.163:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="241" tvg-logo="https://via.placeholder.com/120x80?text=241" group-title="其他频道",241
-http://192.168.16.254:8866/udp/239.94.2.164:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="242" tvg-logo="https://via.placeholder.com/120x80?text=242" group-title="其他频道",242
-http://192.168.16.254:8866/udp/239.94.2.162:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="243" tvg-logo="https://via.placeholder.com/120x80?text=243" group-title="其他频道",243
-http://192.168.16.254:8866/udp/239.94.2.167:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="244" tvg-logo="https://via.placeholder.com/120x80?text=244" group-title="其他频道",244
-http://192.168.16.254:8866/udp/239.94.2.168:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="245" tvg-logo="https://via.placeholder.com/120x80?text=245" group-title="其他频道",245
-http://192.168.16.254:8866/udp/239.94.2.169:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="246" tvg-logo="https://via.placeholder.com/120x80?text=246" group-title="其他频道",246
-http://192.168.16.254:8866/udp/239.94.2.170:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="247" tvg-logo="https://via.placeholder.com/120x80?text=247" group-title="其他频道",247
-http://192.168.16.254:8866/udp/239.94.2.172:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="248" tvg-logo="https://via.placeholder.com/120x80?text=248" group-title="其他频道",248
-http://192.168.16.254:8866/udp/239.94.2.173:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="249" tvg-logo="https://via.placeholder.com/120x80?text=249" group-title="其他频道",249
-http://192.168.16.254:8866/udp/239.94.2.174:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="250" tvg-logo="https://via.placeholder.com/120x80?text=250" group-title="其他频道",250
-http://192.168.16.254:8866/udp/239.94.2.175:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="251" tvg-logo="https://via.placeholder.com/120x80?text=251" group-title="其他频道",251
-http://192.168.16.254:8866/udp/239.94.2.176:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="252" tvg-logo="https://via.placeholder.com/120x80?text=252" group-title="其他频道",252
-http://192.168.16.254:8866/udp/239.94.2.177:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="253" tvg-logo="https://via.placeholder.com/120x80?text=253" group-title="其他频道",253
-http://192.168.16.254:8866/udp/239.94.2.178:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="254" tvg-logo="https://via.placeholder.com/120x80?text=254" group-title="其他频道",254
-http://192.168.16.254:8866/udp/239.94.2.179:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="255" tvg-logo="https://via.placeholder.com/120x80?text=255" group-title="其他频道",255
-http://192.168.16.254:8866/udp/239.94.2.180:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="256" tvg-logo="https://via.placeholder.com/120x80?text=256" group-title="其他频道",256
-http://192.168.16.254:8866/udp/239.94.2.181:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="257" tvg-logo="https://via.placeholder.com/120x80?text=257" group-title="其他频道",257
-http://192.168.16.254:8866/udp/239.94.2.182:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="258" tvg-logo="https://via.placeholder.com/120x80?text=258" group-title="其他频道",258
-http://192.168.16.254:8866/udp/239.94.2.183:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="259" tvg-logo="https://via.placeholder.com/120x80?text=259" group-title="其他频道",259
-http://192.168.16.254:8866/udp/239.94.2.184:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="260" tvg-logo="https://via.placeholder.com/120x80?text=260" group-title="其他频道",260
-http://192.168.16.254:8866/udp/239.94.2.209:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="261" tvg-logo="https://via.placeholder.com/120x80?text=261" group-title="其他频道",261
-http://192.168.16.254:8866/udp/239.94.2.185:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="262" tvg-logo="https://via.placeholder.com/120x80?text=262" group-title="其他频道",262
-http://192.168.16.254:8866/udp/239.94.2.186:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="263" tvg-logo="https://via.placeholder.com/120x80?text=263" group-title="其他频道",263
-http://192.168.16.254:8866/udp/239.94.2.187:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="264" tvg-logo="https://via.placeholder.com/120x80?text=264" group-title="其他频道",264
-http://192.168.16.254:8866/udp/239.94.2.189:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="265" tvg-logo="https://via.placeholder.com/120x80?text=265" group-title="其他频道",265
-http://192.168.16.254:8866/udp/239.94.2.190:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="266" tvg-logo="https://via.placeholder.com/120x80?text=266" group-title="其他频道",266
-http://192.168.16.254:8866/udp/239.94.2.191:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="267" tvg-logo="https://via.placeholder.com/120x80?text=267" group-title="其他频道",267
-http://192.168.16.254:8866/udp/239.94.2.192:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="268" tvg-logo="https://via.placeholder.com/120x80?text=268" group-title="其他频道",268
-http://192.168.16.254:8866/udp/239.94.2.193:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="269" tvg-logo="https://via.placeholder.com/120x80?text=269" group-title="其他频道",269
-http://192.168.16.254:8866/udp/239.94.2.194:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="270" tvg-logo="https://via.placeholder.com/120x80?text=270" group-title="其他频道",270
-http://192.168.16.254:8866/udp/239.94.2.195:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="271" tvg-logo="https://via.placeholder.com/120x80?text=271" group-title="其他频道",271
-http://192.168.16.254:8866/udp/239.94.2.196:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="272" tvg-logo="https://via.placeholder.com/120x80?text=272" group-title="其他频道",272
-http://192.168.16.254:8866/udp/239.94.2.197:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="273" tvg-logo="https://via.placeholder.com/120x80?text=273" group-title="其他频道",273
-http://192.168.16.254:8866/udp/239.94.2.198:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="274" tvg-logo="https://via.placeholder.com/120x80?text=274" group-title="其他频道",274
-http://192.168.16.254:8866/udp/239.94.2.199:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="275" tvg-logo="https://via.placeholder.com/120x80?text=275" group-title="其他频道",275
-http://192.168.16.254:8866/udp/239.94.2.200:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="276" tvg-logo="https://via.placeholder.com/120x80?text=276" group-title="其他频道",276
-http://192.168.16.254:8866/udp/239.94.2.201:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="277" tvg-logo="https://via.placeholder.com/120x80?text=277" group-title="其他频道",277
-http://192.168.16.254:8866/udp/239.94.2.202:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="278" tvg-logo="https://via.placeholder.com/120x80?text=278" group-title="其他频道",278
-http://192.168.16.254:8866/udp/239.94.2.203:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="279" tvg-logo="https://via.placeholder.com/120x80?text=279" group-title="其他频道",279
-http://192.168.16.254:8866/udp/239.94.2.204:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="280" tvg-logo="https://via.placeholder.com/120x80?text=280" group-title="其他频道",280
-http://192.168.16.254:8866/udp/239.94.2.205:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="281" tvg-logo="https://via.placeholder.com/120x80?text=281" group-title="其他频道",281
-http://192.168.16.254:8866/udp/239.94.2.206:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="282" tvg-logo="https://via.placeholder.com/120x80?text=282" group-title="其他频道",282
-http://192.168.16.254:8866/udp/239.94.2.207:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="283" tvg-logo="https://via.placeholder.com/120x80?text=283" group-title="其他频道",283
-http://192.168.16.254:8866/udp/239.94.2.208:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="284" tvg-logo="https://via.placeholder.com/120x80?text=284" group-title="其他频道",284
-http://192.168.16.254:8866/udp/239.94.2.210:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="285" tvg-logo="https://via.placeholder.com/120x80?text=285" group-title="其他频道",285
-http://192.168.16.254:8866/udp/239.94.2.211:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="286" tvg-logo="https://via.placeholder.com/120x80?text=286" group-title="其他频道",286
-http://192.168.16.254:8866/udp/239.94.2.212:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="287" tvg-logo="https://via.placeholder.com/120x80?text=287" group-title="其他频道",287
-http://192.168.16.254:8866/udp/239.94.2.213:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="288" tvg-logo="https://via.placeholder.com/120x80?text=288" group-title="其他频道",288
-http://192.168.16.254:8866/udp/239.94.2.215:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="289" tvg-logo="https://via.placeholder.com/120x80?text=289" group-title="其他频道",289
-http://192.168.16.254:8866/udp/239.94.2.216:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="290" tvg-logo="https://via.placeholder.com/120x80?text=290" group-title="其他频道",290
-http://192.168.16.254:8866/udp/239.94.2.188:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="291" tvg-logo="https://via.placeholder.com/120x80?text=291" group-title="其他频道",291
-http://192.168.16.254:8866/udp/239.94.2.217:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="292" tvg-logo="https://via.placeholder.com/120x80?text=292" group-title="其他频道",292
-http://192.168.16.254:8866/udp/239.94.2.218:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="293" tvg-logo="https://via.placeholder.com/120x80?text=293" group-title="其他频道",293
-http://192.168.16.254:8866/udp/239.94.2.219:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="294" tvg-logo="https://via.placeholder.com/120x80?text=294" group-title="其他频道",294
-http://192.168.16.254:8866/udp/239.94.2.220:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="295" tvg-logo="https://via.placeholder.com/120x80?text=295" group-title="其他频道",295
-http://192.168.16.254:8866/udp/239.94.2.221:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="296" tvg-logo="https://via.placeholder.com/120x80?text=296" group-title="其他频道",296
-http://192.168.16.254:8866/udp/239.94.2.222:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="297" tvg-logo="https://via.placeholder.com/120x80?text=297" group-title="其他频道",297
-http://192.168.16.254:8866/udp/239.94.2.223:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="298" tvg-logo="https://via.placeholder.com/120x80?text=298" group-title="其他频道",298
-http://192.168.16.254:8866/udp/239.94.2.224:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="299" tvg-logo="https://via.placeholder.com/120x80?text=299" group-title="其他频道",299
-http://192.168.16.254:8866/udp/239.94.2.226:5140/
-
-#EXTINF:-1 tvg-id="CCTV13" tvg-name="3" tvg-logo="https://epg.51zmt.top:8000/tb1/ys/CCTV13.png" group-title="其他频道",3
+#EXTINF:-1 tvg-id="CCTV4K" tvg-name="CCTV-3高清" tvg-logo="https://epg.51zmt.top:8000/tb1/ys/CCTV4K.png" group-title="央视频道",CCTV-3高清
 http://192.168.16.254:8866/udp/239.94.0.32:5140/
 
-#EXTINF:-1 tvg-id="" tvg-name="300" tvg-logo="https://via.placeholder.com/120x80?text=300" group-title="其他频道",300
-http://192.168.16.254:8866/udp/239.94.2.228:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="301" tvg-logo="https://via.placeholder.com/120x80?text=301" group-title="其他频道",301
-http://192.168.16.254:8866/udp/239.94.2.229:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="302" tvg-logo="https://via.placeholder.com/120x80?text=302" group-title="其他频道",302
-http://192.168.16.254:8866/udp/239.94.2.230:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="303" tvg-logo="https://via.placeholder.com/120x80?text=303" group-title="其他频道",303
-http://192.168.16.254:8866/udp/239.94.2.231:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="304" tvg-logo="https://via.placeholder.com/120x80?text=304" group-title="其他频道",304
-http://192.168.16.254:8866/udp/239.94.2.232:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="305" tvg-logo="https://via.placeholder.com/120x80?text=305" group-title="其他频道",305
-http://192.168.16.254:8866/udp/239.94.2.233:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="306" tvg-logo="https://via.placeholder.com/120x80?text=306" group-title="其他频道",306
-http://192.168.16.254:8866/udp/239.94.2.235:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="307" tvg-logo="https://via.placeholder.com/120x80?text=307" group-title="其他频道",307
-http://192.168.16.254:8866/udp/239.94.2.236:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="308" tvg-logo="https://via.placeholder.com/120x80?text=308" group-title="其他频道",308
-http://192.168.16.254:8866/udp/239.94.2.237:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="309" tvg-logo="https://via.placeholder.com/120x80?text=309" group-title="其他频道",309
-http://192.168.16.254:8866/udp/239.94.2.238:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="34" tvg-logo="https://via.placeholder.com/120x80?text=34" group-title="其他频道",34
-http://192.168.16.254:8866/udp/239.94.0.61:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="35" tvg-logo="https://via.placeholder.com/120x80?text=35" group-title="其他频道",35
-http://192.168.16.254:8866/udp/239.94.0.62:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="36" tvg-logo="https://via.placeholder.com/120x80?text=36" group-title="其他频道",36
-http://192.168.16.254:8866/udp/239.94.0.63:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="37" tvg-logo="https://via.placeholder.com/120x80?text=37" group-title="其他频道",37
-http://192.168.16.254:8866/udp/239.94.0.64:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="38" tvg-logo="https://via.placeholder.com/120x80?text=38" group-title="其他频道",38
-http://192.168.16.254:8866/udp/239.94.0.65:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="39" tvg-logo="https://via.placeholder.com/120x80?text=39" group-title="其他频道",39
-http://192.168.16.254:8866/udp/239.94.0.66:5140/
-
-#EXTINF:-1 tvg-id="CCTV14" tvg-name="4" tvg-logo="https://epg.51zmt.top:8000/tb1/ys/CCTV14.png" group-title="其他频道",4
+#EXTINF:-1 tvg-id="CCTV4K" tvg-name="CCTV-4高清" tvg-logo="https://epg.51zmt.top:8000/tb1/ys/CCTV4K.png" group-title="央视频道",CCTV-4高清
 http://192.168.16.254:8866/udp/239.94.0.4:5140/
 
-#EXTINF:-1 tvg-id="" tvg-name="40" tvg-logo="https://via.placeholder.com/120x80?text=40" group-title="其他频道",40
-http://192.168.16.254:8866/udp/239.94.0.67:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="41" tvg-logo="https://via.placeholder.com/120x80?text=41" group-title="其他频道",41
-http://192.168.16.254:8866/udp/239.94.0.68:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="42" tvg-logo="https://via.placeholder.com/120x80?text=42" group-title="其他频道",42
-http://192.168.16.254:8866/udp/239.94.0.69:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="43" tvg-logo="https://via.placeholder.com/120x80?text=43" group-title="其他频道",43
-http://192.168.16.254:8866/udp/239.94.0.70:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="44" tvg-logo="https://via.placeholder.com/120x80?text=44" group-title="其他频道",44
-http://192.168.16.254:8866/udp/239.94.0.71:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="45" tvg-logo="https://via.placeholder.com/120x80?text=45" group-title="其他频道",45
-http://192.168.16.254:8866/udp/239.94.0.72:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="46" tvg-logo="https://via.placeholder.com/120x80?text=46" group-title="其他频道",46
-http://192.168.16.254:8866/udp/239.94.0.73:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="47" tvg-logo="https://via.placeholder.com/120x80?text=47" group-title="其他频道",47
-http://192.168.16.254:8866/udp/239.94.0.74:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="48" tvg-logo="https://via.placeholder.com/120x80?text=48" group-title="其他频道",48
-http://192.168.16.254:8866/udp/239.94.0.75:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="49" tvg-logo="https://via.placeholder.com/120x80?text=49" group-title="其他频道",49
-http://192.168.16.254:8866/udp/239.94.0.76:5140/
-
-#EXTINF:-1 tvg-id="CCTV15" tvg-name="5" tvg-logo="https://epg.51zmt.top:8000/tb1/ys/CCTV15.png" group-title="其他频道",5
+#EXTINF:-1 tvg-id="CCTV4K" tvg-name="CCTV-5高清" tvg-logo="https://epg.51zmt.top:8000/tb1/ys/CCTV4K.png" group-title="央视频道",CCTV-5高清
 http://192.168.16.254:8866/udp/239.94.0.33:5140/
 
-#EXTINF:-1 tvg-id="" tvg-name="50" tvg-logo="https://via.placeholder.com/120x80?text=50" group-title="其他频道",50
-http://192.168.16.254:8866/udp/239.94.0.77:5140/
+#EXTINF:-1 tvg-id="CCTV4K" tvg-name="CCTV-5＋高清" tvg-logo="https://epg.51zmt.top:8000/tb1/ys/CCTV4K.png" group-title="央视频道",CCTV-5＋高清
+http://192.168.16.254:8866/udp/239.94.0.23:5140/
 
-#EXTINF:-1 tvg-id="" tvg-name="51" tvg-logo="https://via.placeholder.com/120x80?text=51" group-title="其他频道",51
-http://192.168.16.254:8866/udp/239.94.0.78:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="52" tvg-logo="https://via.placeholder.com/120x80?text=52" group-title="其他频道",52
-http://192.168.16.254:8866/udp/239.94.0.103:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="53" tvg-logo="https://via.placeholder.com/120x80?text=53" group-title="其他频道",53
-http://192.168.16.254:8866/udp/239.94.0.79:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="54" tvg-logo="https://via.placeholder.com/120x80?text=54" group-title="其他频道",54
-http://192.168.16.254:8866/udp/239.94.0.80:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="55" tvg-logo="https://via.placeholder.com/120x80?text=55" group-title="其他频道",55
-http://192.168.16.254:8866/udp/239.94.0.81:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="56" tvg-logo="https://via.placeholder.com/120x80?text=56" group-title="其他频道",56
-http://192.168.16.254:8866/udp/239.94.0.83:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="57" tvg-logo="https://via.placeholder.com/120x80?text=57" group-title="其他频道",57
-http://192.168.16.254:8866/udp/239.94.0.84:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="58" tvg-logo="https://via.placeholder.com/120x80?text=58" group-title="其他频道",58
-http://192.168.16.254:8866/udp/239.94.0.85:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="59" tvg-logo="https://via.placeholder.com/120x80?text=59" group-title="其他频道",59
-http://192.168.16.254:8866/udp/239.94.0.86:5140/
-
-#EXTINF:-1 tvg-id="CCTV16" tvg-name="6" tvg-logo="https://via.placeholder.com/120x80?text=6" group-title="其他频道",6
+#EXTINF:-1 tvg-id="CCTV4K" tvg-name="CCTV-6高清" tvg-logo="https://epg.51zmt.top:8000/tb1/ys/CCTV4K.png" group-title="央视频道",CCTV-6高清
 http://192.168.16.254:8866/udp/239.94.0.34:5140/
 
-#EXTINF:-1 tvg-id="" tvg-name="60" tvg-logo="https://via.placeholder.com/120x80?text=60" group-title="其他频道",60
-http://192.168.16.254:8866/udp/239.94.0.87:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="61" tvg-logo="https://via.placeholder.com/120x80?text=61" group-title="其他频道",61
-http://192.168.16.254:8866/udp/239.94.0.88:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="62" tvg-logo="https://via.placeholder.com/120x80?text=62" group-title="其他频道",62
-http://192.168.16.254:8866/udp/239.94.0.89:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="63" tvg-logo="https://via.placeholder.com/120x80?text=63" group-title="其他频道",63
-http://192.168.16.254:8866/udp/239.94.0.90:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="64" tvg-logo="https://via.placeholder.com/120x80?text=64" group-title="其他频道",64
-http://192.168.16.254:8866/udp/239.94.0.91:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="65" tvg-logo="https://via.placeholder.com/120x80?text=65" group-title="其他频道",65
-http://192.168.16.254:8866/udp/239.94.0.92:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="66" tvg-logo="https://via.placeholder.com/120x80?text=66" group-title="其他频道",66
-http://192.168.16.254:8866/udp/239.94.0.93:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="66" tvg-logo="https://via.placeholder.com/120x80?text=66" group-title="其他频道",66
-http://192.168.16.254:8866/udp/239.94.0.94:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="67" tvg-logo="https://via.placeholder.com/120x80?text=67" group-title="其他频道",67
-http://192.168.16.254:8866/udp/239.94.0.94:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="68" tvg-logo="https://via.placeholder.com/120x80?text=68" group-title="其他频道",68
-http://192.168.16.254:8866/udp/239.94.0.95:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="69" tvg-logo="https://via.placeholder.com/120x80?text=69" group-title="其他频道",69
-http://192.168.16.254:8866/udp/239.94.0.96:5140/
-
-#EXTINF:-1 tvg-id="CCTV17" tvg-name="7" tvg-logo="https://epg.51zmt.top:8000/tb1/ys/CCTV17.png" group-title="其他频道",7
+#EXTINF:-1 tvg-id="CCTV4K" tvg-name="CCTV-7高清" tvg-logo="https://epg.51zmt.top:8000/tb1/ys/CCTV4K.png" group-title="央视频道",CCTV-7高清
 http://192.168.16.254:8866/udp/239.94.0.7:5140/
 
-#EXTINF:-1 tvg-id="" tvg-name="70" tvg-logo="https://via.placeholder.com/120x80?text=70" group-title="其他频道",70
-http://192.168.16.254:8866/udp/239.94.0.97:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="71" tvg-logo="https://via.placeholder.com/120x80?text=71" group-title="其他频道",71
-http://192.168.16.254:8866/udp/239.94.0.98:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="72" tvg-logo="https://via.placeholder.com/120x80?text=72" group-title="其他频道",72
-http://192.168.16.254:8866/udp/239.94.0.99:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="73" tvg-logo="https://via.placeholder.com/120x80?text=73" group-title="其他频道",73
-http://192.168.16.254:8866/udp/239.94.0.100:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="74" tvg-logo="https://via.placeholder.com/120x80?text=74" group-title="其他频道",74
-http://192.168.16.254:8866/udp/239.94.0.101:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="75" tvg-logo="https://via.placeholder.com/120x80?text=75" group-title="其他频道",75
-http://192.168.16.254:8866/udp/239.94.0.102:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="76" tvg-logo="https://via.placeholder.com/120x80?text=76" group-title="其他频道",76
-http://192.168.16.254:8866/udp/239.94.0.104:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="77" tvg-logo="https://via.placeholder.com/120x80?text=77" group-title="其他频道",77
-http://192.168.16.254:8866/udp/239.94.0.105:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="78" tvg-logo="https://via.placeholder.com/120x80?text=78" group-title="其他频道",78
-http://192.168.16.254:8866/udp/239.94.0.106:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="79" tvg-logo="https://via.placeholder.com/120x80?text=79" group-title="其他频道",79
-http://192.168.16.254:8866/udp/239.94.0.107:5140/
-
-#EXTINF:-1 tvg-id="CCTV8" tvg-name="8" tvg-logo="https://epg.51zmt.top:8000/tb1/ys/CCTV8.png" group-title="其他频道",8
+#EXTINF:-1 tvg-id="CCTV4K" tvg-name="CCTV-8高清" tvg-logo="https://epg.51zmt.top:8000/tb1/ys/CCTV4K.png" group-title="央视频道",CCTV-8高清
 http://192.168.16.254:8866/udp/239.94.0.35:5140/
 
-#EXTINF:-1 tvg-id="" tvg-name="80" tvg-logo="https://via.placeholder.com/120x80?text=80" group-title="其他频道",80
-http://192.168.16.254:8866/udp/239.94.0.109:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="81" tvg-logo="https://via.placeholder.com/120x80?text=81" group-title="其他频道",81
-http://192.168.16.254:8866/udp/239.94.0.110:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="82" tvg-logo="https://via.placeholder.com/120x80?text=82" group-title="其他频道",82
-http://192.168.16.254:8866/udp/239.94.0.82:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="83" tvg-logo="https://via.placeholder.com/120x80?text=83" group-title="其他频道",83
-http://192.168.16.254:8866/udp/239.94.0.165:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="84" tvg-logo="https://via.placeholder.com/120x80?text=84" group-title="其他频道",84
-http://192.168.16.254:8866/udp/239.94.0.174:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="85" tvg-logo="https://via.placeholder.com/120x80?text=85" group-title="其他频道",85
-http://192.168.16.254:8866/udp/239.94.0.177:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="86" tvg-logo="https://via.placeholder.com/120x80?text=86" group-title="其他频道",86
-http://192.168.16.254:8866/udp/239.94.0.184:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="87" tvg-logo="https://via.placeholder.com/120x80?text=87" group-title="其他频道",87
-http://192.168.16.254:8866/udp/239.94.0.185:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="88" tvg-logo="https://via.placeholder.com/120x80?text=88" group-title="其他频道",88
-http://192.168.16.254:8866/udp/239.94.0.186:5140/
-
-#EXTINF:-1 tvg-id="" tvg-name="89" tvg-logo="https://via.placeholder.com/120x80?text=89" group-title="其他频道",89
-http://192.168.16.254:8866/udp/239.94.1.1:5140/
-
-#EXTINF:-1 tvg-id="CCTV9" tvg-name="9" tvg-logo="https://epg.51zmt.top:8000/tb1/ys/CCTV9.png" group-title="其他频道",9
+#EXTINF:-1 tvg-id="CCTV4K" tvg-name="CCTV-9高清" tvg-logo="https://epg.51zmt.top:8000/tb1/ys/CCTV4K.png" group-title="央视频道",CCTV-9高清
 http://192.168.16.254:8866/udp/239.94.0.9:5140/
 
-#EXTINF:-1 tvg-id="" tvg-name="90" tvg-logo="https://via.placeholder.com/120x80?text=90" group-title="其他频道",90
+#EXTINF:-1 tvg-id="CCTV4K" tvg-name="CCTV-少儿高清" tvg-logo="https://epg.51zmt.top:8000/tb1/ys/CCTV4K.png" group-title="央视频道",CCTV-少儿高清
+http://192.168.16.254:8866/udp/239.94.0.14:5140/
+
+#EXTINF:-1 tvg-id="东方卫视" tvg-name="东方卫视4K" tvg-logo="https://via.placeholder.com/120x80?text=%E4%B8%9C%E6%96%B9%E5%8D%AB%E8%A7%864K" group-title="卫视频道",东方卫视4K
+http://192.168.16.254:8866/udp/239.94.0.125:5140/
+
+#EXTINF:-1 tvg-id="东方卫视" tvg-name="东方卫视高清" tvg-logo="https://via.placeholder.com/120x80?text=%E4%B8%9C%E6%96%B9%E5%8D%AB%E8%A7%86%E9%AB%98%E6%B8%85" group-title="卫视频道",东方卫视高清
+http://192.168.16.254:8866/udp/239.94.0.64:5140/
+
+#EXTINF:-1 tvg-id="北京卫视" tvg-name="北京卫视4K" tvg-logo="https://via.placeholder.com/120x80?text=%E5%8C%97%E4%BA%AC%E5%8D%AB%E8%A7%864K" group-title="卫视频道",北京卫视4K
+http://192.168.16.254:8866/udp/239.94.0.111:5140/
+
+#EXTINF:-1 tvg-id="北京卫视" tvg-name="北京卫视高清" tvg-logo="https://via.placeholder.com/120x80?text=%E5%8C%97%E4%BA%AC%E5%8D%AB%E8%A7%86%E9%AB%98%E6%B8%85" group-title="卫视频道",北京卫视高清
+http://192.168.16.254:8866/udp/239.94.0.65:5140/
+
+#EXTINF:-1 tvg-id="四川卫视" tvg-name="四川卫视4K" tvg-logo="https://via.placeholder.com/120x80?text=%E5%9B%9B%E5%B7%9D%E5%8D%AB%E8%A7%864K" group-title="卫视频道",四川卫视4K
+http://192.168.16.254:8866/udp/239.94.0.121:5140/
+
+#EXTINF:-1 tvg-id="四川卫视" tvg-name="四川卫视高清" tvg-logo="https://via.placeholder.com/120x80?text=%E5%9B%9B%E5%B7%9D%E5%8D%AB%E8%A7%86%E9%AB%98%E6%B8%85" group-title="卫视频道",四川卫视高清
+http://192.168.16.254:8866/udp/239.94.0.59:5140/
+
+#EXTINF:-1 tvg-id="山东卫视" tvg-name="山东卫视4K" tvg-logo="https://via.placeholder.com/120x80?text=%E5%B1%B1%E4%B8%9C%E5%8D%AB%E8%A7%864K" group-title="卫视频道",山东卫视4K
+http://192.168.16.254:8866/udp/239.94.0.128:5140/
+
+#EXTINF:-1 tvg-id="山东卫视" tvg-name="山东卫视高清" tvg-logo="https://via.placeholder.com/120x80?text=%E5%B1%B1%E4%B8%9C%E5%8D%AB%E8%A7%86%E9%AB%98%E6%B8%85" group-title="卫视频道",山东卫视高清
+http://192.168.16.254:8866/udp/239.94.0.69:5140/
+
+#EXTINF:-1 tvg-id="广东卫视" tvg-name="广东卫视4K" tvg-logo="https://via.placeholder.com/120x80?text=%E5%B9%BF%E4%B8%9C%E5%8D%AB%E8%A7%864K" group-title="卫视频道",广东卫视4K
+http://192.168.16.254:8866/udp/239.94.0.127:5140/
+
+#EXTINF:-1 tvg-id="广东卫视" tvg-name="广东卫视高清" tvg-logo="https://via.placeholder.com/120x80?text=%E5%B9%BF%E4%B8%9C%E5%8D%AB%E8%A7%86%E9%AB%98%E6%B8%85" group-title="卫视频道",广东卫视高清
+http://192.168.16.254:8866/udp/239.94.0.67:5140/
+
+#EXTINF:-1 tvg-id="江苏卫视" tvg-name="江苏卫视4K" tvg-logo="https://via.placeholder.com/120x80?text=%E6%B1%9F%E8%8B%8F%E5%8D%AB%E8%A7%864K" group-title="卫视频道",江苏卫视4K
+http://192.168.16.254:8866/udp/239.94.0.123:5140/
+
+#EXTINF:-1 tvg-id="江苏卫视" tvg-name="江苏卫视高清" tvg-logo="https://via.placeholder.com/120x80?text=%E6%B1%9F%E8%8B%8F%E5%8D%AB%E8%A7%86%E9%AB%98%E6%B8%85" group-title="卫视频道",江苏卫视高清
+http://192.168.16.254:8866/udp/239.94.0.62:5140/
+
+#EXTINF:-1 tvg-id="浙江卫视" tvg-name="浙江卫视4K" tvg-logo="https://via.placeholder.com/120x80?text=%E6%B5%99%E6%B1%9F%E5%8D%AB%E8%A7%864K" group-title="卫视频道",浙江卫视4K
+http://192.168.16.254:8866/udp/239.94.0.124:5140/
+
+#EXTINF:-1 tvg-id="浙江卫视" tvg-name="浙江卫视高清" tvg-logo="https://via.placeholder.com/120x80?text=%E6%B5%99%E6%B1%9F%E5%8D%AB%E8%A7%86%E9%AB%98%E6%B8%85" group-title="卫视频道",浙江卫视高清
+http://192.168.16.254:8866/udp/239.94.0.63:5140/
+
+#EXTINF:-1 tvg-id="深圳卫视" tvg-name="深圳卫视4K" tvg-logo="https://via.placeholder.com/120x80?text=%E6%B7%B1%E5%9C%B3%E5%8D%AB%E8%A7%864K" group-title="卫视频道",深圳卫视4K
+http://192.168.16.254:8866/udp/239.94.0.126:5140/
+
+#EXTINF:-1 tvg-id="深圳卫视" tvg-name="深圳卫视高清" tvg-logo="https://via.placeholder.com/120x80?text=%E6%B7%B1%E5%9C%B3%E5%8D%AB%E8%A7%86%E9%AB%98%E6%B8%85" group-title="卫视频道",深圳卫视高清
+http://192.168.16.254:8866/udp/239.94.0.66:5140/
+
+#EXTINF:-1 tvg-id="湖南卫视" tvg-name="湖南卫视4K" tvg-logo="https://via.placeholder.com/120x80?text=%E6%B9%96%E5%8D%97%E5%8D%AB%E8%A7%864K" group-title="卫视频道",湖南卫视4K
+http://192.168.16.254:8866/udp/239.94.0.122:5140/
+
+#EXTINF:-1 tvg-id="湖南卫视" tvg-name="湖南卫视高清" tvg-logo="https://via.placeholder.com/120x80?text=%E6%B9%96%E5%8D%97%E5%8D%AB%E8%A7%86%E9%AB%98%E6%B8%85" group-title="卫视频道",湖南卫视高清
+http://192.168.16.254:8866/udp/239.94.0.61:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="CDTV-1高清" tvg-logo="https://via.placeholder.com/120x80?text=CDTV1%E9%AB%98%E6%B8%85" group-title="四川地方台",CDTV-1高清
+http://192.168.16.254:8866/udp/239.94.0.154:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="CDTV-2高清" tvg-logo="https://via.placeholder.com/120x80?text=CDTV2%E9%AB%98%E6%B8%85" group-title="四川地方台",CDTV-2高清
+http://192.168.16.254:8866/udp/239.94.0.165:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="CDTV-3高清" tvg-logo="https://via.placeholder.com/120x80?text=CDTV3%E9%AB%98%E6%B8%85" group-title="四川地方台",CDTV-3高清
+http://192.168.16.254:8866/udp/239.94.0.174:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="CDTV-4高清" tvg-logo="https://via.placeholder.com/120x80?text=CDTV4%E9%AB%98%E6%B8%85" group-title="四川地方台",CDTV-4高清
+http://192.168.16.254:8866/udp/239.94.0.177:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="CDTV-5高清" tvg-logo="https://via.placeholder.com/120x80?text=CDTV5%E9%AB%98%E6%B8%85" group-title="四川地方台",CDTV-5高清
+http://192.168.16.254:8866/udp/239.94.0.184:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="CDTV-6高清" tvg-logo="https://via.placeholder.com/120x80?text=CDTV6%E9%AB%98%E6%B8%85" group-title="四川地方台",CDTV-6高清
+http://192.168.16.254:8866/udp/239.94.0.185:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="CDTV-8高清" tvg-logo="https://via.placeholder.com/120x80?text=CDTV8%E9%AB%98%E6%B8%85" group-title="四川地方台",CDTV-8高清
+http://192.168.16.254:8866/udp/239.94.0.186:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="SCTV-2高清" tvg-logo="https://via.placeholder.com/120x80?text=SCTV2%E9%AB%98%E6%B8%85" group-title="四川地方台",SCTV-2高清
+http://192.168.16.254:8866/udp/239.94.0.70:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="SCTV-3高清" tvg-logo="https://via.placeholder.com/120x80?text=SCTV3%E9%AB%98%E6%B8%85" group-title="四川地方台",SCTV-3高清
+http://192.168.16.254:8866/udp/239.94.0.71:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="SCTV-4高清" tvg-logo="https://via.placeholder.com/120x80?text=SCTV4%E9%AB%98%E6%B8%85" group-title="四川地方台",SCTV-4高清
+http://192.168.16.254:8866/udp/239.94.0.72:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="SCTV-5高清" tvg-logo="https://via.placeholder.com/120x80?text=SCTV5%E9%AB%98%E6%B8%85" group-title="四川地方台",SCTV-5高清
+http://192.168.16.254:8866/udp/239.94.0.73:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="SCTV-6高清" tvg-logo="https://via.placeholder.com/120x80?text=SCTV6%E9%AB%98%E6%B8%85" group-title="四川地方台",SCTV-6高清
+http://192.168.16.254:8866/udp/239.94.0.74:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="SCTV-7高清" tvg-logo="https://via.placeholder.com/120x80?text=SCTV7%E9%AB%98%E6%B8%85" group-title="四川地方台",SCTV-7高清
+http://192.168.16.254:8866/udp/239.94.0.75:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="SCTV-科教高清" tvg-logo="https://via.placeholder.com/120x80?text=SCTV%E7%A7%91%E6%95%99%E9%AB%98%E6%B8%85" group-title="四川地方台",SCTV-科教高清
+http://192.168.16.254:8866/udp/239.94.0.76:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="i成都" tvg-logo="https://via.placeholder.com/120x80?text=i%E6%88%90%E9%83%BD" group-title="四川地方台",i成都
+http://192.168.16.254:8866/udp/239.94.2.1:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="4K乐享超清专区" tvg-logo="https://via.placeholder.com/120x80?text=4K%E4%B9%90%E4%BA%AB%E8%B6%85%E6%B8%85%E4%B8%93%E5%8C%BA" group-title="其他频道",4K乐享超清专区
+http://192.168.16.254:8866/udp/239.94.1.162:5140/
+
+#EXTINF:-1 tvg-id="内蒙古少儿" tvg-name="4K少儿专区" tvg-logo="https://via.placeholder.com/120x80?text=4K%E5%B0%91%E5%84%BF%E4%B8%93%E5%8C%BA" group-title="其他频道",4K少儿专区
+http://192.168.16.254:8866/udp/239.94.1.70:5140/
+
+#EXTINF:-1 tvg-id="冬奥纪实" tvg-name="4K纪实专区" tvg-logo="https://via.placeholder.com/120x80?text=4K%E7%BA%AA%E5%AE%9E%E4%B8%93%E5%8C%BA" group-title="其他频道",4K纪实专区
+http://192.168.16.254:8866/udp/239.94.1.69:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="4K视界专区" tvg-logo="https://via.placeholder.com/120x80?text=4K%E8%A7%86%E7%95%8C%E4%B8%93%E5%8C%BA" group-title="其他频道",4K视界专区
+http://192.168.16.254:8866/udp/239.94.1.60:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="920-全网组播" tvg-logo="https://via.placeholder.com/120x80?text=920%E5%85%A8%E7%BD%91%E7%BB%84%E6%92%AD" group-title="其他频道",920-全网组播
+http://192.168.16.254:8866/udp/239.94.2.128:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="921-全网组播" tvg-logo="https://via.placeholder.com/120x80?text=921%E5%85%A8%E7%BD%91%E7%BB%84%E6%92%AD" group-title="其他频道",921-全网组播
+http://192.168.16.254:8866/udp/239.94.2.129:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="922-全网组播" tvg-logo="https://via.placeholder.com/120x80?text=922%E5%85%A8%E7%BD%91%E7%BB%84%E6%92%AD" group-title="其他频道",922-全网组播
+http://192.168.16.254:8866/udp/239.94.2.131:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="923-全网组播" tvg-logo="https://via.placeholder.com/120x80?text=923%E5%85%A8%E7%BD%91%E7%BB%84%E6%92%AD" group-title="其他频道",923-全网组播
+http://192.168.16.254:8866/udp/239.94.2.132:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="924-全网组播" tvg-logo="https://via.placeholder.com/120x80?text=924%E5%85%A8%E7%BD%91%E7%BB%84%E6%92%AD" group-title="其他频道",924-全网组播
+http://192.168.16.254:8866/udp/239.94.2.135:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="925-全网组播" tvg-logo="https://via.placeholder.com/120x80?text=925%E5%85%A8%E7%BD%91%E7%BB%84%E6%92%AD" group-title="其他频道",925-全网组播
+http://192.168.16.254:8866/udp/239.94.2.137:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="926-全网组播" tvg-logo="https://via.placeholder.com/120x80?text=926%E5%85%A8%E7%BD%91%E7%BB%84%E6%92%AD" group-title="其他频道",926-全网组播
+http://192.168.16.254:8866/udp/239.94.2.139:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="927-全网组播" tvg-logo="https://via.placeholder.com/120x80?text=927%E5%85%A8%E7%BD%91%E7%BB%84%E6%92%AD" group-title="其他频道",927-全网组播
+http://192.168.16.254:8866/udp/239.94.2.140:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="CETV-1高清" tvg-logo="https://via.placeholder.com/120x80?text=CETV1%E9%AB%98%E6%B8%85" group-title="其他频道",CETV-1高清
 http://192.168.16.254:8866/udp/239.94.1.2:5140/
 
-#EXTINF:-1 tvg-id="" tvg-name="91" tvg-logo="https://via.placeholder.com/120x80?text=91" group-title="其他频道",91
-http://192.168.16.254:8866/udp/239.94.1.3:5140/
+#EXTINF:-1 tvg-id="" tvg-name="CETV-4高清" tvg-logo="https://via.placeholder.com/120x80?text=CETV4%E9%AB%98%E6%B8%85" group-title="其他频道",CETV-4高清
+http://192.168.16.254:8866/udp/239.94.1.20:5140/
 
-#EXTINF:-1 tvg-id="" tvg-name="92" tvg-logo="https://via.placeholder.com/120x80?text=92" group-title="其他频道",92
-http://192.168.16.254:8866/udp/239.94.1.4:5140/
+#EXTINF:-1 tvg-id="CGTN俄语" tvg-name="CGTN俄语" tvg-logo="https://via.placeholder.com/120x80?text=CGTN%E4%BF%84%E8%AF%AD" group-title="其他频道",CGTN俄语
+http://192.168.16.254:8866/udp/239.94.2.145:5140/
 
-#EXTINF:-1 tvg-id="" tvg-name="93" tvg-logo="https://via.placeholder.com/120x80?text=93" group-title="其他频道",93
-http://192.168.16.254:8866/udp/239.94.1.5:5140/
+#EXTINF:-1 tvg-id="CGTN法语" tvg-name="CGTN法语" tvg-logo="https://via.placeholder.com/120x80?text=CGTN%E6%B3%95%E8%AF%AD" group-title="其他频道",CGTN法语
+http://192.168.16.254:8866/udp/239.94.1.66:5140/
 
-#EXTINF:-1 tvg-id="" tvg-name="94" tvg-logo="https://via.placeholder.com/120x80?text=94" group-title="其他频道",94
-http://192.168.16.254:8866/udp/239.94.1.6:5140/
+#EXTINF:-1 tvg-id="CGTN纪录" tvg-name="CGTN纪录" tvg-logo="https://via.placeholder.com/120x80?text=CGTN%E7%BA%AA%E5%BD%95" group-title="其他频道",CGTN纪录
+http://192.168.16.254:8866/udp/239.94.2.141:5140/
 
-#EXTINF:-1 tvg-id="" tvg-name="95" tvg-logo="https://via.placeholder.com/120x80?text=95" group-title="其他频道",95
+#EXTINF:-1 tvg-id="" tvg-name="CGTN英语" tvg-logo="https://via.placeholder.com/120x80?text=CGTN%E8%8B%B1%E8%AF%AD" group-title="其他频道",CGTN英语
+http://192.168.16.254:8866/udp/239.94.0.40:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="CGTN西班牙语" tvg-logo="https://via.placeholder.com/120x80?text=CGTN%E8%A5%BF%E7%8F%AD%E7%89%99%E8%AF%AD" group-title="其他频道",CGTN西班牙语
+http://192.168.16.254:8866/udp/239.94.1.65:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="CGTN阿拉伯语" tvg-logo="https://via.placeholder.com/120x80?text=CGTN%E9%98%BF%E6%8B%89%E4%BC%AF%E8%AF%AD" group-title="其他频道",CGTN阿拉伯语
+http://192.168.16.254:8866/udp/239.94.2.144:5140/
+
+#EXTINF:-1 tvg-id="CHC动作电影" tvg-name="CHC动作电影" tvg-logo="https://via.placeholder.com/120x80?text=CHC%E5%8A%A8%E4%BD%9C%E7%94%B5%E5%BD%B1" group-title="其他频道",CHC动作电影
+http://192.168.16.254:8866/udp/239.94.1.175:5140/
+
+#EXTINF:-1 tvg-id="CHC家庭影院" tvg-name="CHC家庭影院" tvg-logo="https://via.placeholder.com/120x80?text=CHC%E5%AE%B6%E5%BA%AD%E5%BD%B1%E9%99%A2" group-title="其他频道",CHC家庭影院
+http://192.168.16.254:8866/udp/239.94.1.173:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="CHC影迷电影" tvg-logo="https://via.placeholder.com/120x80?text=CHC%E5%BD%B1%E8%BF%B7%E7%94%B5%E5%BD%B1" group-title="其他频道",CHC影迷电影
+http://192.168.16.254:8866/udp/239.94.1.174:5140/
+
+#EXTINF:-1 tvg-id="东南卫视" tvg-name="东南卫视高清" tvg-logo="https://via.placeholder.com/120x80?text=%E4%B8%9C%E5%8D%97%E5%8D%AB%E8%A7%86%E9%AB%98%E6%B8%85" group-title="其他频道",东南卫视高清
+http://192.168.16.254:8866/udp/239.94.0.80:5140/
+
+#EXTINF:-1 tvg-id="东方卫视" tvg-name="东方财经高清" tvg-logo="https://via.placeholder.com/120x80?text=%E4%B8%9C%E6%96%B9%E8%B4%A2%E7%BB%8F%E9%AB%98%E6%B8%85" group-title="其他频道",东方财经高清
+http://192.168.16.254:8866/udp/239.94.1.59:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="中国交通" tvg-logo="https://via.placeholder.com/120x80?text=%E4%B8%AD%E5%9B%BD%E4%BA%A4%E9%80%9A" group-title="其他频道",中国交通
+http://192.168.16.254:8866/udp/239.94.0.87:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="中国天气" tvg-logo="https://via.placeholder.com/120x80?text=%E4%B8%AD%E5%9B%BD%E5%A4%A9%E6%B0%94" group-title="其他频道",中国天气
+http://192.168.16.254:8866/udp/239.94.1.167:5140/
+
+#EXTINF:-1 tvg-id="乐游" tvg-name="乐游" tvg-logo="https://via.placeholder.com/120x80?text=%E4%B9%90%E6%B8%B8" group-title="其他频道",乐游
+http://192.168.16.254:8866/udp/239.94.1.164:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="乐龄学堂专区" tvg-logo="https://via.placeholder.com/120x80?text=%E4%B9%90%E9%BE%84%E5%AD%A6%E5%A0%82%E4%B8%93%E5%8C%BA" group-title="其他频道",乐龄学堂专区
+http://192.168.16.254:8866/udp/239.94.1.155:5140/
+
+#EXTINF:-1 tvg-id="云南卫视" tvg-name="云南卫视高清" tvg-logo="https://via.placeholder.com/120x80?text=%E4%BA%91%E5%8D%97%E5%8D%AB%E8%A7%86%E9%AB%98%E6%B8%85" group-title="其他频道",云南卫视高清
+http://192.168.16.254:8866/udp/239.94.0.90:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="云演艺宣传" tvg-logo="https://via.placeholder.com/120x80?text=%E4%BA%91%E6%BC%94%E8%89%BA%E5%AE%A3%E4%BC%A0" group-title="其他频道",云演艺宣传
+http://192.168.16.254:8866/udp/239.94.2.25:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="云看熊猫专区" tvg-logo="https://via.placeholder.com/120x80?text=%E4%BA%91%E7%9C%8B%E7%86%8A%E7%8C%AB%E4%B8%93%E5%8C%BA" group-title="其他频道",云看熊猫专区
 http://192.168.16.254:8866/udp/239.94.1.7:5140/
 
-#EXTINF:-1 tvg-id="" tvg-name="96" tvg-logo="https://via.placeholder.com/120x80?text=96" group-title="其他频道",96
-http://192.168.16.254:8866/udp/239.94.1.8:5140/
+#EXTINF:-1 tvg-id="" tvg-name="亲子趣学4k专区" tvg-logo="https://via.placeholder.com/120x80?text=%E4%BA%B2%E5%AD%90%E8%B6%A3%E5%AD%A64k%E4%B8%93%E5%8C%BA" group-title="其他频道",亲子趣学4k专区
+http://192.168.16.254:8866/udp/239.94.1.156:5140/
 
-#EXTINF:-1 tvg-id="" tvg-name="97" tvg-logo="https://via.placeholder.com/120x80?text=97" group-title="其他频道",97
+#EXTINF:-1 tvg-id="" tvg-name="健康养生专区" tvg-logo="https://via.placeholder.com/120x80?text=%E5%81%A5%E5%BA%B7%E5%85%BB%E7%94%9F%E4%B8%93%E5%8C%BA" group-title="其他频道",健康养生专区
+http://192.168.16.254:8866/udp/239.94.1.27:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="全球大片专区" tvg-logo="https://via.placeholder.com/120x80?text=%E5%85%A8%E7%90%83%E5%A4%A7%E7%89%87%E4%B8%93%E5%8C%BA" group-title="其他频道",全球大片专区
+http://192.168.16.254:8866/udp/239.94.1.24:5140/
+
+#EXTINF:-1 tvg-id="兵团卫视" tvg-name="兵团卫视高清" tvg-logo="https://via.placeholder.com/120x80?text=%E5%85%B5%E5%9B%A2%E5%8D%AB%E8%A7%86%E9%AB%98%E6%B8%85" group-title="其他频道",兵团卫视高清
+http://192.168.16.254:8866/udp/239.94.0.102:5140/
+
+#EXTINF:-1 tvg-id="内蒙古卫视" tvg-name="内蒙古卫视高清" tvg-logo="https://via.placeholder.com/120x80?text=%E5%86%85%E8%92%99%E5%8F%A4%E5%8D%AB%E8%A7%86%E9%AB%98%E6%B8%85" group-title="其他频道",内蒙古卫视高清
+http://192.168.16.254:8866/udp/239.94.0.94:5140/
+
+#EXTINF:-1 tvg-id="newtv军事评论" tvg-name="军事高清专区" tvg-logo="https://via.placeholder.com/120x80?text=%E5%86%9B%E4%BA%8B%E9%AB%98%E6%B8%85%E4%B8%93%E5%8C%BA" group-title="其他频道",军事高清专区
+http://192.168.16.254:8866/udp/239.94.1.52:5140/
+
+#EXTINF:-1 tvg-id="动漫秀场" tvg-name="动漫秀场" tvg-logo="https://via.placeholder.com/120x80?text=%E5%8A%A8%E6%BC%AB%E7%A7%80%E5%9C%BA" group-title="其他频道",动漫秀场
+http://192.168.16.254:8866/udp/239.94.1.171:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="华语影院专区" tvg-logo="https://via.placeholder.com/120x80?text=%E5%8D%8E%E8%AF%AD%E5%BD%B1%E9%99%A2%E4%B8%93%E5%8C%BA" group-title="其他频道",华语影院专区
+http://192.168.16.254:8866/udp/239.94.1.22:5140/
+
+#EXTINF:-1 tvg-id="吉林卫视" tvg-name="吉林卫视高清" tvg-logo="https://via.placeholder.com/120x80?text=%E5%90%89%E6%9E%97%E5%8D%AB%E8%A7%86%E9%AB%98%E6%B8%85" group-title="其他频道",吉林卫视高清
+http://192.168.16.254:8866/udp/239.94.0.91:5140/
+
+#EXTINF:-1 tvg-id="四川卫视" tvg-name="四川乡村高清" tvg-logo="https://via.placeholder.com/120x80?text=%E5%9B%9B%E5%B7%9D%E4%B9%A1%E6%9D%91%E9%AB%98%E6%B8%85" group-title="其他频道",四川乡村高清
+http://192.168.16.254:8866/udp/239.94.0.77:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="四海钓鱼" tvg-logo="https://via.placeholder.com/120x80?text=%E5%9B%9B%E6%B5%B7%E9%92%93%E9%B1%BC" group-title="其他频道",四海钓鱼
+http://192.168.16.254:8866/udp/239.94.1.168:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="地理高清专区" tvg-logo="https://via.placeholder.com/120x80?text=%E5%9C%B0%E7%90%86%E9%AB%98%E6%B8%85%E4%B8%93%E5%8C%BA" group-title="其他频道",地理高清专区
+http://192.168.16.254:8866/udp/239.94.1.54:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="墨宝高清专区" tvg-logo="https://via.placeholder.com/120x80?text=%E5%A2%A8%E5%AE%9D%E9%AB%98%E6%B8%85%E4%B8%93%E5%8C%BA" group-title="其他频道",墨宝高清专区
+http://192.168.16.254:8866/udp/239.94.1.51:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="多彩文体4K" tvg-logo="https://via.placeholder.com/120x80?text=%E5%A4%9A%E5%BD%A9%E6%96%87%E4%BD%934K" group-title="其他频道",多彩文体4K
+http://192.168.16.254:8866/udp/239.94.1.176:5140/
+
+#EXTINF:-1 tvg-id="四川卫视" tvg-name="大爱四川高清专区" tvg-logo="https://via.placeholder.com/120x80?text=%E5%A4%A7%E7%88%B1%E5%9B%9B%E5%B7%9D%E9%AB%98%E6%B8%85%E4%B8%93%E5%8C%BA" group-title="其他频道",大爱四川高清专区
+http://192.168.16.254:8866/udp/239.94.1.12:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="大爱旅游高清专区" tvg-logo="https://via.placeholder.com/120x80?text=%E5%A4%A7%E7%88%B1%E6%97%85%E6%B8%B8%E9%AB%98%E6%B8%85%E4%B8%93%E5%8C%BA" group-title="其他频道",大爱旅游高清专区
+http://192.168.16.254:8866/udp/239.94.1.13:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="大爱时尚高清专区" tvg-logo="https://via.placeholder.com/120x80?text=%E5%A4%A7%E7%88%B1%E6%97%B6%E5%B0%9A%E9%AB%98%E6%B8%85%E4%B8%93%E5%8C%BA" group-title="其他频道",大爱时尚高清专区
+http://192.168.16.254:8866/udp/239.94.1.15:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="大爱生活高清专区" tvg-logo="https://via.placeholder.com/120x80?text=%E5%A4%A7%E7%88%B1%E7%94%9F%E6%B4%BB%E9%AB%98%E6%B8%85%E4%B8%93%E5%8C%BA" group-title="其他频道",大爱生活高清专区
+http://192.168.16.254:8866/udp/239.94.1.14:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="天元围棋" tvg-logo="https://via.placeholder.com/120x80?text=%E5%A4%A9%E5%85%83%E5%9B%B4%E6%A3%8B" group-title="其他频道",天元围棋
+http://192.168.16.254:8866/udp/239.94.1.152:5140/
+
+#EXTINF:-1 tvg-id="天津卫视" tvg-name="天津卫视高清" tvg-logo="https://via.placeholder.com/120x80?text=%E5%A4%A9%E6%B4%A5%E5%8D%AB%E8%A7%86%E9%AB%98%E6%B8%85" group-title="其他频道",天津卫视高清
+http://192.168.16.254:8866/udp/239.94.0.68:5140/
+
+#EXTINF:-1 tvg-id="宁夏卫视" tvg-name="宁夏卫视高清" tvg-logo="https://via.placeholder.com/120x80?text=%E5%AE%81%E5%A4%8F%E5%8D%AB%E8%A7%86%E9%AB%98%E6%B8%85" group-title="其他频道",宁夏卫视高清
+http://192.168.16.254:8866/udp/239.94.0.96:5140/
+
+#EXTINF:-1 tvg-id="安徽卫视" tvg-name="安徽卫视高清" tvg-logo="https://via.placeholder.com/120x80?text=%E5%AE%89%E5%BE%BD%E5%8D%AB%E8%A7%86%E9%AB%98%E6%B8%85" group-title="其他频道",安徽卫视高清
+http://192.168.16.254:8866/udp/239.94.0.85:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="宝宝动画专区" tvg-logo="https://via.placeholder.com/120x80?text=%E5%AE%9D%E5%AE%9D%E5%8A%A8%E7%94%BB%E4%B8%93%E5%8C%BA" group-title="其他频道",宝宝动画专区
+http://192.168.16.254:8866/udp/239.94.1.32:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="少儿动画高清专区" tvg-logo="https://via.placeholder.com/120x80?text=%E5%B0%91%E5%84%BF%E5%8A%A8%E7%94%BB%E9%AB%98%E6%B8%85%E4%B8%93%E5%8C%BA" group-title="其他频道",少儿动画高清专区
+http://192.168.16.254:8866/udp/239.94.1.33:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="少儿天地专区" tvg-logo="https://via.placeholder.com/120x80?text=%E5%B0%91%E5%84%BF%E5%A4%A9%E5%9C%B0%E4%B8%93%E5%8C%BA" group-title="其他频道",少儿天地专区
+http://192.168.16.254:8866/udp/239.94.1.138:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="峨眉电影高清" tvg-logo="https://via.placeholder.com/120x80?text=%E5%B3%A8%E7%9C%89%E7%94%B5%E5%BD%B1%E9%AB%98%E6%B8%85" group-title="其他频道",峨眉电影高清
+http://192.168.16.254:8866/udp/239.94.0.103:5140/
+
+#EXTINF:-1 tvg-id="广西卫视" tvg-name="广西卫视高清" tvg-logo="https://via.placeholder.com/120x80?text=%E5%B9%BF%E8%A5%BF%E5%8D%AB%E8%A7%86%E9%AB%98%E6%B8%85" group-title="其他频道",广西卫视高清
+http://192.168.16.254:8866/udp/239.94.0.89:5140/
+
+#EXTINF:-1 tvg-id="康巴卫视" tvg-name="康巴卫视高清" tvg-logo="https://via.placeholder.com/120x80?text=%E5%BA%B7%E5%B7%B4%E5%8D%AB%E8%A7%86%E9%AB%98%E6%B8%85" group-title="其他频道",康巴卫视高清
+http://192.168.16.254:8866/udp/239.94.0.78:5140/
+
+#EXTINF:-1 tvg-id="快乐垂钓" tvg-name="快乐垂钓" tvg-logo="https://via.placeholder.com/120x80?text=%E5%BF%AB%E4%B9%90%E5%9E%82%E9%92%93" group-title="其他频道",快乐垂钓
+http://192.168.16.254:8866/udp/239.94.1.153:5140/
+
+#EXTINF:-1 tvg-id="郑州戏曲" tvg-name="戏曲专区" tvg-logo="https://via.placeholder.com/120x80?text=%E6%88%8F%E6%9B%B2%E4%B8%93%E5%8C%BA" group-title="其他频道",戏曲专区
+http://192.168.16.254:8866/udp/239.94.1.38:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="戏曲精选专区" tvg-logo="https://via.placeholder.com/120x80?text=%E6%88%8F%E6%9B%B2%E7%B2%BE%E9%80%89%E4%B8%93%E5%8C%BA" group-title="其他频道",戏曲精选专区
+http://192.168.16.254:8866/udp/239.94.1.37:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="收视指南专区" tvg-logo="https://via.placeholder.com/120x80?text=%E6%94%B6%E8%A7%86%E6%8C%87%E5%8D%97%E4%B8%93%E5%8C%BA" group-title="其他频道",收视指南专区
+http://192.168.16.254:8866/udp/239.94.1.56:5140/
+
+#EXTINF:-1 tvg-id="新疆卫视" tvg-name="新疆卫视高清" tvg-logo="https://via.placeholder.com/120x80?text=%E6%96%B0%E7%96%86%E5%8D%AB%E8%A7%86%E9%AB%98%E6%B8%85" group-title="其他频道",新疆卫视高清
+http://192.168.16.254:8866/udp/239.94.0.98:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="星光院线专区" tvg-logo="https://via.placeholder.com/120x80?text=%E6%98%9F%E5%85%89%E9%99%A2%E7%BA%BF%E4%B8%93%E5%8C%BA" group-title="其他频道",星光院线专区
+http://192.168.16.254:8866/udp/239.94.1.23:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.0.93:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.0.94:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.0.95:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.0.100:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.0.104:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.0.105:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.0.106:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.0.107:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.0.109:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.0.110:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
 http://192.168.16.254:8866/udp/239.94.1.10:5140/
 
-#EXTINF:-1 tvg-id="" tvg-name="98" tvg-logo="https://via.placeholder.com/120x80?text=98" group-title="其他频道",98
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.93.42.48:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.1.19:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.1.29:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.1.30:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.1.31:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.1.50:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.1.55:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.1.163:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.2.7:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.2.8:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.2.9:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.2.21:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.2.24:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.2.42:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.2.146:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.2.147:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.2.148:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.2.149:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.2.150:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.2.151:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.2.152:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.2.153:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.2.154:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.2.155:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.2.156:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.2.157:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.2.158:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.2.159:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.2.160:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.2.161:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.2.165:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.2.166:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.2.163:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.2.164:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.2.162:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.2.167:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.2.168:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.2.169:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.2.170:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.2.172:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.2.173:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.2.174:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.2.175:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.2.176:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.2.177:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.2.178:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.2.179:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.2.180:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.2.181:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.2.182:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.2.183:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.2.184:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.2.209:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.2.185:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.2.186:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.2.187:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.2.189:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.2.190:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.2.191:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.2.192:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.2.193:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.2.194:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.2.195:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.2.196:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.2.197:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.2.198:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.2.199:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.2.200:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.2.201:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.2.202:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.2.203:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.2.204:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.2.205:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.2.206:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.2.207:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.2.208:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.2.210:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.2.211:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.2.212:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.2.213:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.2.215:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.2.216:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.2.188:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.2.217:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.2.218:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.2.219:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.2.220:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.2.221:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.2.222:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.2.223:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.2.224:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.2.226:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.2.228:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.2.229:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.2.230:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.2.231:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.2.232:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.2.233:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.2.235:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.2.236:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.2.237:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="未能检测" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9C%AA%E8%83%BD%E6%A3%80%E6%B5%8B" group-title="其他频道",未能检测
+http://192.168.16.254:8866/udp/239.94.2.238:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="来钓鱼吧专区" tvg-logo="https://via.placeholder.com/120x80?text=%E6%9D%A5%E9%92%93%E9%B1%BC%E5%90%A7%E4%B8%93%E5%8C%BA" group-title="其他频道",来钓鱼吧专区
+http://192.168.16.254:8866/udp/239.94.1.148:5140/
+
+#EXTINF:-1 tvg-id="欢笑剧场" tvg-name="欢笑剧场4K" tvg-logo="https://via.placeholder.com/120x80?text=%E6%AC%A2%E7%AC%91%E5%89%A7%E5%9C%BA4K" group-title="其他频道",欢笑剧场4K
+http://192.168.16.254:8866/udp/239.94.1.176:5140/
+
+#EXTINF:-1 tvg-id="求索生活" tvg-name="求索频道高清" tvg-logo="https://via.placeholder.com/120x80?text=%E6%B1%82%E7%B4%A2%E9%A2%91%E9%81%93%E9%AB%98%E6%B8%85" group-title="其他频道",求索频道高清
+http://192.168.16.254:8866/udp/239.94.1.142:5140/
+
+#EXTINF:-1 tvg-id="江西卫视" tvg-name="江西卫视高清" tvg-logo="https://via.placeholder.com/120x80?text=%E6%B1%9F%E8%A5%BF%E5%8D%AB%E8%A7%86%E9%AB%98%E6%B8%85" group-title="其他频道",江西卫视高清
+http://192.168.16.254:8866/udp/239.94.0.79:5140/
+
+#EXTINF:-1 tvg-id="河北卫视" tvg-name="河北卫视高清" tvg-logo="https://via.placeholder.com/120x80?text=%E6%B2%B3%E5%8C%97%E5%8D%AB%E8%A7%86%E9%AB%98%E6%B8%85" group-title="其他频道",河北卫视高清
+http://192.168.16.254:8866/udp/239.94.0.86:5140/
+
+#EXTINF:-1 tvg-id="河南卫视" tvg-name="河南卫视高清" tvg-logo="https://via.placeholder.com/120x80?text=%E6%B2%B3%E5%8D%97%E5%8D%AB%E8%A7%86%E9%AB%98%E6%B8%85" group-title="其他频道",河南卫视高清
+http://192.168.16.254:8866/udp/239.94.0.88:5140/
+
+#EXTINF:-1 tvg-id="法治天地" tvg-name="法治天地" tvg-logo="https://via.placeholder.com/120x80?text=%E6%B3%95%E6%B2%BB%E5%A4%A9%E5%9C%B0" group-title="其他频道",法治天地
+http://192.168.16.254:8866/udp/239.94.1.166:5140/
+
+#EXTINF:-1 tvg-id="游戏风云" tvg-name="游戏风云" tvg-logo="https://via.placeholder.com/120x80?text=%E6%B8%B8%E6%88%8F%E9%A3%8E%E4%BA%91" group-title="其他频道",游戏风云
+http://192.168.16.254:8866/udp/239.94.1.46:5140/
+
+#EXTINF:-1 tvg-id="湖北卫视" tvg-name="湖北卫视高清" tvg-logo="https://via.placeholder.com/120x80?text=%E6%B9%96%E5%8C%97%E5%8D%AB%E8%A7%86%E9%AB%98%E6%B8%85" group-title="其他频道",湖北卫视高清
+http://192.168.16.254:8866/udp/239.94.0.84:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="热播剧场专区" tvg-logo="https://via.placeholder.com/120x80?text=%E7%83%AD%E6%92%AD%E5%89%A7%E5%9C%BA%E4%B8%93%E5%8C%BA" group-title="其他频道",热播剧场专区
+http://192.168.16.254:8866/udp/239.94.1.25:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="热门剧场专区" tvg-logo="https://via.placeholder.com/120x80?text=%E7%83%AD%E9%97%A8%E5%89%A7%E5%9C%BA%E4%B8%93%E5%8C%BA" group-title="其他频道",热门剧场专区
+http://192.168.16.254:8866/udp/239.94.1.26:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="热门综艺高清专区" tvg-logo="https://via.placeholder.com/120x80?text=%E7%83%AD%E9%97%A8%E7%BB%BC%E8%89%BA%E9%AB%98%E6%B8%85%E4%B8%93%E5%8C%BA" group-title="其他频道",热门综艺高清专区
+http://192.168.16.254:8866/udp/239.94.1.35:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="熊猫体娱高清专区" tvg-logo="https://via.placeholder.com/120x80?text=%E7%86%8A%E7%8C%AB%E4%BD%93%E5%A8%B1%E9%AB%98%E6%B8%85%E4%B8%93%E5%8C%BA" group-title="其他频道",熊猫体娱高清专区
+http://192.168.16.254:8866/udp/239.94.1.4:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="熊猫少儿高清专区" tvg-logo="https://via.placeholder.com/120x80?text=%E7%86%8A%E7%8C%AB%E5%B0%91%E5%84%BF%E9%AB%98%E6%B8%85%E4%B8%93%E5%8C%BA" group-title="其他频道",熊猫少儿高清专区
+http://192.168.16.254:8866/udp/239.94.1.5:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="熊猫影院专区" tvg-logo="https://via.placeholder.com/120x80?text=%E7%86%8A%E7%8C%AB%E5%BD%B1%E9%99%A2%E4%B8%93%E5%8C%BA" group-title="其他频道",熊猫影院专区
+http://192.168.16.254:8866/udp/239.94.1.6:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="熊猫新闻高清专区" tvg-logo="https://via.placeholder.com/120x80?text=%E7%86%8A%E7%8C%AB%E6%96%B0%E9%97%BB%E9%AB%98%E6%B8%85%E4%B8%93%E5%8C%BA" group-title="其他频道",熊猫新闻高清专区
+http://192.168.16.254:8866/udp/239.94.1.3:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="熊猫爱生活高清专区" tvg-logo="https://via.placeholder.com/120x80?text=%E7%86%8A%E7%8C%AB%E7%88%B1%E7%94%9F%E6%B4%BB%E9%AB%98%E6%B8%85%E4%B8%93" group-title="其他频道",熊猫爱生活高清专区
 http://192.168.16.254:8866/udp/239.94.1.11:5140/
 
-#EXTINF:-1 tvg-id="" tvg-name="99" tvg-logo="https://via.placeholder.com/120x80?text=99" group-title="其他频道",99
-http://192.168.16.254:8866/udp/239.94.1.12:5140/
+#EXTINF:-1 tvg-id="" tvg-name="爱上4K专区" tvg-logo="https://via.placeholder.com/120x80?text=%E7%88%B1%E4%B8%8A4K%E4%B8%93%E5%8C%BA" group-title="其他频道",爱上4K专区
+http://192.168.16.254:8866/udp/239.94.0.21:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="爱乐山" tvg-logo="https://via.placeholder.com/120x80?text=%E7%88%B1%E4%B9%90%E5%B1%B1" group-title="其他频道",爱乐山
+http://192.168.16.254:8866/udp/239.94.2.2:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="爱体育专区" tvg-logo="https://via.placeholder.com/120x80?text=%E7%88%B1%E4%BD%93%E8%82%B2%E4%B8%93%E5%8C%BA" group-title="其他频道",爱体育专区
+http://192.168.16.254:8866/udp/239.94.1.143:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="爱动漫专区" tvg-logo="https://via.placeholder.com/120x80?text=%E7%88%B1%E5%8A%A8%E6%BC%AB%E4%B8%93%E5%8C%BA" group-title="其他频道",爱动漫专区
+http://192.168.16.254:8866/udp/239.94.1.141:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="爱历史专区" tvg-logo="https://via.placeholder.com/120x80?text=%E7%88%B1%E5%8E%86%E5%8F%B2%E4%B8%93%E5%8C%BA" group-title="其他频道",爱历史专区
+http://192.168.16.254:8866/udp/239.94.1.135:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="爱喜剧专区" tvg-logo="https://via.placeholder.com/120x80?text=%E7%88%B1%E5%96%9C%E5%89%A7%E4%B8%93%E5%8C%BA" group-title="其他频道",爱喜剧专区
+http://192.168.16.254:8866/udp/239.94.1.129:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="爱奇谈专区" tvg-logo="https://via.placeholder.com/120x80?text=%E7%88%B1%E5%A5%87%E8%B0%88%E4%B8%93%E5%8C%BA" group-title="其他频道",爱奇谈专区
+http://192.168.16.254:8866/udp/239.94.1.130:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="爱宠宠物专区" tvg-logo="https://via.placeholder.com/120x80?text=%E7%88%B1%E5%AE%A0%E5%AE%A0%E7%89%A9%E4%B8%93%E5%8C%BA" group-title="其他频道",爱宠宠物专区
+http://192.168.16.254:8866/udp/239.94.1.145:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="爱幼教专区" tvg-logo="https://via.placeholder.com/120x80?text=%E7%88%B1%E5%B9%BC%E6%95%99%E4%B8%93%E5%8C%BA" group-title="其他频道",爱幼教专区
+http://192.168.16.254:8866/udp/239.94.1.139:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="爱悬疑专区" tvg-logo="https://via.placeholder.com/120x80?text=%E7%88%B1%E6%82%AC%E7%96%91%E4%B8%93%E5%8C%BA" group-title="其他频道",爱悬疑专区
+http://192.168.16.254:8866/udp/239.94.1.136:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="爱旅行专区" tvg-logo="https://via.placeholder.com/120x80?text=%E7%88%B1%E6%97%85%E8%A1%8C%E4%B8%93%E5%8C%BA" group-title="其他频道",爱旅行专区
+http://192.168.16.254:8866/udp/239.94.1.137:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="爱浪漫专区" tvg-logo="https://via.placeholder.com/120x80?text=%E7%88%B1%E6%B5%AA%E6%BC%AB%E4%B8%93%E5%8C%BA" group-title="其他频道",爱浪漫专区
+http://192.168.16.254:8866/udp/239.94.1.128:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="爱玩具专区" tvg-logo="https://via.placeholder.com/120x80?text=%E7%88%B1%E7%8E%A9%E5%85%B7%E4%B8%93%E5%8C%BA" group-title="其他频道",爱玩具专区
+http://192.168.16.254:8866/udp/239.94.1.140:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="爱生活高清专区" tvg-logo="https://via.placeholder.com/120x80?text=%E7%88%B1%E7%94%9F%E6%B4%BB%E9%AB%98%E6%B8%85%E4%B8%93%E5%8C%BA" group-title="其他频道",爱生活高清专区
+http://192.168.16.254:8866/udp/239.94.1.41:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="爱科幻专区" tvg-logo="https://via.placeholder.com/120x80?text=%E7%88%B1%E7%A7%91%E5%B9%BB%E4%B8%93%E5%8C%BA" group-title="其他频道",爱科幻专区
+http://192.168.16.254:8866/udp/239.94.1.131:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="爱谍战专区" tvg-logo="https://via.placeholder.com/120x80?text=%E7%88%B1%E8%B0%8D%E6%88%98%E4%B8%93%E5%8C%BA" group-title="其他频道",爱谍战专区
+http://192.168.16.254:8866/udp/239.94.1.134:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="爱赛车专区" tvg-logo="https://via.placeholder.com/120x80?text=%E7%88%B1%E8%B5%9B%E8%BD%A6%E4%B8%93%E5%8C%BA" group-title="其他频道",爱赛车专区
+http://192.168.16.254:8866/udp/239.94.1.144:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="爱院线专区" tvg-logo="https://via.placeholder.com/120x80?text=%E7%88%B1%E9%99%A2%E7%BA%BF%E4%B8%93%E5%8C%BA" group-title="其他频道",爱院线专区
+http://192.168.16.254:8866/udp/239.94.1.132:5140/
+
+#EXTINF:-1 tvg-id="环球旅游" tvg-name="环球旅游" tvg-logo="https://via.placeholder.com/120x80?text=%E7%8E%AF%E7%90%83%E6%97%85%E6%B8%B8" group-title="其他频道",环球旅游
+http://192.168.16.254:8866/udp/239.94.1.147:5140/
+
+#EXTINF:-1 tvg-id="甘肃卫视" tvg-name="甘肃卫视高清" tvg-logo="https://via.placeholder.com/120x80?text=%E7%94%98%E8%82%83%E5%8D%AB%E8%A7%86%E9%AB%98%E6%B8%85" group-title="其他频道",甘肃卫视高清
+http://192.168.16.254:8866/udp/239.94.0.99:5140/
+
+#EXTINF:-1 tvg-id="生活时尚" tvg-name="生活时尚" tvg-logo="https://via.placeholder.com/120x80?text=%E7%94%9F%E6%B4%BB%E6%97%B6%E5%B0%9A" group-title="其他频道",生活时尚
+http://192.168.16.254:8866/udp/239.94.1.146:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="电竞天堂高清专区" tvg-logo="https://via.placeholder.com/120x80?text=%E7%94%B5%E7%AB%9E%E5%A4%A9%E5%A0%82%E9%AB%98%E6%B8%85%E4%B8%93%E5%8C%BA" group-title="其他频道",电竞天堂高清专区
+http://192.168.16.254:8866/udp/239.94.1.45:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="百变课堂专区" tvg-logo="https://via.placeholder.com/120x80?text=%E7%99%BE%E5%8F%98%E8%AF%BE%E5%A0%82%E4%B8%93%E5%8C%BA" group-title="其他频道",百变课堂专区
+http://192.168.16.254:8866/udp/239.94.1.43:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="直播室1" tvg-logo="https://via.placeholder.com/120x80?text=%E7%9B%B4%E6%92%AD%E5%AE%A41" group-title="其他频道",直播室1
+http://192.168.16.254:8866/udp/239.94.2.11:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="直播室2" tvg-logo="https://via.placeholder.com/120x80?text=%E7%9B%B4%E6%92%AD%E5%AE%A42" group-title="其他频道",直播室2
+http://192.168.16.254:8866/udp/239.94.2.12:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="直播室3" tvg-logo="https://via.placeholder.com/120x80?text=%E7%9B%B4%E6%92%AD%E5%AE%A43" group-title="其他频道",直播室3
+http://192.168.16.254:8866/udp/239.94.2.13:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="直播室4" tvg-logo="https://via.placeholder.com/120x80?text=%E7%9B%B4%E6%92%AD%E5%AE%A44" group-title="其他频道",直播室4
+http://192.168.16.254:8866/udp/239.94.2.14:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="直播室5" tvg-logo="https://via.placeholder.com/120x80?text=%E7%9B%B4%E6%92%AD%E5%AE%A45" group-title="其他频道",直播室5
+http://192.168.16.254:8866/udp/239.94.2.15:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="直播室6" tvg-logo="https://via.placeholder.com/120x80?text=%E7%9B%B4%E6%92%AD%E5%AE%A46" group-title="其他频道",直播室6
+http://192.168.16.254:8866/udp/239.94.2.16:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="直播室7" tvg-logo="https://via.placeholder.com/120x80?text=%E7%9B%B4%E6%92%AD%E5%AE%A47" group-title="其他频道",直播室7
+http://192.168.16.254:8866/udp/239.94.2.17:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="直播室8" tvg-logo="https://via.placeholder.com/120x80?text=%E7%9B%B4%E6%92%AD%E5%AE%A48" group-title="其他频道",直播室8
+http://192.168.16.254:8866/udp/239.94.2.18:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="看天下精选专区" tvg-logo="https://via.placeholder.com/120x80?text=%E7%9C%8B%E5%A4%A9%E4%B8%8B%E7%B2%BE%E9%80%89%E4%B8%93%E5%8C%BA" group-title="其他频道",看天下精选专区
+http://192.168.16.254:8866/udp/239.94.1.68:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="精彩导视" tvg-logo="https://via.placeholder.com/120x80?text=%E7%B2%BE%E5%BD%A9%E5%AF%BC%E8%A7%86" group-title="其他频道",精彩导视
+http://192.168.16.254:8866/udp/239.94.1.63:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="精彩影视" tvg-logo="https://via.placeholder.com/120x80?text=%E7%B2%BE%E5%BD%A9%E5%BD%B1%E8%A7%86" group-title="其他频道",精彩影视
+http://192.168.16.254:8866/udp/239.94.1.172:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="精彩推荐专区" tvg-logo="https://via.placeholder.com/120x80?text=%E7%B2%BE%E5%BD%A9%E6%8E%A8%E8%8D%90%E4%B8%93%E5%8C%BA" group-title="其他频道",精彩推荐专区
+http://192.168.16.254:8866/udp/239.94.2.10:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="红原日干乔" tvg-logo="https://via.placeholder.com/120x80?text=%E7%BA%A2%E5%8E%9F%E6%97%A5%E5%B9%B2%E4%B9%94" group-title="其他频道",红原日干乔
+http://192.168.16.254:8866/udp/239.94.2.19:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="红原月亮湾" tvg-logo="https://via.placeholder.com/120x80?text=%E7%BA%A2%E5%8E%9F%E6%9C%88%E4%BA%AE%E6%B9%BE" group-title="其他频道",红原月亮湾
+http://192.168.16.254:8866/udp/239.94.2.20:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="红色影院专区" tvg-logo="https://via.placeholder.com/120x80?text=%E7%BA%A2%E8%89%B2%E5%BD%B1%E9%99%A2%E4%B8%93%E5%8C%BA" group-title="其他频道",红色影院专区
+http://192.168.16.254:8866/udp/239.94.1.48:5140/
+
+#EXTINF:-1 tvg-id="经典剧场" tvg-name="经典剧场专区" tvg-logo="https://via.placeholder.com/120x80?text=%E7%BB%8F%E5%85%B8%E5%89%A7%E5%9C%BA%E4%B8%93%E5%8C%BA" group-title="其他频道",经典剧场专区
+http://192.168.16.254:8866/udp/239.94.1.49:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="经典电影专区" tvg-logo="https://via.placeholder.com/120x80?text=%E7%BB%8F%E5%85%B8%E7%94%B5%E5%BD%B1%E4%B8%93%E5%8C%BA" group-title="其他频道",经典电影专区
+http://192.168.16.254:8866/udp/239.94.1.21:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="绚影4K专区" tvg-logo="https://via.placeholder.com/120x80?text=%E7%BB%9A%E5%BD%B14K%E4%B8%93%E5%8C%BA" group-title="其他频道",绚影4K专区
+http://192.168.16.254:8866/udp/239.94.1.150:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="茶频道" tvg-logo="https://via.placeholder.com/120x80?text=%E8%8C%B6%E9%A2%91%E9%81%93" group-title="其他频道",茶频道
+http://192.168.16.254:8866/udp/239.94.1.154:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="蓉城先锋专区" tvg-logo="https://via.placeholder.com/120x80?text=%E8%93%89%E5%9F%8E%E5%85%88%E9%94%8B%E4%B8%93%E5%8C%BA" group-title="其他频道",蓉城先锋专区
+http://192.168.16.254:8866/udp/239.94.1.57:5140/
+
+#EXTINF:-1 tvg-id="西藏卫视" tvg-name="西藏卫视高清" tvg-logo="https://via.placeholder.com/120x80?text=%E8%A5%BF%E8%97%8F%E5%8D%AB%E8%A7%86%E9%AB%98%E6%B8%85" group-title="其他频道",西藏卫视高清
+http://192.168.16.254:8866/udp/239.94.0.97:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="解密高清专区" tvg-logo="https://via.placeholder.com/120x80?text=%E8%A7%A3%E5%AF%86%E9%AB%98%E6%B8%85%E4%B8%93%E5%8C%BA" group-title="其他频道",解密高清专区
+http://192.168.16.254:8866/udp/239.94.1.53:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="谍战剧场专区" tvg-logo="https://via.placeholder.com/120x80?text=%E8%B0%8D%E6%88%98%E5%89%A7%E5%9C%BA%E4%B8%93%E5%8C%BA" group-title="其他频道",谍战剧场专区
+http://192.168.16.254:8866/udp/239.94.1.28:5140/
+
+#EXTINF:-1 tvg-id="贵州卫视" tvg-name="贵州卫视高清" tvg-logo="https://via.placeholder.com/120x80?text=%E8%B4%B5%E5%B7%9E%E5%8D%AB%E8%A7%86%E9%AB%98%E6%B8%85" group-title="其他频道",贵州卫视高清
+http://192.168.16.254:8866/udp/239.94.0.83:5140/
+
+#EXTINF:-1 tvg-id="咪咕足球" tvg-name="足球高清专区" tvg-logo="https://via.placeholder.com/120x80?text=%E8%B6%B3%E7%90%83%E9%AB%98%E6%B8%85%E4%B8%93%E5%8C%BA" group-title="其他频道",足球高清专区
+http://192.168.16.254:8866/udp/239.94.1.47:5140/
+
+#EXTINF:-1 tvg-id="辽宁卫视" tvg-name="辽宁卫视高清" tvg-logo="https://via.placeholder.com/120x80?text=%E8%BE%BD%E5%AE%81%E5%8D%AB%E8%A7%86%E9%AB%98%E6%B8%85" group-title="其他频道",辽宁卫视高清
+http://192.168.16.254:8866/udp/239.94.0.101:5140/
+
+#EXTINF:-1 tvg-id="都市剧场" tvg-name="都市剧场" tvg-logo="https://via.placeholder.com/120x80?text=%E9%83%BD%E5%B8%82%E5%89%A7%E5%9C%BA" group-title="其他频道",都市剧场
+http://192.168.16.254:8866/udp/239.94.1.133:5140/
+
+#EXTINF:-1 tvg-id="重庆卫视" tvg-name="重庆卫视高清" tvg-logo="https://via.placeholder.com/120x80?text=%E9%87%8D%E5%BA%86%E5%8D%AB%E8%A7%86%E9%AB%98%E6%B8%85" group-title="其他频道",重庆卫视高清
+http://192.168.16.254:8866/udp/239.94.0.82:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="金熊猫卡通高清专区" tvg-logo="https://via.placeholder.com/120x80?text=%E9%87%91%E7%86%8A%E7%8C%AB%E5%8D%A1%E9%80%9A%E9%AB%98%E6%B8%85%E4%B8%93" group-title="其他频道",金熊猫卡通高清专区
+http://192.168.16.254:8866/udp/239.94.1.8:5140/
+
+#EXTINF:-1 tvg-id="金色学堂" tvg-name="金色学堂" tvg-logo="https://via.placeholder.com/120x80?text=%E9%87%91%E8%89%B2%E5%AD%A6%E5%A0%82" group-title="其他频道",金色学堂
+http://192.168.16.254:8866/udp/239.94.1.165:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="金鹰纪实高清" tvg-logo="https://via.placeholder.com/120x80?text=%E9%87%91%E9%B9%B0%E7%BA%AA%E5%AE%9E%E9%AB%98%E6%B8%85" group-title="其他频道",金鹰纪实高清
+http://192.168.16.254:8866/udp/239.94.1.1:5140/
+
+#EXTINF:-1 tvg-id="陕西卫视" tvg-name="陕西卫视高清" tvg-logo="https://via.placeholder.com/120x80?text=%E9%99%95%E8%A5%BF%E5%8D%AB%E8%A7%86%E9%AB%98%E6%B8%85" group-title="其他频道",陕西卫视高清
+http://192.168.16.254:8866/udp/239.94.0.92:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="雅克音乐节直播" tvg-logo="https://via.placeholder.com/120x80?text=%E9%9B%85%E5%85%8B%E9%9F%B3%E4%B9%90%E8%8A%82%E7%9B%B4%E6%92%AD" group-title="其他频道",雅克音乐节直播
+http://192.168.16.254:8866/udp/239.94.2.23:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="青春动漫专区" tvg-logo="https://via.placeholder.com/120x80?text=%E9%9D%92%E6%98%A5%E5%8A%A8%E6%BC%AB%E4%B8%93%E5%8C%BA" group-title="其他频道",青春动漫专区
+http://192.168.16.254:8866/udp/239.94.1.34:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="音乐现场高清专区" tvg-logo="https://via.placeholder.com/120x80?text=%E9%9F%B3%E4%B9%90%E7%8E%B0%E5%9C%BA%E9%AB%98%E6%B8%85%E4%B8%93%E5%8C%BA" group-title="其他频道",音乐现场高清专区
+http://192.168.16.254:8866/udp/239.94.1.36:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="魅力时尚高清专区" tvg-logo="https://via.placeholder.com/120x80?text=%E9%AD%85%E5%8A%9B%E6%97%B6%E5%B0%9A%E9%AB%98%E6%B8%85%E4%B8%93%E5%8C%BA" group-title="其他频道",魅力时尚高清专区
+http://192.168.16.254:8866/udp/239.94.1.39:5140/
+
+#EXTINF:-1 tvg-id="" tvg-name="麻辣体育专区" tvg-logo="https://via.placeholder.com/120x80?text=%E9%BA%BB%E8%BE%A3%E4%BD%93%E8%82%B2%E4%B8%93%E5%8C%BA" group-title="其他频道",麻辣体育专区
+http://192.168.16.254:8866/udp/239.94.1.149:5140/
+
+#EXTINF:-1 tvg-id="黑龙江卫视" tvg-name="黑龙江卫视高清" tvg-logo="https://via.placeholder.com/120x80?text=%E9%BB%91%E9%BE%99%E6%B1%9F%E5%8D%AB%E8%A7%86%E9%AB%98%E6%B8%85" group-title="其他频道",黑龙江卫视高清
+http://192.168.16.254:8866/udp/239.94.0.81:5140/
