@@ -1,318 +1,357 @@
-import json
 import os
 import re
 import sys
-import gzip
-import urllib.parse
 from datetime import datetime
-from typing import Dict, List, Optional
-
 import requests
 from bs4 import BeautifulSoup
-from lxml import etree
 
-# ===================== 配置 =====================
+# ===================== 核心配置 =====================
 UDPXY_PROXIES = [
     {"host": "192.168.16.254", "port": 8866, "suffix": "w"},
     {"host": "192.168.19.254", "port": 8866, "suffix": "t"}
 ]
 
 MULTICAST_DATA_URL = "https://epg.51zmt.top:8001/multicast/"
-EPG_XML_URL = "https://epg.112114.xyz/pp.xml"
-EPG_GZ_URL = "https://epg.112114.xyz/pp.xml.gz"
-FILTER_KEYWORDS = ["画中画", "PIP", "pip"]
-USE_SELENIUM = True
-CACHE_MAP_FILE = "./epg_map.json"
-REPORT_FILE = "./output/epg_mapping_report.txt"
+EPG_URL = "https://epg.112114.xyz/epg.xml"
+FILTER_KEYWORDS = ["画中画", "PIP", "pip", "测试", "广告"]
 
-LOGO_51ZMT_PREFIX = "https://epg.51zmt.top:8000/tb1/"
-LOGO_51ZMT = {
-    "CCTV1": "ys/CCTV1.png",
-    "CCTV2": "ys/CCTV2.png",
-    "CCTV3": "ys/CCTV3.png",
-    "CCTV4": "ys/CCTV4.png",
-    "CCTV5": "ys/CCTV5.png",
-    "CCTV6": "ys/CCTV6.png",
-    "CCTV7": "ys/CCTV7.png",
-    "CCTV8": "ys/CCTV8.png",
-    "CCTV9": "ys/CCTV9.png",
-    "CCTV10": "ys/CCTV10.png",
-    "CCTV11": "ys/CCTV11.png",
-    "CCTV12": "ys/CCTV12.png",
-    "CCTV13": "ys/CCTV13.png",
-    "CCTV14": "ys/CCTV14.png",
-    "CCTV15": "ys/CCTV15.png",
-    "CCTV17": "ys/CCTV17.png",
-    "CCTV4K": "ys/CCTV4K.png",
-    "HunanTV": "ws/hunan.png",
-    "ZhejiangTV": "ws/zhejiang.png",
-    "JiangsuTV": "ws/jiangsu.png",
-    "DragonTV": "ws/dongfang.png",
-    "BeijingTV": "ws/beijing.png",
-    "GuangdongTV": "ws/guangdong.png",
-    "SichuanTV": "ws/sichuan.png",
-    "ShenzhenTV": "ws/shenzhen.png",
-    "ShandongTV": "ws/shandong.png",
-    "CDTV1": "difang/cdtv1.png",
-    "CDTV2": "difang/cdtv2.png",
-    "CDTV3": "difang/cdtv3.png",
-    "CDTV4": "difang/cdtv4.png",
-    "CDTV5": "difang/cdtv5.png",
-    "CDTV6": "difang/cdtv6.png",
-    "CDTV8": "difang/cdtv8.png",
-    "SCTV2": "difang/sctv2.png",
-    "SCTV3": "difang/sctv3.png",
-    "SCTV4": "difang/sctv4.png",
-    "SCTV5": "difang/sctv5.png",
-    "SCTV6": "difang/sctv6.png",
-    "SCTV7": "difang/sctv7.png",
+LOGO_SOURCES = {
+    "A": {
+        "prefix": "https://epg.pw/logos/",
+        "mapping": {
+            "CCTV-1": "cctv1.png",
+            "CCTV-2": "cctv2.png",
+            "CCTV-3": "cctv3.png",
+            "CCTV-5": "cctv5.png",
+            "湖南卫视": "hunan.png",
+            "浙江卫视": "zhejiang.png",
+            "江苏卫视": "jiangsu.png",
+            "东方卫视": "dongfang.png",
+            "北京卫视": "beijing.png",
+            "广东卫视": "guangdong.png",
+        }
+    },
+    "B": {
+        "prefix": "https://iptv-logo.com/logos/",
+        "mapping": {
+            "CCTV-1": "cctv-1.png",
+            "CCTV-2": "cctv-2.png",
+            "CCTV-3": "cctv-3.png",
+            "CCTV-4": "cctv-4.png",
+            "CCTV-5": "cctv-5.png",
+            "CCTV-6": "cctv-6.png",
+            "湖南卫视": "hunan-tv.png",
+            "浙江卫视": "zhejiang-tv.png",
+            "江苏卫视": "jiangsu-tv.png",
+            "东方卫视": "dongfang-tv.png",
+            "北京卫视": "beijing-tv.png",
+            "广东卫视": "guangdong-tv.png",
+            "深圳卫视": "shenzhen-tv.png",
+            "山东卫视": "shandong-tv.png",
+            "四川卫视": "sichuan-tv.png",
+        }
+    },
+    "C": {
+        "prefix": "https://tv-logo.com/images/",
+        "mapping": {
+            "CCTV-1": "cctv1-hd.png",
+            "CCTV-2": "cctv2-hd.png",
+            "CCTV-3": "cctv3-hd.png",
+            "CCTV-5": "cctv5-hd.png",
+            "湖南卫视": "hunan-hd.png",
+            "浙江卫视": "zhejiang-hd.png",
+            "江苏卫视": "jiangsu-hd.png",
+            "东方卫视": "dongfang-hd.png",
+        }
+    }
 }
 
-GROUP_CONFIG = {
-    "央视频道": ["CCTV-"],
-    "卫视频道": ["湖南卫视", "浙江卫视", "江苏卫视", "东方卫视", "北京卫视", "广东卫视", "深圳卫视", "山东卫视", "四川卫视"],
-    "四川地方台": ["CDTV-", "SCTV-", "i成都"],
-    "其他频道": []
+TVG_ID_MAPPING = {
+    "CCTV-1": "cctv1",
+    "CCTV-2": "cctv2",
+    "CCTV-3": "cctv3",
+    "CCTV-4": "cctv4",
+    "CCTV-5": "cctv5",
+    "CCTV-6": "cctv6",
+    "CCTV-7": "cctv7",
+    "CCTV-8": "cctv8",
+    "CCTV-9": "cctv9",
+    "CCTV-10": "cctv10",
+    "CCTV-11": "cctv11",
+    "CCTV-12": "cctv12",
+    "CCTV-13": "cctv13",
+    "CCTV-14": "cctv14",
+    "CCTV-15": "cctv15",
+    "CCTV-17": "cctv17",
+    "CCTV-4K": "cctv4k",
+    "CCTV-5+": "cctv5",
+    "湖南卫视": "hunan",
+    "浙江卫视": "zhejiang",
+    "江苏卫视": "jiangsu",
+    "东方卫视": "dongfang",
+    "北京卫视": "btv",
+    "广东卫视": "guangdong",
+    "深圳卫视": "shenzhen",
+    "山东卫视": "shandong",
+    "四川卫视": "sichuan",
+    "湖南卫视4K": "hunan4k",
+    "浙江卫视4K": "zhejiang4k",
+    "江苏卫视4K": "jiangsu4k",
+    "东方卫视4K": "dongfang4k",
+    "北京卫视4K": "btv4k",
+    "广东卫视4K": "guangdong4k",
+    "四川卫视4K": "sichuan4k",
+    "深圳卫视4K": "shenzhen4k",
+    "山东卫视4K": "shandong4k",
+    "CDTV-1": "cdtv1",
+    "CDTV-2": "cdtv2",
+    "CDTV-3": "cdtv3",
+    "CDTV-4": "cdtv4",
+    "CDTV-5": "cdtv5",
+    "CDTV-6": "cdtv6",
+    "CDTV-8": "cdtv8",
+    "SCTV-2": "sctv2",
+    "SCTV-3": "sctv3",
+    "SCTV-4": "sctv4",
+    "SCTV-5": "sctv5",
+    "SCTV-6": "sctv6",
+    "SCTV-7": "sctv7",
+    "SCTV-科教": "sctvke",
+    "CETV-1": "cetv1",
+    "CETV-2": "cetv2",
+    "CETV-4": "cetv4",
+    "CGTN英语": "cgtnen",
+    "CGTN西班牙语": "cgtnes",
+    "CGTN法语": "cgtnfr",
+    "CHC家庭影院": "chc_home",
+    "CHC影迷电影": "chc_movie",
+    "CHC动作电影": "chc_action",
+    "i成都": "ichengdu",
 }
 
-# ===================== EPG 拉取 =====================
-def download_epg_xml() -> Optional[bytes]:
-    try:
-        resp = requests.get(EPG_GZ_URL, timeout=30)
-        resp.raise_for_status()
-        return gzip.decompress(resp.content)
-    except Exception:
-        try:
-            resp = requests.get(EPG_XML_URL, timeout=30)
-            resp.raise_for_status()
-            return resp.content
-        except Exception as e:
-            print(f"[WARN] EPG 下载失败: {e}，尝试读取缓存")
-            return None
+# 分组规则：顺序优先，先命中为准
+GROUP_RULES = [
+    ("央视频道", [r"^CCTV\-", r"^CETV\-", r"CGTN"]),
+    ("卫视频道", [
+        "湖南卫视", "浙江卫视", "江苏卫视", "东方卫视", "北京卫视",
+        "广东卫视", "深圳卫视", "山东卫视", "四川卫视"
+    ]),
+    ("四川地方", [r"^CDTV\-", r"^SCTV\-", "i成都"]),
+    ("CHC影院", ["CHC"]),
+]
 
-def parse_epg_channels(xml_bytes: bytes) -> Dict[str, str]:
-    parser = etree.XMLParser(no_network=True)
-    root = etree.fromstring(xml_bytes, parser)
-    name_to_id: Dict[str, str] = {}
-    for ch in root.xpath("//channel"):
-        cid = ch.get("id")
-        if not cid:
-            continue
-        disp_name = ch.findtext("display-name")
-        if not disp_name:
-            continue
-        norm = normalize_channel_name(disp_name)
-        name_to_id[norm] = cid
-    return name_to_id
+# ===================== 清洗辅助 =====================
+def clean_channel_name(name: str) -> str:
+    name = re.sub(r"[（(].*?[）)]", "", name)
+    name = re.sub(r"\s+", " ", name).strip()
+    return name
 
-def load_or_refresh_epg_map() -> Dict[str, str]:
-    xml_data = download_epg_xml()
-    if xml_data:
-        mapping = parse_epg_channels(xml_data)
-        with open(CACHE_MAP_FILE, "w", encoding="utf-8") as f:
-            json.dump(mapping, f, ensure_ascii=False, indent=2)
-        print(f"[OK] 已刷新 EPG 映射，共 {len(mapping)} 个频道")
-        return mapping
-    else:
-        if os.path.exists(CACHE_MAP_FILE):
-            with open(CACHE_MAP_FILE, "r", encoding="utf-8") as f:
-                mapping = json.load(f)
-            print(f"[CACHE] 使用缓存 EPG 映射，共 {len(mapping)}")
-            return mapping
-        print("[FATAL] 无 EPG、无缓存，无法继续")
-        sys.exit(1)
+def extract_core_name(name: str) -> str:
+    core = name
+    core = re.sub(r"高清|HD|4K|超清|专区|频道", "", core, flags=re.IGNORECASE)
+    core = core.replace("CCTV-5＋", "CCTV-5+")
+    core = core.strip()
+    return core
 
-def normalize_channel_name(name: str) -> str:
-    s = name.strip()
-    s = re.sub(r"[＋+]", "+", s)
-    for kw in ["高清", "HD", "hd", "4K", "专区", "频道", "卫视", "超高清"]:
-        s = s.replace(kw, "")
-    s = re.sub(r"\s+", "", s)
-    return s
-
-def match_tvg_id(raw_name: str, epg_map: Dict[str, str]) -> str:
-    norm = normalize_channel_name(raw_name)
-    if norm in epg_map:
-        return epg_map[norm]
-    for k, vid in epg_map.items():
-        if norm in k or k in norm:
-            return vid
-    return ""
-
-# ===================== 台标 =====================
-def get_channel_logo(tvid: str, raw_name: str) -> str:
-    if tvid in LOGO_51ZMT:
-        url = LOGO_51ZMT_PREFIX + LOGO_51ZMT[tvid]
-        print(f"[LOGO 51ZMT] {raw_name} -> {url}")
-        return url
-    txt = re.sub(r"[^\u4e00-\u9fa5a-zA-Z0-9]", "", raw_name)[:8]
-    qtxt = urllib.parse.quote(txt)
-    placeholder = f"https://via.placeholder.com/120x80?text={qtxt}"
-    print(f"[LOGO placeholder] {raw_name} -> {placeholder}")
+def get_channel_logo(name: str) -> str:
+    core = extract_core_name(name)
+    for src_key in ("A", "B", "C"):
+        src = LOGO_SOURCES[src_key]
+        if core in src["mapping"]:
+            url = f"{src['prefix']}{src['mapping'][core]}"
+            print(f"[LOGO {src_key}] {name} -> {url}")
+            return url
+    txt = re.sub(r"[^\u4e00-\u9fa5a-zA-Z0-9]", "", name)[:8]
+    placeholder = f"https://via.placeholder.com/120x80?text={txt}"
+    print(f"[LOGO fallback] {name} -> placeholder")
     return placeholder
 
-# ===================== 网页抓取 =====================
-def fetch_with_requests(url: str) -> str:
-    resp = requests.get(url, verify=False, timeout=30)
-    resp.raise_for_status()
-    return resp.text
-
-def fetch_with_selenium(url: str) -> str:
-    from selenium import webdriver
-    from selenium.webdriver.chrome.options import Options
-    from selenium.webdriver.chrome.service import Service
-    from webdriver_manager.chrome import ChromeDriverManager
-    chrome_opts = Options()
-    chrome_opts.add_argument("--headless=new")
-    chrome_opts.add_argument("--no-sandbox")
-    chrome_opts.add_argument("--disable-dev-shm-usage")
-    chrome_opts.add_argument("--ignore-certificate-errors")
-    chrome_opts.add_argument("--disable-gpu")
-    chrome_opts.add_experimental_option("excludeSwitches", ["enable-logging"])
-    service = Service(ChromeDriverManager().install())
-    driver = webdriver.Chrome(service=service, options=chrome_opts)
-    try:
-        driver.get(url)
-        WebDriverWait(driver, 20).until(
-            lambda d: d.find_element(By.TAG_NAME, "table")
-        )
-        return driver.page_source
-    finally:
-        driver.quit()
-
-# ========== 重点重写：解析表格，正确区分序号 / 中文名称 / UDP ==========
-def parse_multicast_page(html: str) -> List[Dict[str, str]]:
-    soup = BeautifulSoup(html, "lxml")
-    table = soup.find("table")
-    if not table:
-        raise RuntimeError("页面无表格")
-
-    out: List[Dict[str, str]] = []
-    seen: set = set()
-    udp_re = re.compile(r"(udp://@)?239\.\d{1,3}\.\d{1,3}\.\d{1,3}:\d{1,5}")
-    chinese_re = re.compile(r"[\u4e00-\u9fa5]")
-
-    for tr in table.find_all("tr"):
-        tds = [td.get_text(strip=True) for td in tr.find_all(["td", "th"])]
-        udp_url: Optional[str] = None
-        chan_name: Optional[str] = None
-
-        for text in tds:
-            m = udp_re.search(text)
-            if m:
-                udp_url = m.group(0)
-                if not udp_url.startswith("udp://"):
-                    udp_url = f"udp://@{udp_url}"
-                continue
-            # 包含中文的单元格，才是频道名
-            if chinese_re.search(text):
-                chan_name = text
-
-        # 如果没有抓到中文名字，直接丢弃这一行（就是你之前那些数字行）
-        if not udp_url or not chan_name:
-            continue
-        if any(k in chan_name for k in FILTER_KEYWORDS):
-            continue
-
-        key = f"{chan_name}||{udp_url}"
-        if key in seen:
-            continue
-        seen.add(key)
-        out.append({"name": chan_name, "udp_url": udp_url})
-
-    if not out:
-        raise RuntimeError("解析不到带中文名称的有效频道")
-    return out
-
-# ===================== M3U 生成 =====================
 def get_channel_group(name: str) -> str:
-    for gname, prefix_list in GROUP_CONFIG.items():
-        if any(p in name for p in prefix_list):
-            return gname
+    for group, patterns in GROUP_RULES:
+        for pat in patterns:
+            if isinstance(pat, str):
+                if pat in name:
+                    return group
+            else:
+                if re.search(pat, name):
+                    return group
     return "其他频道"
 
-def parse_udp(udp_url: str) -> Optional[Dict[str, str]]:
-    raw = udp_url.replace("udp://@", "")
-    m = re.fullmatch(r"(\d+\.\d+\.\d+\.\d+):(\d+)", raw)
+def get_tvg_id(name: str) -> str | None:
+    core = extract_core_name(name)
+    return TVG_ID_MAPPING.get(core)
+
+def get_tvg_name(name: str) -> str:
+    return name
+
+def parse_udp_url(raw: str):
+    raw = raw.strip()
+    raw = raw.replace("udp://@", "")
+    m = re.fullmatch(r"(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}):(\d+)", raw)
     if not m:
         return None
     return {"ip": m.group(1), "port": m.group(2)}
 
-def build_udpxy(udp_info: Dict[str, str], host: str, port: int) -> str:
+def generate_udpxy_url(udp_info, host, port) -> str:
+    if not udp_info:
+        return ""
     return f"http://{host}:{port}/udp/{udp_info['ip']}:{udp_info['port']}/"
 
-def generate_m3u_and_report(channels: List[Dict], epg_map: Dict[str, str], outdir: str):
-    os.makedirs(outdir, exist_ok=True)
-    grouped: Dict[str, List] = {}
-    hit = 0
-    miss = 0
-    report_lines = []
+# ===================== 页面抓取：优先静态，失败再动态 =====================
+def fetch_multicast_data(url: str):
+    sess = requests.Session()
+    sess.verify = False
+    headers = {
+        "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+    }
 
+    try:
+        print("尝试静态抓取页面 ...")
+        resp = sess.get(url, timeout=20, headers=headers)
+        resp.raise_for_status()
+        soup = BeautifulSoup(resp.text, "lxml")
+        chans = parse_page_channels(soup, resp.text)
+        if chans:
+            return chans
+        print("静态解析为空，尝试 Selenium 动态渲染 ...")
+    except Exception as e:
+        print(f"静态请求失败：{e}，切换动态渲染")
+
+    return fetch_with_selenium(url)
+
+def parse_page_channels(soup: BeautifulSoup, raw_text: str):
+    rows = soup.select("table tr")
+    udp_re = re.compile(r"(udp://@)?239\.\d{1,3}\.\d{1,3}\.\d{1,3}:\d{1,5}")
+    found = []
+    seen = set()
+
+    for tr in rows:
+        tds = [clean_channel_name(td.get_text(strip=True)) for td in tr.select("td")]
+        if len(tds) < 2:
+            continue
+
+        udp_url = None
+        chan_name = None
+        for cell in tds:
+            m = udp_re.search(cell)
+            if m:
+                udp_url = m.group(0)
+                if not udp_url.startswith("udp://"):
+                    udp_url = f"udp://@{udp_url}"
+            else:
+                if cell and not chan_name and not re.fullmatch(r"\d+", cell):
+                    chan_name = cell
+
+        if not (chan_name and udp_url):
+            continue
+        chan_name = clean_channel_name(chan_name)
+        if any(k in chan_name for k in FILTER_KEYWORDS):
+            continue
+        key = f"{chan_name}|{udp_url}"
+        if key in seen:
+            continue
+        seen.add(key)
+        found.append({"name": chan_name, "udp_url": udp_url})
+
+    if not found:
+        # 兜底：全文正则配对（简单方案：相邻行配对）
+        all_udp = udp_re.findall(raw_text)
+        print(f"表格解析失败，全文找到 {len(all_udp)} 个组播地址，无法自动配对，放弃兜底配对")
+    return found
+
+def fetch_with_selenium(url: str):
+    from selenium import webdriver
+    from selenium.webdriver.chrome.options import Options
+    from selenium.webdriver.common.by import By
+    from selenium.webdriver.support.ui import WebDriverWait
+    from selenium.webdriver.support import expected_conditions as EC
+    from selenium.webdriver.chrome.service import Service
+
+    chrome_options = Options()
+    chrome_options.add_argument("--headless=new")
+    chrome_options.add_argument("--no-sandbox")
+    chrome_options.add_argument("--disable-dev-shm-usage")
+    chrome_options.add_argument("--ignore-certificate-errors")
+    chrome_options.add_experimental_option("excludeSwitches", ["enable-logging"])
+
+    # GitHub Actions 推荐：如果预装 chromedriver，不要用 webdriver-manager
+    try:
+        from webdriver_manager.chrome import ChromeDriverManager
+        service = Service(ChromeDriverManager().install())
+    except ImportError:
+        service = Service()
+
+    driver = webdriver.Chrome(service=service, options=chrome_options)
+    try:
+        driver.get(url)
+        wait = WebDriverWait(driver, 20)
+        wait.until(EC.presence_of_element_located((By.TAG_NAME, "table")))
+        html = driver.page_source
+        soup = BeautifulSoup(html, "lxml")
+        return parse_page_channels(soup, html)
+    finally:
+        driver.quit()
+
+# ===================== M3U 生成 =====================
+def generate_m3u(channels, output_dir: str):
+    os.makedirs(output_dir, exist_ok=True)
+    grouped: dict[str, list] = {}
     for ch in channels:
         g = get_channel_group(ch["name"])
         grouped.setdefault(g, []).append(ch)
-        tid = match_tvg_id(ch["name"], epg_map)
-        if tid:
-            hit += 1
-            report_lines.append(f"[HIT] {ch['name']:25} -> tvg-id={tid}")
-        else:
-            miss += 1
-            report_lines.append(f"[MISS] {ch['name']:25} -> NO tvg-id")
-
-    for g in grouped:
-        grouped[g].sort(key=lambda x: x["name"])
 
     for proxy in UDPXY_PROXIES:
         lines = [
-            f'#EXTM3U x-tvg-url="{EPG_XML_URL}"',
-            f"# Generated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}",
-            f"# udpxy: {proxy['host']}:{proxy['port']}",
+            f'#EXTM3U x-tvg-url="{EPG_URL}"',
+            f"# 生成时间：{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}",
+            f"# udpxy：{proxy['host']}:{proxy['port']}",
             ""
         ]
-        for gname, chlist in grouped.items():
-            for ch in chlist:
-                udp_info = parse_udp(ch["udp_url"])
-                if not udp_info:
-                    print(f"跳过无效 UDP: {ch['name']}")
+        for gname in grouped:
+            for ch in grouped[gname]:
+                udp_info = parse_udp_url(ch["udp_url"])
+                stream_url = generate_udpxy_url(udp_info, proxy["host"], proxy["port"])
+                if not stream_url:
+                    print(f"跳过无效流：{ch['name']}")
                     continue
-                link = build_udpxy(udp_info, proxy["host"], proxy["port"])
-                tid = match_tvg_id(ch["name"], epg_map)
-                tname = ch["name"]
-                logo = get_channel_logo(tid, ch["name"])
-                gtitle = gname
-                ext = (
-                    f'#EXTINF:-1 tvg-id="{tid}" tvg-name="{tname}" '
-                    f'tvg-logo="{logo}" group-title="{gtitle}",{tname}'
-                )
-                lines.append(ext)
-                lines.append(link)
+
+                tvg_id = get_tvg_id(ch["name"])
+                tvg_name = get_tvg_name(ch["name"])
+                tvg_logo = get_channel_logo(ch["name"])
+                group_title = gname
+
+                if tvg_id:
+                    extinf = (
+                        f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{tvg_name}" '
+                        f'tvg-logo="{tvg_logo}" group-title="{group_title}",{tvg_name}'
+                    )
+                else:
+                    # 没有 tvg-id 就删掉这个属性，避免播放器异常
+                    extinf = (
+                        f'#EXTINF:-1 tvg-name="{tvg_name}" '
+                        f'tvg-logo="{tvg_logo}" group-title="{group_title}",{tvg_name}'
+                    )
+                lines.append(extinf)
+                lines.append(stream_url)
                 lines.append("")
+
         fn = f"IPTV_{proxy['suffix']}.m3u"
-        fp = os.path.join(outdir, fn)
-        with open(fp, "w", encoding="utf-8", newline="\n") as f:
+        fp = os.path.join(output_dir, fn)
+        with open(fp, "w", encoding="utf-8") as f:
             f.write("\n".join(lines))
         print(f"输出：{fp}")
 
-    report_lines.insert(0, f"匹配统计：命中 {hit} / 缺失 {miss}\n")
-    with open(REPORT_FILE, "w", encoding="utf-8") as f:
-        f.write("\n".join(report_lines))
-    print(f"匹配报告：{REPORT_FILE}")
-
 def main():
-    requests.packages.urllib3.disable_warnings()
-    outdir = "./output"
-    print(f"输出目录：{os.path.abspath(outdir)}")
-    epg_map = load_or_refresh_epg_map()
-    if USE_SELENIUM:
-        html = fetch_with_selenium(MULTICAST_DATA_URL)
-    else:
-        html = fetch_with_requests(MULTICAST_DATA_URL)
-    chans = parse_multicast_page(html)
-    print(f"解析频道总数：{len(chans)}")
-    generate_m3u_and_report(chans, epg_map, outdir)
-    print("✅ 全部完成")
+    output_dir = "./output"
+    print(f"输出目录：{os.path.abspath(output_dir)}")
+    chans = fetch_multicast_data(MULTICAST_DATA_URL)
+    if not chans:
+        print("错误：没有解析到任何频道")
+        sys.exit(1)
+    print(f"成功解析频道数量：{len(chans)}")
+    generate_m3u(chans, output_dir)
+    print("\n✅ 完成")
 
 if __name__ == "__main__":
-    from selenium.webdriver.common.by import By
-    from selenium.webdriver.support.ui import WebDriverWait
+    requests.packages.urllib3.disable_warnings()
     main()
