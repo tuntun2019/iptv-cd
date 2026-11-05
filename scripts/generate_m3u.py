@@ -13,7 +13,7 @@ UDPXY_PROXIES = [
 ]
 
 MULTICAST_DATA_URL = "https://epg.51zmt.top:8001/multicast/"
-# ========== 修改为你实际在用的EPG源 ==========
+# ========== EPG源 ==========
 EPG_URL = "http://epg.51zmt.top:8000/e1.xml.gz"
 FILTER_KEYWORDS = ["画中画", "PIP", "pip", "测试", "广告"]
 
