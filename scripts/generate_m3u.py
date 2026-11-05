@@ -12,7 +12,7 @@ UDPXY_PROXIES = [
 ]
 
 MULTICAST_DATA_URL = "https://epg.51zmt.top:8001/multicast/"
-EPG_URL = "https://epg.112114.xyz/epg.xml"
+EPG_URL = "https://epg.pw/xmltv/epg.xml"
 FILTER_KEYWORDS = ["画中画", "PIP", "pip", "测试", "广告"]
 
 LOGO_SOURCES = {
