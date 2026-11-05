@@ -1,6 +1,7 @@
 import os
 import re
 import sys
+import base64
 from datetime import datetime
 import requests
 from bs4 import BeautifulSoup
@@ -32,8 +33,8 @@ TVG_ID_MAPPING = {
     "CCTV-14": "cctv14",
     "CCTV-15": "cctv15",
     "CCTV-17": "cctv17",
+    "CCTV-5+": "cctv5plus",
     "CCTV-4K": "cctv4k",
-    "CCTV-5+": "cctv5",
     "湖南卫视": "hunan",
     "浙江卫视": "zhejiang",
     "江苏卫视": "jiangsu",
@@ -43,15 +44,38 @@ TVG_ID_MAPPING = {
     "深圳卫视": "shenzhen",
     "山东卫视": "shandong",
     "四川卫视": "sichuan",
-    "湖南卫视4K": "hunan4k",
-    "浙江卫视4K": "zhejiang4k",
-    "江苏卫视4K": "jiangsu4k",
-    "东方卫视4K": "dongfang4k",
-    "北京卫视4K": "btv4k",
-    "广东卫视4K": "guangdong4k",
-    "四川卫视4K": "sichuan4k",
-    "深圳卫视4K": "shenzhen4k",
-    "山东卫视4K": "shandong4k",
+    "安徽卫视": "anhui",
+    "河南卫视": "henan",
+    "湖北卫视": "hubei",
+    "河北卫视": "hebei",
+    "江西卫视": "jiangxi",
+    "辽宁卫视": "liaoning",
+    "重庆卫视": "chongqing",
+    "贵州卫视": "guizhou",
+    "云南卫视": "yunnan",
+    "广西卫视": "guangxi",
+    "陕西卫视": "shaanxi",
+    "山西卫视": "shanxi",
+    "吉林卫视": "jilin",
+    "黑龙江卫视": "heilongjiang",
+    "海南卫视": "hainan",
+    "宁夏卫视": "ningxia",
+    "甘肃卫视": "gansu",
+    "新疆卫视": "xinjiang",
+    "内蒙古卫视": "neimenggu",
+    "西藏卫视": "xizang",
+    "青海卫视": "qinghai",
+    "CETV-1": "cetv1",
+    "CETV-2": "cetv2",
+    "CETV-4": "cetv4",
+    "CGTN英语": "cgtnen",
+    "CGTN西班牙语": "cgtnes",
+    "CGTN法语": "cgtnfr",
+    "CGTN阿拉伯语": "cgtnar",
+    "CGTN俄语": "cgtnru",
+    "CHC家庭影院": "chc_home",
+    "CHC影迷电影": "chc_movie",
+    "CHC动作电影": "chc_action",
     "CDTV-1": "cdtv1",
     "CDTV-2": "cdtv2",
     "CDTV-3": "cdtv3",
@@ -66,23 +90,12 @@ TVG_ID_MAPPING = {
     "SCTV-6": "sctv6",
     "SCTV-7": "sctv7",
     "SCTV-科教": "sctvke",
-    "CETV-1": "cetv1",
-    "CETV-2": "cetv2",
-    "CETV-4": "cetv4",
-    "CGTN英语": "cgtnen",
-    "CGTN西班牙语": "cgtnes",
-    "CGTN法语": "cgtnfr",
-    "CHC家庭影院": "chc_home",
-    "CHC影迷电影": "chc_movie",
-    "CHC动作电影": "chc_action",
-    "i成都": "ichengdu",
+    "i成都": "ichengdu"
 }
 
-# 分组规则：顺序优先，先命中为准
-# r"卫视$"：所有名字以「卫视」结尾的频道归入卫视频道
 GROUP_RULES = [
     ("央视频道", [r"^CCTV\-", r"^CETV\-", r"CGTN"]),
-    ("卫视频道", [r"卫视$"]),
+    ("卫视频道", [r"卫视"]),
     ("四川地方", [r"^CDTV\-", r"^SCTV\-", r"i成都"]),
     ("CHC影院", [r"CHC"]),
 ]
@@ -101,15 +114,17 @@ def extract_core_name(name: str) -> str:
     return core
 
 def get_channel_logo(name: str) -> str:
-    """简化台标，直接使用频道名作为 placeholder text"""
-    if not name:
-        name = "Channel"
-    # 移除 url 不安全字符
-    text = re.sub(r"[^\u4e00-\u9fa5a-zA-Z0-9：·\-_ ]+", "", name).strip()
-    text = text.replace(" ", "_")
-    logo_url = f"https://via.placeholder.com/120x80?text={text}"
-    print(f"[LOGO] {name} -> {logo_url}")
-    return logo_url
+    """生成内嵌SVG base64占位图，原生支持中文，无外网依赖"""
+    display_name = name if name else "Channel"
+    svg = f'''<svg width="120" height="80" xmlns="http://www.w3.org/2000/svg">
+  <rect width="120" height="80" fill="#8899aa"/>
+  <text x="60" y="48" font-family="Noto Sans CJK SC,sans-serif" font-size="16" fill="#ffffff" text-anchor="middle">{display_name}</text>
+</svg>'''
+    b = svg.encode("utf-8")
+    b64 = base64.b64encode(b).decode("ascii")
+    data_uri = f"data:image/svg+xml;base64,{b64}"
+    print(f"[LOGO] {name} -> svg base64")
+    return data_uri
 
 def get_channel_group(name: str) -> str:
     for group, patterns in GROUP_RULES:
