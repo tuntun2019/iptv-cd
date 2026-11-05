@@ -12,7 +12,7 @@ UDPXY_PROXIES = [
 ]
 
 MULTICAST_DATA_URL = "https://epg.51zmt.top:8001/multicast/"
-EPG_URL = "http://epg.51zmt.top:8000/e.xml.gz"
+EPG_URL = "http://epg.51zmt.top:8000/e1.xml.gz"
 FILTER_KEYWORDS = ["画中画", "PIP", "pip", "测试", "广告"]
 
 TVG_ID_MAPPING = {
