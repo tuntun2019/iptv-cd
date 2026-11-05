@@ -16,26 +16,25 @@ MULTICAST_DATA_URL = "https://epg.51zmt.top:8001/multicast/"
 EPG_URL = "http://epg.51zmt.top:8000/e1.xml.gz"
 FILTER_KEYWORDS = ["画中画", "PIP", "pip", "测试", "广告"]
 
-# 适配 epg.51zmt.top:8000/e1.xml.gz
 TVG_ID_MAPPING = {
     "CCTV-1": "1",
     "CCTV-2": "2",
     "CCTV-3": "3",
     "CCTV-4": "4",
     "CCTV-5": "5",
-    "CCTV-6": "6",
-    "CCTV-7": "7",
-    "CCTV-8": "8",
-    "CCTV-9": "9",
-    "CCTV-10": "10",
-    "CCTV-11": "11",
-    "CCTV-12": "12",
-    "CCTV-13": "13",
-    "CCTV-14": "14",
-    "CCTV-15": "15",
-    "CCTV-17": "17",
-    "CCTV-5+": "16",
-    "CCTV-4K": "18",
+    "CCTV-5+": "6",
+    "CCTV-6": "7",
+    "CCTV-7": "8",
+    "CCTV-8": "9",
+    "CCTV-9": "10",
+    "CCTV-10": "11",
+    "CCTV-11": "12",
+    "CCTV-12": "13",
+    "CCTV-13": "14",
+    "CCTV-14": "15",
+    "CCTV-15": "16",
+    "CCTV-17": "18",
+    "CCTV-4K": "19",
 
     "湖南卫视": "31",
     "浙江卫视": "32",
@@ -98,7 +97,7 @@ TVG_ID_MAPPING = {
 GROUP_RULES = [
     ("央视频道", [r"^CCTV\-", r"^CETV\-", r"CGTN"]),
     ("卫视频道", [r"卫视"]),
-    ("四川地方", [r"^CDTV\-", r"^SCTV\-", r"i成都"]),
+    ("四川地方", [r"^CDTV\-", r"^SCTV\-", r"四川", r"成都",r"i成都"]),
     ("CHC影院", [r"CHC"]),
 ]
 
