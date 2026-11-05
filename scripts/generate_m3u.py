@@ -25,7 +25,6 @@ USE_SELENIUM = True
 CACHE_MAP_FILE = "./epg_map.json"
 REPORT_FILE = "./output/epg_mapping_report.txt"
 
-# 51zmt 官方台标（优先）
 LOGO_51ZMT_PREFIX = "https://epg.51zmt.top:8000/tb1/"
 LOGO_51ZMT = {
     "CCTV1": "ys/CCTV1.png",
@@ -69,12 +68,6 @@ LOGO_51ZMT = {
     "SCTV7": "difang/sctv7.png",
 }
 
-# 备用台标库（降级）
-LOGO_BACKUP = {
-    "A": {"prefix": "https://epg.pw/logos/", "mapping": {}},
-    "B": {"prefix": "https://iptv-logo.com/logos/", "mapping": {}},
-}
-
 GROUP_CONFIG = {
     "央视频道": ["CCTV-"],
     "卫视频道": ["湖南卫视", "浙江卫视", "江苏卫视", "东方卫视", "北京卫视", "广东卫视", "深圳卫视", "山东卫视", "四川卫视"],
@@ -82,7 +75,7 @@ GROUP_CONFIG = {
     "其他频道": []
 }
 
-# ===================== EPG 自动拉取 & 解析，拿到官方 channel-id =====================
+# ===================== EPG 拉取 =====================
 def download_epg_xml() -> Optional[bytes]:
     try:
         resp = requests.get(EPG_GZ_URL, timeout=30)
@@ -98,12 +91,9 @@ def download_epg_xml() -> Optional[bytes]:
             return None
 
 def parse_epg_channels(xml_bytes: bytes) -> Dict[str, str]:
-    """返回：归一化频道名 -> 官方 tvg-id"""
     parser = etree.XMLParser(no_network=True)
     root = etree.fromstring(xml_bytes, parser)
-    ns = {"tv": "http://xmltv.org/wiki/xmltv.dtd"}
     name_to_id: Dict[str, str] = {}
-
     for ch in root.xpath("//channel"):
         cid = ch.get("id")
         if not cid:
@@ -144,11 +134,9 @@ def match_tvg_id(raw_name: str, epg_map: Dict[str, str]) -> str:
     norm = normalize_channel_name(raw_name)
     if norm in epg_map:
         return epg_map[norm]
-    # 二次宽松匹配
     for k, vid in epg_map.items():
         if norm in k or k in norm:
             return vid
-    # 兜底：不生成乱 id，留空，播放器依靠 tvg-name
     return ""
 
 # ===================== 台标 =====================
@@ -157,14 +145,13 @@ def get_channel_logo(tvid: str, raw_name: str) -> str:
         url = LOGO_51ZMT_PREFIX + LOGO_51ZMT[tvid]
         print(f"[LOGO 51ZMT] {raw_name} -> {url}")
         return url
-    norm = normalize_channel_name(raw_name)
     txt = re.sub(r"[^\u4e00-\u9fa5a-zA-Z0-9]", "", raw_name)[:8]
     qtxt = urllib.parse.quote(txt)
     placeholder = f"https://via.placeholder.com/120x80?text={qtxt}"
     print(f"[LOGO placeholder] {raw_name} -> {placeholder}")
     return placeholder
 
-# ===================== 网页抓取组播（保留原有） =====================
+# ===================== 网页抓取 =====================
 def fetch_with_requests(url: str) -> str:
     resp = requests.get(url, verify=False, timeout=30)
     resp.raise_for_status()
@@ -193,41 +180,51 @@ def fetch_with_selenium(url: str) -> str:
     finally:
         driver.quit()
 
+# ========== 重点重写：解析表格，正确区分序号 / 中文名称 / UDP ==========
 def parse_multicast_page(html: str) -> List[Dict[str, str]]:
     soup = BeautifulSoup(html, "lxml")
     table = soup.find("table")
     if not table:
         raise RuntimeError("页面无表格")
+
     out: List[Dict[str, str]] = []
     seen: set = set()
     udp_re = re.compile(r"(udp://@)?239\.\d{1,3}\.\d{1,3}\.\d{1,3}:\d{1,5}")
+    chinese_re = re.compile(r"[\u4e00-\u9fa5]")
+
     for tr in table.find_all("tr"):
         tds = [td.get_text(strip=True) for td in tr.find_all(["td", "th"])]
         udp_url: Optional[str] = None
         chan_name: Optional[str] = None
+
         for text in tds:
             m = udp_re.search(text)
             if m:
                 udp_url = m.group(0)
                 if not udp_url.startswith("udp://"):
                     udp_url = f"udp://@{udp_url}"
-            else:
-                if text and not chan_name:
-                    chan_name = text
+                continue
+            # 包含中文的单元格，才是频道名
+            if chinese_re.search(text):
+                chan_name = text
+
+        # 如果没有抓到中文名字，直接丢弃这一行（就是你之前那些数字行）
         if not udp_url or not chan_name:
             continue
         if any(k in chan_name for k in FILTER_KEYWORDS):
             continue
+
         key = f"{chan_name}||{udp_url}"
         if key in seen:
             continue
         seen.add(key)
         out.append({"name": chan_name, "udp_url": udp_url})
+
     if not out:
-        raise RuntimeError("解析不到频道")
+        raise RuntimeError("解析不到带中文名称的有效频道")
     return out
 
-# ===================== M3U 生成 + 报告 =====================
+# ===================== M3U 生成 =====================
 def get_channel_group(name: str) -> str:
     for gname, prefix_list in GROUP_CONFIG.items():
         if any(p in name for p in prefix_list):
