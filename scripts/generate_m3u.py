@@ -1,7 +1,7 @@
 import os
 import re
 import sys
-import base64
+import urllib.parse
 from datetime import datetime
 import requests
 from bs4 import BeautifulSoup
@@ -340,7 +340,7 @@ TVG_ID_MAPPING = {
 GROUP_RULES = [
     ("央视频道", [r"^CCTV\-", r"^CCTV\d", r"^CETV\-", r"中国教育", r"CGTN", r"央视"]),
     ("卫视频道", [r"卫视"]),
-    ("四川地方", [r"^CDTV\-", r"^CDTV\d", r"^SCTV\-", r"^SCTV\d", r"四川", r"康巴卫视"]),
+    ("四川地方", [r"^CDTV\-", r"^CDTV\d", r"^SCTV\-", r"^SCTV\d", r"四川", r"峨眉",r"康巴卫视"]),
     ("CHC影院", [r"CHC"]),
     ("数字付费", [r"风云", "求索", "梨园", "第一剧场", "世界地理", "怀旧剧场", "兵器科技", "书画频道", "四海钓鱼", "快乐垂钓", "天元围棋"]),
 ]
@@ -359,15 +359,15 @@ def extract_core_name(name: str) -> str:
     return core
 
 def get_channel_logo(name: str) -> str:
-    display_name = name if name else "Channel"
-    svg = f'''<svg width="120" height="80" xmlns="http://www.w3.org/2000/svg">
-  <rect width="120" height="80" fill="#8899aa"/>
-  <text x="60" y="48" font-family="Noto Sans CJK SC,sans-serif" font-size="16" fill="#ffffff" text-anchor="middle">{display_name}</text>
-</svg>'''
-    b = svg.encode("utf-8")
-    b64 = base64.b64encode(b).decode("ascii")
-    data_uri = f"data:image/svg+xml;base64,{b64}"
-    return data_uri
+    display_name = name.strip() if name else "Channel"
+    if len(display_name) > 10:
+        display_name = display_name[:9] + "…"
+    encoded_text = urllib.parse.quote(display_name, safe="")
+    logo_url = (
+        f"https://mockimg.dev/120x80/4A4545/FFFFFF.svg"
+        f"?text={encoded_text}&bold=true"
+    )
+    return logo_url
 
 def get_channel_group(name: str) -> str:
     for group, patterns in GROUP_RULES:
