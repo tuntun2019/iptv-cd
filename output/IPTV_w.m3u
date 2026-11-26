@@ -1,5 +1,5 @@
 #EXTM3U x-tvg-url="http://epg.51zmt.top:8000/e1.xml.gz"
-# 生成时间：2026-11-25 06:42:42
+# 生成时间：2026-11-26 06:34:07
 # udpxy：192.168.16.254:8866
 
 #EXTINF:-1 tvg-id="1" tvg-name="CCTV-1高清" tvg-logo="https://mockimg.dev/120x80/4A4545/FFFFFF.svg?text=CCTV-1%E9%AB%98%E6%B8%85&bold=true" group-title="央视频道",CCTV-1高清
@@ -437,11 +437,11 @@ http://192.168.16.254:8866/udp/239.94.1.56:5140/
 #EXTINF:-1 tvg-name="蓉城先锋专区" tvg-logo="https://mockimg.dev/120x80/4A4545/FFFFFF.svg?text=%E8%93%89%E5%9F%8E%E5%85%88%E9%94%8B%E4%B8%93%E5%8C%BA&bold=true" group-title="其他频道",蓉城先锋专区
 http://192.168.16.254:8866/udp/239.94.1.57:5140/
 
-#EXTINF:-1 tvg-id="1258" tvg-name="东方财经高清" tvg-logo="https://mockimg.dev/120x80/4A4545/FFFFFF.svg?text=%E4%B8%9C%E6%96%B9%E8%B4%A2%E7%BB%8F%E9%AB%98%E6%B8%85&bold=true" group-title="其他频道",东方财经高清
-http://192.168.16.254:8866/udp/239.94.1.59:5140/
-
 #EXTINF:-1 tvg-name="4K视界专区" tvg-logo="https://mockimg.dev/120x80/4A4545/FFFFFF.svg?text=4K%E8%A7%86%E7%95%8C%E4%B8%93%E5%8C%BA&bold=true" group-title="其他频道",4K视界专区
 http://192.168.16.254:8866/udp/239.94.1.60:5140/
+
+#EXTINF:-1 tvg-id="1258" tvg-name="东方财经高清" tvg-logo="https://mockimg.dev/120x80/4A4545/FFFFFF.svg?text=%E4%B8%9C%E6%96%B9%E8%B4%A2%E7%BB%8F%E9%AB%98%E6%B8%85&bold=true" group-title="其他频道",东方财经高清
+http://192.168.16.254:8866/udp/239.94.1.59:5140/
 
 #EXTINF:-1 tvg-name="4K纪实专区" tvg-logo="https://mockimg.dev/120x80/4A4545/FFFFFF.svg?text=4K%E7%BA%AA%E5%AE%9E%E4%B8%93%E5%8C%BA&bold=true" group-title="其他频道",4K纪实专区
 http://192.168.16.254:8866/udp/239.94.1.69:5140/
@@ -560,11 +560,20 @@ http://192.168.16.254:8866/udp/239.94.2.2:5140/
 #EXTINF:-1 tvg-name="精彩推荐专区" tvg-logo="https://mockimg.dev/120x80/4A4545/FFFFFF.svg?text=%E7%B2%BE%E5%BD%A9%E6%8E%A8%E8%8D%90%E4%B8%93%E5%8C%BA&bold=true" group-title="其他频道",精彩推荐专区
 http://192.168.16.254:8866/udp/239.94.2.10:5140/
 
+#EXTINF:-1 tvg-name="红原日干乔" tvg-logo="https://mockimg.dev/120x80/4A4545/FFFFFF.svg?text=%E7%BA%A2%E5%8E%9F%E6%97%A5%E5%B9%B2%E4%B9%94&bold=true" group-title="其他频道",红原日干乔
+http://192.168.16.254:8866/udp/239.94.2.19:5140/
+
+#EXTINF:-1 tvg-name="红原月亮湾" tvg-logo="https://mockimg.dev/120x80/4A4545/FFFFFF.svg?text=%E7%BA%A2%E5%8E%9F%E6%9C%88%E4%BA%AE%E6%B9%BE&bold=true" group-title="其他频道",红原月亮湾
+http://192.168.16.254:8866/udp/239.94.2.20:5140/
+
 #EXTINF:-1 tvg-name="中国体育1" tvg-logo="https://mockimg.dev/120x80/4A4545/FFFFFF.svg?text=%E4%B8%AD%E5%9B%BD%E4%BD%93%E8%82%B21&bold=true" group-title="其他频道",中国体育1
 http://192.168.16.254:8866/udp/239.94.2.7:5140/
 
 #EXTINF:-1 tvg-name="直播室1" tvg-logo="https://mockimg.dev/120x80/4A4545/FFFFFF.svg?text=%E7%9B%B4%E6%92%AD%E5%AE%A41&bold=true" group-title="其他频道",直播室1
 http://192.168.16.254:8866/udp/239.94.2.11:5140/
+
+#EXTINF:-1 tvg-name="雅克音乐节直播" tvg-logo="https://mockimg.dev/120x80/4A4545/FFFFFF.svg?text=%E9%9B%85%E5%85%8B%E9%9F%B3%E4%B9%90%E8%8A%82%E7%9B%B4%E6%92%AD&bold=true" group-title="其他频道",雅克音乐节直播
+http://192.168.16.254:8866/udp/239.94.2.23:5140/
 
 #EXTINF:-1 tvg-name="中国体育2" tvg-logo="https://mockimg.dev/120x80/4A4545/FFFFFF.svg?text=%E4%B8%AD%E5%9B%BD%E4%BD%93%E8%82%B22&bold=true" group-title="其他频道",中国体育2
 http://192.168.16.254:8866/udp/239.94.2.8:5140/
@@ -572,71 +581,62 @@ http://192.168.16.254:8866/udp/239.94.2.8:5140/
 #EXTINF:-1 tvg-name="直播室2" tvg-logo="https://mockimg.dev/120x80/4A4545/FFFFFF.svg?text=%E7%9B%B4%E6%92%AD%E5%AE%A42&bold=true" group-title="其他频道",直播室2
 http://192.168.16.254:8866/udp/239.94.2.12:5140/
 
+#EXTINF:-1 tvg-name="云演艺宣传" tvg-logo="https://mockimg.dev/120x80/4A4545/FFFFFF.svg?text=%E4%BA%91%E6%BC%94%E8%89%BA%E5%AE%A3%E4%BC%A0&bold=true" group-title="其他频道",云演艺宣传
+http://192.168.16.254:8866/udp/239.94.2.25:5140/
+
 #EXTINF:-1 tvg-name="中国体育3" tvg-logo="https://mockimg.dev/120x80/4A4545/FFFFFF.svg?text=%E4%B8%AD%E5%9B%BD%E4%BD%93%E8%82%B23&bold=true" group-title="其他频道",中国体育3
 http://192.168.16.254:8866/udp/239.94.2.9:5140/
 
 #EXTINF:-1 tvg-name="直播室3" tvg-logo="https://mockimg.dev/120x80/4A4545/FFFFFF.svg?text=%E7%9B%B4%E6%92%AD%E5%AE%A43&bold=true" group-title="其他频道",直播室3
 http://192.168.16.254:8866/udp/239.94.2.13:5140/
 
-#EXTINF:-1 tvg-name="直播室4" tvg-logo="https://mockimg.dev/120x80/4A4545/FFFFFF.svg?text=%E7%9B%B4%E6%92%AD%E5%AE%A44&bold=true" group-title="其他频道",直播室4
-http://192.168.16.254:8866/udp/239.94.2.14:5140/
-
-#EXTINF:-1 tvg-name="直播室5" tvg-logo="https://mockimg.dev/120x80/4A4545/FFFFFF.svg?text=%E7%9B%B4%E6%92%AD%E5%AE%A45&bold=true" group-title="其他频道",直播室5
-http://192.168.16.254:8866/udp/239.94.2.15:5140/
-
-#EXTINF:-1 tvg-name="直播室6" tvg-logo="https://mockimg.dev/120x80/4A4545/FFFFFF.svg?text=%E7%9B%B4%E6%92%AD%E5%AE%A46&bold=true" group-title="其他频道",直播室6
-http://192.168.16.254:8866/udp/239.94.2.16:5140/
-
-#EXTINF:-1 tvg-name="直播室7" tvg-logo="https://mockimg.dev/120x80/4A4545/FFFFFF.svg?text=%E7%9B%B4%E6%92%AD%E5%AE%A47&bold=true" group-title="其他频道",直播室7
-http://192.168.16.254:8866/udp/239.94.2.17:5140/
-
-#EXTINF:-1 tvg-name="直播室8" tvg-logo="https://mockimg.dev/120x80/4A4545/FFFFFF.svg?text=%E7%9B%B4%E6%92%AD%E5%AE%A48&bold=true" group-title="其他频道",直播室8
-http://192.168.16.254:8866/udp/239.94.2.18:5140/
-
-#EXTINF:-1 tvg-name="红原日干乔" tvg-logo="https://mockimg.dev/120x80/4A4545/FFFFFF.svg?text=%E7%BA%A2%E5%8E%9F%E6%97%A5%E5%B9%B2%E4%B9%94&bold=true" group-title="其他频道",红原日干乔
-http://192.168.16.254:8866/udp/239.94.2.19:5140/
-
-#EXTINF:-1 tvg-name="红原月亮湾" tvg-logo="https://mockimg.dev/120x80/4A4545/FFFFFF.svg?text=%E7%BA%A2%E5%8E%9F%E6%9C%88%E4%BA%AE%E6%B9%BE&bold=true" group-title="其他频道",红原月亮湾
-http://192.168.16.254:8866/udp/239.94.2.20:5140/
-
-#EXTINF:-1 tvg-name="雅克音乐节直播" tvg-logo="https://mockimg.dev/120x80/4A4545/FFFFFF.svg?text=%E9%9B%85%E5%85%8B%E9%9F%B3%E4%B9%90%E8%8A%82%E7%9B%B4%E6%92%AD&bold=true" group-title="其他频道",雅克音乐节直播
-http://192.168.16.254:8866/udp/239.94.2.23:5140/
-
-#EXTINF:-1 tvg-name="云演艺宣传" tvg-logo="https://mockimg.dev/120x80/4A4545/FFFFFF.svg?text=%E4%BA%91%E6%BC%94%E8%89%BA%E5%AE%A3%E4%BC%A0&bold=true" group-title="其他频道",云演艺宣传
-http://192.168.16.254:8866/udp/239.94.2.25:5140/
-
 #EXTINF:-1 tvg-name="920-全网组播" tvg-logo="https://mockimg.dev/120x80/4A4545/FFFFFF.svg?text=920-%E5%85%A8%E7%BD%91%E7%BB%84%E6%92%AD&bold=true" group-title="其他频道",920-全网组播
 http://192.168.16.254:8866/udp/239.94.2.128:5140/
+
+#EXTINF:-1 tvg-name="直播室4" tvg-logo="https://mockimg.dev/120x80/4A4545/FFFFFF.svg?text=%E7%9B%B4%E6%92%AD%E5%AE%A44&bold=true" group-title="其他频道",直播室4
+http://192.168.16.254:8866/udp/239.94.2.14:5140/
 
 #EXTINF:-1 tvg-name="921-全网组播" tvg-logo="https://mockimg.dev/120x80/4A4545/FFFFFF.svg?text=921-%E5%85%A8%E7%BD%91%E7%BB%84%E6%92%AD&bold=true" group-title="其他频道",921-全网组播
 http://192.168.16.254:8866/udp/239.94.2.129:5140/
 
-#EXTINF:-1 tvg-name="电信导视3" tvg-logo="https://mockimg.dev/120x80/4A4545/FFFFFF.svg?text=%E7%94%B5%E4%BF%A1%E5%AF%BC%E8%A7%863&bold=true" group-title="其他频道",电信导视3
-http://192.168.16.254:8866/udp/239.94.2.21:5140/
+#EXTINF:-1 tvg-name="直播室5" tvg-logo="https://mockimg.dev/120x80/4A4545/FFFFFF.svg?text=%E7%9B%B4%E6%92%AD%E5%AE%A45&bold=true" group-title="其他频道",直播室5
+http://192.168.16.254:8866/udp/239.94.2.15:5140/
 
 #EXTINF:-1 tvg-name="922-全网组播" tvg-logo="https://mockimg.dev/120x80/4A4545/FFFFFF.svg?text=922-%E5%85%A8%E7%BD%91%E7%BB%84%E6%92%AD&bold=true" group-title="其他频道",922-全网组播
 http://192.168.16.254:8866/udp/239.94.2.131:5140/
 
+#EXTINF:-1 tvg-name="直播室6" tvg-logo="https://mockimg.dev/120x80/4A4545/FFFFFF.svg?text=%E7%9B%B4%E6%92%AD%E5%AE%A46&bold=true" group-title="其他频道",直播室6
+http://192.168.16.254:8866/udp/239.94.2.16:5140/
+
 #EXTINF:-1 tvg-name="923-全网组播" tvg-logo="https://mockimg.dev/120x80/4A4545/FFFFFF.svg?text=923-%E5%85%A8%E7%BD%91%E7%BB%84%E6%92%AD&bold=true" group-title="其他频道",923-全网组播
 http://192.168.16.254:8866/udp/239.94.2.132:5140/
 
-#EXTINF:-1 tvg-name="雅克音乐节宣传" tvg-logo="https://mockimg.dev/120x80/4A4545/FFFFFF.svg?text=%E9%9B%85%E5%85%8B%E9%9F%B3%E4%B9%90%E8%8A%82%E5%AE%A3%E4%BC%A0&bold=true" group-title="其他频道",雅克音乐节宣传
-http://192.168.16.254:8866/udp/239.94.2.24:5140/
+#EXTINF:-1 tvg-name="直播室7" tvg-logo="https://mockimg.dev/120x80/4A4545/FFFFFF.svg?text=%E7%9B%B4%E6%92%AD%E5%AE%A47&bold=true" group-title="其他频道",直播室7
+http://192.168.16.254:8866/udp/239.94.2.17:5140/
 
 #EXTINF:-1 tvg-name="924-全网组播" tvg-logo="https://mockimg.dev/120x80/4A4545/FFFFFF.svg?text=924-%E5%85%A8%E7%BD%91%E7%BB%84%E6%92%AD&bold=true" group-title="其他频道",924-全网组播
 http://192.168.16.254:8866/udp/239.94.2.135:5140/
 
+#EXTINF:-1 tvg-name="直播室8" tvg-logo="https://mockimg.dev/120x80/4A4545/FFFFFF.svg?text=%E7%9B%B4%E6%92%AD%E5%AE%A48&bold=true" group-title="其他频道",直播室8
+http://192.168.16.254:8866/udp/239.94.2.18:5140/
+
 #EXTINF:-1 tvg-name="925-全网组播" tvg-logo="https://mockimg.dev/120x80/4A4545/FFFFFF.svg?text=925-%E5%85%A8%E7%BD%91%E7%BB%84%E6%92%AD&bold=true" group-title="其他频道",925-全网组播
 http://192.168.16.254:8866/udp/239.94.2.137:5140/
-
-#EXTINF:-1 tvg-name="华西证券" tvg-logo="https://mockimg.dev/120x80/4A4545/FFFFFF.svg?text=%E5%8D%8E%E8%A5%BF%E8%AF%81%E5%88%B8&bold=true" group-title="其他频道",华西证券
-http://192.168.16.254:8866/udp/239.94.2.42:5140/
 
 #EXTINF:-1 tvg-name="926-全网组播" tvg-logo="https://mockimg.dev/120x80/4A4545/FFFFFF.svg?text=926-%E5%85%A8%E7%BD%91%E7%BB%84%E6%92%AD&bold=true" group-title="其他频道",926-全网组播
 http://192.168.16.254:8866/udp/239.94.2.139:5140/
 
 #EXTINF:-1 tvg-name="927-全网组播" tvg-logo="https://mockimg.dev/120x80/4A4545/FFFFFF.svg?text=927-%E5%85%A8%E7%BD%91%E7%BB%84%E6%92%AD&bold=true" group-title="其他频道",927-全网组播
 http://192.168.16.254:8866/udp/239.94.2.140:5140/
+
+#EXTINF:-1 tvg-name="电信导视3" tvg-logo="https://mockimg.dev/120x80/4A4545/FFFFFF.svg?text=%E7%94%B5%E4%BF%A1%E5%AF%BC%E8%A7%863&bold=true" group-title="其他频道",电信导视3
+http://192.168.16.254:8866/udp/239.94.2.21:5140/
+
+#EXTINF:-1 tvg-name="雅克音乐节宣传" tvg-logo="https://mockimg.dev/120x80/4A4545/FFFFFF.svg?text=%E9%9B%85%E5%85%8B%E9%9F%B3%E4%B9%90%E8%8A%82%E5%AE%A3%E4%BC%A0&bold=true" group-title="其他频道",雅克音乐节宣传
+http://192.168.16.254:8866/udp/239.94.2.24:5140/
+
+#EXTINF:-1 tvg-name="华西证券" tvg-logo="https://mockimg.dev/120x80/4A4545/FFFFFF.svg?text=%E5%8D%8E%E8%A5%BF%E8%AF%81%E5%88%B8&bold=true" group-title="其他频道",华西证券
+http://192.168.16.254:8866/udp/239.94.2.42:5140/
 
 #EXTINF:-1 tvg-id="1283" tvg-name="游戏风云" tvg-logo="https://mockimg.dev/120x80/4A4545/FFFFFF.svg?text=%E6%B8%B8%E6%88%8F%E9%A3%8E%E4%BA%91&bold=true" group-title="数字付费",游戏风云
 http://192.168.16.254:8866/udp/239.94.1.46:5140/
